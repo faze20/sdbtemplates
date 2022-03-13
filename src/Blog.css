@@ -1,0 +1,126 @@
+.blog_container {
+  margin-top: 70px;
+}
+.blogSubheader {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  color: #fff;
+}
+.blogSubheader span {
+  color: #fff;
+}
+.blog_textcontent h2 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.blog_textcontent {
+  width: 40%;
+  z-index: 1;
+}
+.blog_image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.blog_sectionContent {
+  margin: 5px;
+}
+.blog_sectionContent > h3 {
+  text-align: center;
+}
+.blog_description {
+  background: "#7B8487";
+}
+.blog_app {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog_created {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  color: #fff;
+  margin: 5px;
+  font-size: 8px;
+}
+.blog_created > p {
+  margin: 5px;
+}
+.blog_gallery {
+  z-index: 1;
+  position: absolute;
+  top: 80%;
+}
+.blog_overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  /* background-color: "#96928D"; */
+}
+.blog_sectionArena {
+  display: flex;
+  justify-content: center;
+}
+.blogItemList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.blogItemList_content {
+  margin: 7px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.blogItemList_content img {
+  width: 200px;
+  height: 300px;
+}
+.blogItemList_content p {
+  max-width: 200px;
+  padding: 4px 0px;
+}
+.blogItemList_content h4 {
+  max-width: 200px;
+  margin: 5px 0px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.blogItemlist_container {
+  margin-top: 10%;
+}
+.blogItemlist_container h2 {
+  text-align: center;
+  margin: 5%;
+  font-size: 2.5rem;
+}
+.imageBlog_overlay {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  border-radius: 5px;
+}
+/* .imageBlog_overlay:hover {
+  display: block;
+} */
+.blog_image > h4 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: #fff;
+}
+.blog_image {
+  position: relative;
+}
