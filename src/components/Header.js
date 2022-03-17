@@ -30,8 +30,8 @@ function Header() {
                     <Grow>Quote  </Grow>
                 </Link>  
 
-                <Link to="/contact">
-                    <Grow> Contact </Grow>
+                <Link to="/account">
+                    <Grow> Account </Grow>
                 </Link>
 
                 <CustomMenu onClick={()=> setBurgerStatus(true)}/>

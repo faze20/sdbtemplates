@@ -8,6 +8,14 @@
   position: relative;
 }
 
+.application_banner {
+  background: url("/assets/sdbnew1banner.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .clouddata header,
 .websites header,
 .applications header,

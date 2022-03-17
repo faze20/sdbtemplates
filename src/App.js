@@ -21,7 +21,7 @@ import Portfolio from './components/Portfolio';
 import Contents from './components/Contents';
 import About from './components/About';
 import Blog from './components/Blog';
-
+import Utilities from './components/Utilities';
 
 
 function App() {
@@ -31,17 +31,20 @@ function App() {
       <div className="App">        
        
         <Switch>
-        <Route path="/softwares">
-                <Softwares />  
-            </Route>
             <Route path="/websites">
                 <Websites />  
+            </Route>
+            <Route path="/software">
+                <Softwares />  
             </Route>
             <Route path="/applications">
                 <Applications />  
             </Route>
             <Route path="/data">
                 <Clouddata />  
+            </Route>
+            <Route path="/utilities">
+                <Utilities />  
             </Route>
 
             <Route path="/contact">

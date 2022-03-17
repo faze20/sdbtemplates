@@ -10,18 +10,18 @@ function Home() {
             <Section
                 title="Custom Software"
                 description="One Stop Shop for your Scalable Software Solutions"
-                route='softwares'
+                route='software'
                 backgroundImg="apps.png"
-                leftBtnText="Custom Engineering"
+                leftBtnText="Software Engineering"
                 rightBtnText="Continous Integration"
-                color = 'red'
+                color = 'white'
             
             />
             <Section
                 title="Web Applications"
                 description="Order your Secure,Responsive and accessible Customised Websites"
                 route= 'websites'
-                backgroundImg="website.png"
+                backgroundImg="sdbnew3.png"
                 leftBtnText="Website Optimisation"
                 rightBtnText="Backend"            
             />
@@ -29,7 +29,7 @@ function Home() {
                 title="Mobile Applications "
                 description="Proficient and high converting Mobile/Web Application"
                 route='applications'
-                backgroundImg="background.png"
+                backgroundImg="sdbnew1.png"
                 leftBtnText="Native apps"
                 rightBtnText="Cross Platform"                          
             />
@@ -38,10 +38,10 @@ function Home() {
                 title="Cloud Technology"
                 description="Get your secured and undisrupted architecture migration"
                 route='data'
-                backgroundImg="cloud3.png"
+                backgroundImg="sdbnew2.png"
                 leftBtnText="Integration"
                 rightBtnText="Migration"
-                color = 'red'
+                color = 'white'
             />
             <Section
                 title="Data Warehouse"
@@ -50,7 +50,16 @@ function Home() {
                 backgroundImg="data.png"
                 leftBtnText="Data Sorting"
                 rightBtnText="Data Analytics"
-                color = 'red'            
+                color = 'white'            
+            />
+            <Section
+                title="Utilities"
+                description="Free Tools for Software Optimisation"
+                route='utilities'
+                backgroundImg="sdbnew.png"
+                leftBtnText="Software Performance"
+                rightBtnText="Keyword Analysis"
+                color = 'white'            
             />
             <Footer />
         </Container>

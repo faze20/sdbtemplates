@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade'
 function Applications() {
     return (
         <div className="applications">
-            <header style= {{ background :"url('/assets/mobilebnr.png') center center" } }>
+            <header className='application_banner' >
             <div className="header_content">
                   <Fade right>
                     <div className="left">

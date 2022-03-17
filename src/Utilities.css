@@ -1,0 +1,35 @@
+.utilities {
+  margin-top: 6.5rem;
+}
+.utilities_subheader {
+  /* background: green; */
+  padding: 0.5rem;
+}
+.utilities_p {
+  color: #fff;
+}
+.utility_divider {
+  height: 1px;
+  background-color: grey;
+  margin-bottom: 0.25rem;
+}
+.utility_ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.big {
+  margin: 0 2rem;
+  text-decoration-color: red;
+}
+.utility_ul li {
+  color: red;
+}
+.utility_pagecontent {
+  height: 80vh;
+  position: relative;
+}
+.content_left {
+  position: absolute;
+  top: 20rem;
+}
