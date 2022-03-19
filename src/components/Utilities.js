@@ -1,7 +1,29 @@
 import React , {useEffect} from 'react'
 import TextTransition, { presets } from "react-text-transition";
-
-// import '../App.css'
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import YoutubeSearchedForIcon from '@mui/icons-material/YoutubeSearchedFor';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import TagIcon from '@mui/icons-material/Tag';
+import KeyIcon from '@mui/icons-material/Key';
+import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import AddLinkIcon from '@mui/icons-material/AddLink';
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import GpsFixedIcon from '@mui/icons-material/GpsFixed';
+import PollIcon from '@mui/icons-material/Poll';
+import TranslateIcon from '@mui/icons-material/Translate';
+import TuneIcon from '@mui/icons-material/Tune';
+import ViewComfyIcon from '@mui/icons-material/ViewComfy';
+import WebhookIcon from '@mui/icons-material/Webhook';
+import EmailIcon from '@mui/icons-material/Email';
+import Filter9PlusIcon from '@mui/icons-material/Filter9Plus';
+import PolicyIcon from '@mui/icons-material/Policy';
+import GavelIcon from '@mui/icons-material/Gavel';
+import AirIcon from '@mui/icons-material/Air';
+import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import LinkIcon from '@mui/icons-material/Link';
+import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 import '../Utilities.css';
 import { Link } from 'react-router-dom'
 
@@ -85,7 +107,7 @@ function Utilities() {
            <div className='content_left'>
 
                <h1>
-                   Free SEO & Digital Marketing Tools
+                   Free SEO &amp; Digital Marketing Tools
                </h1>
                <h2>
                    The Best Free Seo and Digital Marketing Solution Your Business Will Ever Need.
@@ -97,73 +119,402 @@ function Utilities() {
         <div className="countdowns">
             <div className="countdown_content">
                 <h4> 264M</h4>
-                <p>Emails verified</p>
+                <p>Emails <br /> verified</p>
+                <div className="content_icon">
+                    <img src="/assets/emailnw.jpg" alt="" />
+                </div>
 
             </div>
             <div className="countdown_content">
             <h4> 705M</h4>
-                <p>Keyword Analyzed</p>
+                <p>Keyword <br /> Analyzed</p>
+                <div className="content_icon">
+                    <img src="/assets/searchnew.jpg" alt="" />
+                </div>
 
             </div>
             <div className="countdown_content">
-            <h4> 117K</h4>
-                <p>Happy Users</p>
+                <h4> 117K</h4>
+                <p>Happy <br /> Users</p>
+                <div className="content_icon">
+                    <img src="/assets/boy.png" alt="" />
+                </div>
 
             </div>
         </div>
-        <div className="seo_solutions">
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+
+        <div className="utility_tools">
+            <div className="utility_contents">
+
+            <div className="seo_tools">
+
+                <h2>
+                    SEO Tools
+                </h2>
+                <div className="seo_items">
+
+                    <div className="seo_solcontents">
+                        <img src="/assets/keywordicon.jpg" alt="" />
+                        <Link  to="/blog">  <h4>Keyword Research Tool</h4> </Link>
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        < KeyIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Bulk Keyword Tool</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <QuestionAnswerIcon />
+                        </div>
+                        <Link  to="/blog"><h4>Question Explorer</h4></Link>
+
+                        
+                    </div>
+                    <div className="seo_solcontents">
+                    <img src="/assets/backlinkicon.jpg" alt="" />
+                    <Link  to="/blog"> <h4>High CPC Keyword Explorer</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <AddLinkIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Free Backlinks List</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                    <img src="/assets/backlinkicon.jpg" alt="" />
+                    <Link  to="/blog"><h4>SEO Analyzer</h4></Link>
+
+                        
+                    </div>
+                </div>
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+
+            <div className="seo_tools">
+
+            <h2>
+                YouTube Tools
+            </h2>
+            <div className="seo_items">
+
+                        <div className="seo_solcontents">
+                            <div>
+                            <YouTubeIcon />
+                            </div>
+                            <Link  to="/blog"> <h4>YouTube Keyword Tool</h4></Link>
+
+                           
+                        </div>
+                        <div className="seo_solcontents">
+                            <div>
+
+                        <YoutubeSearchedForIcon />
+                            </div>
+                            <Link  to="/blog"> <h4>YouTube Top Keyword Explorer</h4></Link>
+
+                           
+                        </div>
+                </div>
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+
+            <div className="seo_tools">
+
+            <h2>
+               AI Tools
+            </h2>
+            <div className="seo_items">
+
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <TranslateIcon />
+                        </div>
+                        <Link  to="/blog"><h4>AI Content Generator</h4></Link>
+
+                        
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <TuneIcon />
+                        </div>
+                        <Link  to="/blog"><h4>AI Paragraph Translator</h4></Link>
+
+                        
+                    </div>
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+
+            <div className="seo_tools">
+
+                    <h2>
+                    Discover Tools
+                    </h2>
+                    <div className="seo_items">
+
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <ViewComfyIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Programs Explorer</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <GpsFixedIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Find Influencers</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <AssessmentIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>High CPC Keywords Explorer</h4></Link>
+
+                       
+                    </div>
+                    </div>
+                    
             </div>
+
+              <div className="seo_tools">
+
+            <h2>
+               Instagram Tools
+            </h2>
+            <div className="seo_items">
+
             <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+                <div>
+
+                <TagIcon />
+                </div>
+                <Link  to="/blog"> <h4>HashTags Explorer</h4></Link>
+
+               
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
+           
+              </div>
+           
+           
+              <div className="seo_tools">
+
+                    <h2>
+
+                        Email Marketing Tools
+                    </h2>
+                    <div  className="seo_items">
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <AttachEmailIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Email Validation Tool</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <EmailIcon />
+                        </div>
+                        <Link  to="/blog"><h4>Bulk Email  Validation</h4></Link>
+
+                        
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <Filter9PlusIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Email Text Extractor</h4></Link>
+
+                       
+                    </div>
+                    <div className="seo_solcontents">
+                        <div>
+
+                        <WebhookIcon />
+                        </div>
+                        <Link  to="/blog"> <h4>Warmup Schedule Generator</h4></Link>
+
+                       
+                    </div>
+
+                    </div>
+              </div> 
+
+              <div className="seo_tools">
+                    <h2>
+                        Affiliate Marketing Tools
+                    </h2>
+                    <div  className="seo_items">
+                            <div className="seo_solcontents">
+                                <div>
+
+                                <PollIcon/>
+                                </div>
+                                <Link  to="/blog"> <h4>Programs Explorer</h4></Link>
+
+                               
+                            </div>
+
+                    </div>
+                  </div>        
+
+                  <div className="seo_tools">
+                        <h2>
+                            WEB Tools
+                        </h2>
+                        <div className="seo_items">
+
+                        <div className="seo_solcontents">
+                            <div>
+
+                            <PolicyIcon />
+                            </div>
+                            <Link  to="/blog"><h4>Privacy Policy Generator Tool</h4></Link>
+
+                            
+                        </div>
+                        <div className="seo_solcontents">
+                            <div>
+
+                            <GavelIcon />
+                            </div>
+                            <Link  to="/blog"><h4>Terms &amp; Conditions Generator Tool</h4></Link>
+
+                            
+                        </div>
+                        <div className="seo_solcontents">
+                            <div>
+
+                            <AirIcon />
+                            </div>
+                            <Link  to="/blog"><h4>WEB Scrapper</h4></Link>
+
+                            
+                        </div>
+                        <div className="seo_solcontents">
+                            <div>
+
+                            <CalendarMonthIcon />
+                            </div>
+                            <Link  to="/blog"><h4>Calender</h4></Link>
+
+                            
+                        </div>
+                        </div>
+                      </div>  
+
+                      <div className="seo_tools">
+
+                            <h2>
+                                Other Tools &amp; Services
+                            </h2>
+                            <div className="seo_items">
+                            <div className="seo_solcontents">
+                                <div>
+
+                                <LocalPoliceIcon />
+                                </div>
+                                <Link  to="/blog"><h4>Super Sender License</h4></Link>
+
+                                
+                            </div>
+                            <div className="seo_solcontents">
+                                <div>
+
+                                <LinkIcon />
+                                </div>
+                                <Link  to="/blog"><h4>Link Shortener</h4></Link>
+
+                                
+                            </div>
+                            <div className="seo_solcontents">
+                                <div>
+
+                                <AnalyticsIcon />
+                                </div>
+                                <Link  to="/blog"><h4>InQuickSTicks</h4></Link>
+
+                                
+                            </div>
+                            <div className="seo_solcontents">
+                                <div>
+
+                                <ModeStandbyIcon />
+                                </div>
+                                <Link  to="/blog"> <h4>SDB-Tutors</h4></Link>
+
+                               
+                            </div>
+
+                            </div>
+                      </div>
             </div>
-            <div className="seo_solcontents">
-                <h4>Keyword Research Tool</h4>
-            </div>
+
+                      <div className="adverts">
+                          <div className="placeholder">
+                              <h4>
+                                  place your adverts here
+                                  holders
+                              </h4>
+                              <div className="placeholder_content">
+                                  <img
+                                   src="/assets/sdbnew6.png"
+                                    alt=""
+                                     />
+                                     <p>Travel the world.</p>
+                              </div><div className="placeholder_content">
+                                  <img
+                                   src="/assets/sdbnew6.png"
+                                    alt=""
+                                     />
+                                     <p>Travel the world.</p>
+                              </div>
+                              <div className="placeholder_content">
+                                  <img
+                                   src="/assets/sdbnew2.png"
+                                    alt=""
+                                     />
+                                     <p>Contents.</p>
+                              </div>
+                              <div className="placeholder_content">
+                                  <img
+                                   src="/assets/sdbnew4.png"
+                                    alt=""
+                                     />
+                                     <p>Refactorinng.</p>
+                              </div>
+                              <div className="placeholder_content">
+                                  <img
+                                   src="/assets/sdbnew5.png"
+                                    alt=""
+                                     />
+                                     <p>Finance for freelancer.</p>
+                              </div>
+                          </div>
+                      </div>
         </div>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga
-             temporibus magnam sit necessitatibus dolor aut dolore ex ea quibusdam
-              adipisci veritatis dolorum molestiae, eaque inventore corrupti minus,
-               sapiente dolorem?
-        </div>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga
-             temporibus magnam sit necessitatibus dolor aut dolore ex ea quibusdam
-              adipisci veritatis dolorum molestiae, eaque inventore corrupti minus,
-               sapiente dolorem?
-        </div>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga
-             temporibus magnam sit necessitatibus dolor aut dolore ex ea quibusdam
-              adipisci veritatis dolorum molestiae, eaque inventore corrupti minus,
-               sapiente dolorem?
-        </div>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est fuga
-             temporibus magnam sit necessitatibus dolor aut dolore ex ea quibusdam
-              adipisci veritatis dolorum molestiae, eaque inventore corrupti minus,
-               sapiente dolorem?
-        </div>
+       
         
         
        
