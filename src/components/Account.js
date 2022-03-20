@@ -1,27 +1,49 @@
-import React from 'react'
-import styled from 'styled-components'
+import React , { useState } from 'react'
+import '../Account.css';
+
 
 
 function Account() {
+    const [submitting, setSubmitting] = useState(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSubmitting(true);
+    
+        setTimeout(() => {
+            setSubmitting(false);
+        }, 3000)
+     }
+
     return (
-        <Wrap>
+        <div className='wrap'>
              Create Account
-        </Wrap>
+             <div className="form_container">
+             <div className="wrapper">
+                <h1>Login </h1>
+                {submitting &&
+                <div>Submtting Form...</div>
+                }
+                <form onSubmit={handleSubmit}>
+                    <div>
+                    <label>
+                         Name  
+                    </label>
+                        <input type='text' name="name" placeholder='Afeez' />
+                    </div>
+                    <div>
+                    <label>
+                         password  
+                    </label>
+                        <input type='password' placeholder='*****' />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+
+             </div>
+        </div>
     )
 }
 
 export default Account
 
-const Wrap = styled.div`
-padding-left:5px;
-padding-right:5px;
-font-weight:600;
-text-transform :uppercase;
-// text-align:center;
-align-items:center;
-align-content:center;
-justify-content:center;
-justify-items:center;
-margin-top:70px;
-
-`

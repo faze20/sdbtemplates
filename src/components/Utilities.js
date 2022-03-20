@@ -48,55 +48,55 @@ function Utilities() {
                     <div className='utility_divider'></div>
 
         <div className="utilities_subheader">
-            <p >
+            {/* <p > */}
                 <TextTransition
                     text={ TEXTS[index % TEXTS.length] }
                     springConfig={ presets.gentle }
                     
                 />
                
-            </p>
+            {/* </p> */}
         </div>
         <div className='utility_divider'></div>
 
             <div className="utility_subnav">
                 <ul className='utility_ul'>
                     <li>
-                        <Link to='#'>
+                        <Link to="/ecommerce">
                         <p>SEO</p>
                             
                         </Link>
                     </li>
                     <li>
-                        <Link to='/'>
+                        <Link to="/ecommerce">
                         <p > Youtube</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link href='#'>
+                        <Link to="/ecommerce">
                             <p > Email</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link href='#'>
+                        <Link to="/ecommerce">
                         <p > Webtools</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link href='#'>
+                        <Link to="/ecommerce">
                         <p >Discover</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link href='#'>
+                        <Link to="/ecommerce">
                         <p > AI</p>
                           
                         </Link>
@@ -155,14 +155,15 @@ function Utilities() {
 
                     <div className="seo_solcontents">
                         <img src="/assets/keywordicon.jpg" alt="" />
-                        <Link  to="/blog">  <h4>Keyword Research Tool</h4> </Link>
+                        <a href='https://www.softwaredevbytes.com'>  <h4>Keyword Research Tool</h4></a>
+
                     </div>
                     <div className="seo_solcontents">
                         <div>
 
                         < KeyIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Bulk Keyword Tool</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'><h4>Bulk Keyword Tool</h4></a>
 
                        
                     </div>
@@ -171,13 +172,13 @@ function Utilities() {
 
                         <QuestionAnswerIcon />
                         </div>
-                        <Link  to="/blog"><h4>Question Explorer</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'><h4>Question Explorer</h4></a>
 
                         
                     </div>
                     <div className="seo_solcontents">
                     <img src="/assets/backlinkicon.jpg" alt="" />
-                    <Link  to="/blog"> <h4>High CPC Keyword Explorer</h4></Link>
+                    <a href='https://www.softwaredevbytes.com'>  <h4>High CPC Keyword Explorer</h4></a>
 
                        
                     </div>
@@ -186,13 +187,13 @@ function Utilities() {
 
                         <AddLinkIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Free Backlinks List</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'> <h4>Free Backlinks List</h4></a>
 
                        
                     </div>
                     <div className="seo_solcontents">
                     <img src="/assets/backlinkicon.jpg" alt="" />
-                    <Link  to="/blog"><h4>SEO Analyzer</h4></Link>
+                    <a href='https://www.softwaredevbytes.com'> <h4>SEO Analyzer</h4></a>
 
                         
                     </div>
@@ -210,7 +211,7 @@ function Utilities() {
                             <div>
                             <YouTubeIcon />
                             </div>
-                            <Link  to="/blog"> <h4>YouTube Keyword Tool</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'><h4>YouTube Keyword Tool</h4></a>
 
                            
                         </div>
@@ -219,7 +220,7 @@ function Utilities() {
 
                         <YoutubeSearchedForIcon />
                             </div>
-                            <Link  to="/blog"> <h4>YouTube Top Keyword Explorer</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'> <h4>YouTube Top Keyword Explorer</h4></a>
 
                            
                         </div>
@@ -238,7 +239,7 @@ function Utilities() {
 
                         <TranslateIcon />
                         </div>
-                        <Link  to="/blog"><h4>AI Content Generator</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'><h4>AI Content Generator</h4></a>
 
                         
                     </div>
@@ -247,7 +248,7 @@ function Utilities() {
 
                         <TuneIcon />
                         </div>
-                        <Link  to="/blog"><h4>AI Paragraph Translator</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'><h4>AI Paragraph Translator</h4></a>
 
                         
                     </div>
@@ -267,7 +268,7 @@ function Utilities() {
 
                         <ViewComfyIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Programs Explorer</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'>  <h4>Programs Explorer</h4></a>
 
                        
                     </div>
@@ -276,7 +277,7 @@ function Utilities() {
 
                         <GpsFixedIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Find Influencers</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'><h4>Find Influencers</h4></a>
 
                        
                     </div>
@@ -285,7 +286,7 @@ function Utilities() {
 
                         <AssessmentIcon />
                         </div>
-                        <Link  to="/blog"> <h4>High CPC Keywords Explorer</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'>  <h4>High CPC Keywords Explorer</h4></a>
 
                        
                     </div>
@@ -305,7 +306,7 @@ function Utilities() {
 
                 <TagIcon />
                 </div>
-                <Link  to="/blog"> <h4>HashTags Explorer</h4></Link>
+                <a href='https://www.softwaredevbytes.com'> <h4>HashTags Explorer</h4></a>
 
                
             </div>
@@ -326,7 +327,7 @@ function Utilities() {
 
                         <AttachEmailIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Email Validation Tool</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'>  <h4>Email Validation Tool</h4></a>
 
                        
                     </div>
@@ -335,7 +336,7 @@ function Utilities() {
 
                         <EmailIcon />
                         </div>
-                        <Link  to="/blog"><h4>Bulk Email  Validation</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'> <h4>Bulk Email  Validation</h4></a>
 
                         
                     </div>
@@ -344,7 +345,7 @@ function Utilities() {
 
                         <Filter9PlusIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Email Text Extractor</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'> <h4>Email Text Extractor</h4></a>
 
                        
                     </div>
@@ -353,7 +354,7 @@ function Utilities() {
 
                         <WebhookIcon />
                         </div>
-                        <Link  to="/blog"> <h4>Warmup Schedule Generator</h4></Link>
+                        <a href='https://www.softwaredevbytes.com'> <h4>Warmup Schedule Generator</h4></a>
 
                        
                     </div>
@@ -371,7 +372,7 @@ function Utilities() {
 
                                 <PollIcon/>
                                 </div>
-                                <Link  to="/blog"> <h4>Programs Explorer</h4></Link>
+                                <a href='https://www.softwaredevbytes.com'> <h4>Programs Explorer</h4></a>
 
                                
                             </div>
@@ -390,7 +391,7 @@ function Utilities() {
 
                             <PolicyIcon />
                             </div>
-                            <Link  to="/blog"><h4>Privacy Policy Generator Tool</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'> <h4>Privacy Policy Generator Tool</h4></a>
 
                             
                         </div>
@@ -399,7 +400,7 @@ function Utilities() {
 
                             <GavelIcon />
                             </div>
-                            <Link  to="/blog"><h4>Terms &amp; Conditions Generator Tool</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'><h4>Terms &amp; Conditions Generator Tool</h4></a>
 
                             
                         </div>
@@ -408,7 +409,7 @@ function Utilities() {
 
                             <AirIcon />
                             </div>
-                            <Link  to="/blog"><h4>WEB Scrapper</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'><h4>WEB Scrapper</h4></a>
 
                             
                         </div>
@@ -417,7 +418,7 @@ function Utilities() {
 
                             <CalendarMonthIcon />
                             </div>
-                            <Link  to="/blog"><h4>Calender</h4></Link>
+                            <a href='https://www.softwaredevbytes.com'><h4>Calender</h4></a>
 
                             
                         </div>
@@ -435,7 +436,7 @@ function Utilities() {
 
                                 <LocalPoliceIcon />
                                 </div>
-                                <Link  to="/blog"><h4>Super Sender License</h4></Link>
+                                <a href='https://www.softwaredevbytes.com'> <h4>Super Sender License</h4></a>
 
                                 
                             </div>
@@ -444,7 +445,7 @@ function Utilities() {
 
                                 <LinkIcon />
                                 </div>
-                                <Link  to="/blog"><h4>Link Shortener</h4></Link>
+                                <a href='https://www.softwaredevbytes.com'> <h4>Link Shortener</h4></a>
 
                                 
                             </div>
@@ -453,7 +454,7 @@ function Utilities() {
 
                                 <AnalyticsIcon />
                                 </div>
-                                <Link  to="/blog"><h4>InQuickSTicks</h4></Link>
+                                <a href='https://www.softwaredevbytes.com'><h4>InQuickSTicks</h4></a>
 
                                 
                             </div>
@@ -462,7 +463,8 @@ function Utilities() {
 
                                 <ModeStandbyIcon />
                                 </div>
-                                <Link  to="/blog"> <h4>SDB-Tutors</h4></Link>
+                                <a href='https://www.softwaredevbytes.com'> <h4>SDB-Tutors</h4></a>
+
 
                                
                             </div>
@@ -482,7 +484,7 @@ function Utilities() {
                                    src="/assets/sdbnew6.png"
                                     alt=""
                                      />
-                                     <p>Travel the world.</p>
+                                     <p>Arabian leather</p>
                               </div><div className="placeholder_content">
                                   <img
                                    src="/assets/sdbnew6.png"

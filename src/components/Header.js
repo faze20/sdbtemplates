@@ -43,7 +43,11 @@ function Header() {
 
                 </CloseWrapper>
                 {navs && navs.map((car,index)=> (
-                    <li> <Link key={index} to= {`/${car}`}> {car} </Link> </li>
+                    <li key={index} > 
+                        <Link to= {`/${car}`}>
+                            {car}
+                        </Link>
+                    </li>
 
                 ))}            
                 
