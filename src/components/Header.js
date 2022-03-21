@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const navs = useSelector(selectNavs)
 
     return (
@@ -29,10 +30,19 @@ function Header() {
                 <Link to="/quote">
                     <Grow>Quote  </Grow>
                 </Link>  
+                {isLoggedIn ?  (
+                    <Link to="/account">
+                       <Grow> Account </Grow>
+                    </Link>
+                ) 
+                : (
+                    <Link to="/account">
+                       <Grow> Username </Grow>
+                    </Link>
+                )
+                }
 
-                <Link to="/account">
-                    <Grow> Account </Grow>
-                </Link>
+                
 
                 <CustomMenu onClick={()=> setBurgerStatus(true)}/>
             </RightMenu>
