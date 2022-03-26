@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
-import Footer from './Footer'
 
 
 function Home() {
@@ -61,7 +60,6 @@ function Home() {
                 rightBtnText="Keyword Analysis"
                 color = 'white'            
             />
-            <Footer />
         </Container>
     )
 }
@@ -69,5 +67,5 @@ function Home() {
 export default Home
 
 const Container = styled.div`
-height:100vh;
+// height:100vh;
 `

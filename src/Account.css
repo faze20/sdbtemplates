@@ -9,42 +9,53 @@
   margin-top: 70px;
   background-image: url("/assets/contactbgrd.jpg");
 }
-.form_container{
+.wrap a {
+  text-decoration: underline;
+  color: green;
+}
+.wrapper_header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 2rem 2rem;
+}
+.wrapper_header button {
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.form_container {
+  display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
-.form_content{
-  /* display: flex; */
+.form_content {
   background-color: #fff;
   opacity: 0.8;
   border-radius: 0.5rem;
+  margin: 2rem;
 }
-.contain{
+.contain {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
 }
-.mid_section{
+.mid_section {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0.5rem;
   font-size: 3rem;
 }
-.section_content{
+.section_content {
   margin: 1rem;
   display: flex;
   align-items: center;
   border: 1px solid #909194;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   transition-duration: 0.5s;
-
 }
-.section_content:hover{
+.section_content:hover {
   border: 2px solid green;
   transform: translateY(-5%);
 }
@@ -56,7 +67,7 @@
   font-size: 1rem;
   cursor: pointer;
 }
-.section_content button{
+.section_content button {
   border: none;
   padding: 0.3rem 2.5rem;
   cursor: pointer;
@@ -64,7 +75,7 @@
   width: 100%;
   background: none;
 }
-.btn_submit{
+.btn_submit {
   font-size: 1rem;
   width: 90%;
   padding: 1rem;
@@ -79,38 +90,38 @@
   color: #fff;
   letter-spacing: 6px;
   transition: ease-in-out;
-  /* transition-delay: 2s; */
 }
-.forgot_pword{
+.forgot_pword {
   margin-top: 1rem;
   text-align: left;
   margin-left: 5rem;
-  
 }
-.checkbox{
+.checkbox {
   margin-bottom: 0.2rem;
   display: flex;
   align-items: center;
 }
 .checkbox span {
-  margin-left:0.5rem ;
-
+  margin-left: 0.5rem;
 }
 
-.not_registered{
+.not_registered {
   border: 1px solid #909194;
-  margin-top: 3rem;
-  margin: 3rem 1rem 0.5rem 1rem;
+  margin: 1.5rem 1rem 1.5rem 1rem;
   border-radius: 0.2rem;
-
 }
-.terms_condition{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 1rem 0;
+.terms_condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
 }
-.terms_condition > p{
+.terms_condition > p {
   width: 300px;
   font-size: 0.6rem;
+}
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column-reverse;
+  }
 }

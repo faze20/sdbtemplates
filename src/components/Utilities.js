@@ -463,7 +463,7 @@ function Utilities() {
 
                                 <ModeStandbyIcon />
                                 </div>
-                                <a href='https://www.softwaredevbytes.com'> <h4>SDB-Tutors</h4></a>
+                                <a href='https://www.softwaredevbytes.com '> <h4>SDB-Tutors</h4></a>
 
 
                                

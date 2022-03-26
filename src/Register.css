@@ -1,0 +1,66 @@
+.register {
+  padding-top: 2rem;
+}
+.register a {
+  text-decoration: underline;
+  color: green;
+}
+.register_header {
+  margin-top: 3rem;
+  text-align: center;
+}
+.register_box {
+  margin: 2rem 1rem 0 1rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.register_container {
+  margin: 2rem;
+}
+.register_content {
+  display: flex;
+  margin: 2rem;
+}
+.register_content input {
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid green;
+  outline: none;
+}
+.btn_signup {
+  background: green;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 75%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.forgot_pword {
+  text-align: center;
+}
+.error_message {
+  color: gray;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+@media (max-width: 768px) {
+  .register_content {
+    flex-direction: column;
+    margin: 0;
+  }
+  .register_content input {
+    margin: 0.4rem 0;
+  }
+  .register_container {
+    display: block;
+  }
+  .register_box {
+    margin: 0;
+  }
+}

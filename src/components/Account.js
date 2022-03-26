@@ -3,45 +3,73 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../Account.css';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 
 
 
 function Account() {
     const [submitting, setSubmitting] = useState(false);
-    const handleSubmit = (e) => {
+    const [input, setInput] = useState({ email: '', password : ''});
+    const navigate = useNavigate();
+
+
+    const handleChange = (e) => setInput({
+        ...input,
+        [e.currentTarget.name]: e.currentTarget.value
+    }); 
+
+    const refreshPage = (e) =>{
+        navigate("/")
+        window.location.reload(true)
+
+    }
+    const handleSubmit =  async (e) => {
         e.preventDefault();
         setSubmitting(true);
+     
+        const response = await fetch('http://localhost:8000/users/login' , {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(input)
+
+        });
+        const result = await response.json()
+        localStorage.setItem('user', JSON.stringify(result))
+        console.log(result);
+        refreshPage()
+        
+    }
     
-        setTimeout(() => {
-            setSubmitting(false);
-        }, 3000)
-     }
+ 
 
     return (
         <div className='wrap'>
              <div className="form_container">
+               
+                <div className="form_content">
                 <div className="wrapper">
                     <div className="wrapper_header">
 
                     <h1>Login </h1>
-                    <button>Register</button>
+                    <button onClick={() => navigate("/register")}>Register</button>
                     </div>
                     {submitting &&
                     <div>Submtting Form...</div>
                     }
                 </div>
-                <div className="form_content">
                     <div className="contain">
-
+                       
                     <div className="section1">
                         <form onSubmit={handleSubmit}>
                             <div className="section_content">
-                                {/* <label htmlFor="name">Name</label> */}
-                                <input type='text' name="name" placeholder='Username' required/>
+                                <input onChange={ handleChange } value={input.email}
+                                type='email' name="email" placeholder='Enter your Email' required/>
                             </div>
                             <div className="section_content">
-                                <input type='password' placeholder='Password' required/>
+                                <input onChange={ handleChange } value={input.password}
+                                type='password' name="password" placeholder='Password' required/>
                             </div>
                             
                                 <button className='btn_submit' type="submit">Login</button>
@@ -50,7 +78,7 @@ function Account() {
                                         <input type="checkbox" name="" id="" />
                                         <span>Stay signed in</span>
                                     </div>
-                                    <Link> Forgot your password?</Link>
+                                    <Link to="/forgotpassword"> Forgot your password?</Link>
                                 </div>
 
                            
@@ -83,8 +111,8 @@ function Account() {
                         <div className="terms_condition">
                             <p>
                             By clicking Sign in or Continue with Google, 
-                            Facebook, or Apple, you agree to Softwaredevbytes's Terms 
-                            of Use and Privacy Policy. 
+                            Facebook, or Apple, you agree to <Link to="/terms">Softwaredevbytes's Terms of Use </Link> 
+                             and <Link to="/privacy">Privacy Policy.</Link>  
                             
                             </p>
                             <p>
@@ -98,7 +126,7 @@ function Account() {
                         <div className="register">
                             <p>
                             Don't have an account ?
-                            <Link href="/blog">
+                            <Link to="/register">
                                 register
                             </Link>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
-import Contact from './Contact';
+// import Contact from './Contact';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div className="footer">
-            <Contact />
+            {/* <Contact /> */}
 
 
             <div className="footer_group">
@@ -32,7 +32,7 @@ function Footer() {
                 <div className="sub">
                     <EmailIcon />
                     <a href="mailto:toafeez20@gmail.com" target="_top">
-                    info@softwaredevbytes.com
+                    afeez20@softwaredevbytes.com
                     </a>
                 </div>
               

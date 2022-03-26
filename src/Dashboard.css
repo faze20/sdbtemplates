@@ -1,0 +1,12 @@
+.container {
+  margin-top: 4.5rem;
+  padding-top: 1rem;
+}
+.utility_content {
+  opacity: 0.4;
+  padding: 6rem 6rem 3rem 6rem;
+}
+.utility_container {
+  background: #fff;
+  border-radius: 1rem;
+}

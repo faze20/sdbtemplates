@@ -1,16 +1,45 @@
-import React , { useState } from 'react'
+import React , { useState , useEffect } from 'react'
 import styled from 'styled-components'
 import  MenuIcon from '@material-ui/icons/Menu';
+import PersonIcon from '@mui/icons-material/Person';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CloseIcon from '@material-ui/icons/Close';
 import { selectNavs } from '../features/navheads/navSlice';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
   
 
-function Header() {
+
+
+function Header({userPayload}) {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [showSubProfileMenu, setShowSubProfileMenu] = useState(false);
+
+    const[ user , setUser ] = useState('')
     const navs = useSelector(selectNavs)
+    const loggedInUser = JSON.parse(localStorage.getItem("user")) 
+
+    useEffect(() => {
+        if (loggedInUser === undefined || loggedInUser === null ) {
+            setUser('')
+        }else{
+            setUser(loggedInUser);
+            setIsLoggedIn(false)
+            console.log("header change storage")
+        }
+       }, [])
+
+    console.log(user.firstName)
+
+    const logout = (e)=>{
+        localStorage.clear();
+        setIsLoggedIn(true)
+
+    }
+    const dropProfileMenu = ()=>{
+        setShowSubProfileMenu(prev => !prev)
+    }
 
     return (
        
@@ -25,6 +54,7 @@ function Header() {
                       </Link> 
                 ))}
             </Menu>
+           
 
             <RightMenu>
                 <Link to="/quote">
@@ -36,9 +66,28 @@ function Header() {
                     </Link>
                 ) 
                 : (
-                    <Link to="/account">
-                       <Grow> Username </Grow>
-                    </Link>
+                    
+                    <Profile>
+                        <PersonIcon />
+                        <div onClick={dropProfileMenu} >
+
+                        <span>{user.firstName}</span>
+                        <ArrowDropDownIcon />
+
+                        </div>
+                        {showSubProfileMenu && 
+                            <SubProfile>
+                                <ul>
+                                    <li><Link  to="/dashboard"> Profile</Link> </li>
+                                    <li><Link  to="/dashboard"> Dashboard</Link> </li>
+                                    <li><Link  to="/dashboard">  Pricing</Link> </li>
+                                    <li><Link  to="/dashboard">  Delete Account</Link> </li>
+                                </ul>
+                            </SubProfile>
+                        }
+                        <button onClick={logout}> Logout </button>
+
+                    </Profile>
                 )
                 }
 
@@ -164,3 +213,57 @@ transition : 0.5s;
     transform:translateY(-10px)
 };
 `
+const Profile = styled.div`
+display:flex;
+align-items:center;
+span{
+font-size:0.8rem;
+color:green;
+
+}
+button{
+padding:0 0.3rem;
+margin:0 0.8rem;
+background:red;
+color:#fff;
+border:none;
+height: 25px;
+cursor:pointer;
+border-radius:0.2rem;
+:hover{
+    background:transparent;
+    color:green;
+    border:1px solid red;
+}
+}
+div{
+    display:flex;
+    flex-direction:column;
+    justify-contents:center;
+    margin:0 0.5rem;
+   
+}
+`
+
+const SubProfile = styled.div`
+position:absolute;
+top:3rem;
+color:green;
+background:#fff;
+ul{
+    display:flex;
+    flex-direction:column;
+    color:green;
+    margin-top:2rem;
+    li{
+        margin:0.3rem;
+        padding:0.2rem;
+        :hover{
+            text-decoration:underline;
+            color:green;
+        }
+    }
+}
+`
+
+

@@ -1,12 +1,14 @@
-import React from 'react';
+import React  from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Account from './components/Account';
 import Quote from './components/Quote';
 import Softwares from './components/Softwares';
@@ -22,78 +24,98 @@ import Contents from './components/Contents';
 import About from './components/About';
 import Blog from './components/Blog';
 import Utilities from './components/Utilities';
-
+import TermsandConditions from './components/TermsandConditions';
+import Privacypolicy from './components/Privacypolicy';
+import Register from './components/Register';
+import Forgotpassword from './components/Forgotpassword';
+import Footer from './components/Footer';
+import Dashboard from './components/Dashboard';
 
 function App() {
-  return (
-    <Router>
-       <Header />
-      <div className="App">        
-       
-        <Switch>
-            <Route path="/websites">
-                <Websites />  
-            </Route>
-            <Route path="/software">
-                <Softwares />  
-            </Route>
-            <Route path="/applications">
-                <Applications />  
-            </Route>
-            <Route path="/data">
-                <Clouddata />  
-            </Route>
-            <Route path="/utilities">
-                <Utilities />  
-            </Route>
+    return (
+        <>
+        <Router>
+        <Header  />
+        <div className="App">        
+        
+            < Routes>
+                <Route path="/websites" element={<Websites />} />
+                    
+                <Route path="/software" element={ <Softwares />} />
+                    
+                    
+                <Route path="/applications " element={<Applications />} />
+                    
+                    
+                <Route path="/data"  element={ <Clouddata /> } />
+                    
+                    
+                <Route path="/utilities"  element={ <Utilities />} />
+                    
+                    
 
-            <Route path="/contact">
-                <Contact />  
-            </Route>
+                <Route path="/contact"  element={ <Contact /> } />
+                    
+                    
 
-          <Route path="/account">
-                <Account />  
-            </Route>
+            <Route path="/account"  element={ <Account /> } />
+                
+                    
             
-            <Route path="/quote">
-                <Quote />  
-            </Route>
-            <Route path="/blockchain">
-                <Blockchain />  
-            </Route>
-            <Route path="/blog">
-                <Blog />  
-            </Route>
-            <Route path="/ecommerce">
-                <Ecommerce />  
-            </Route>
-            <Route path="/debug">
-                <Debugging />  
-            </Route>
-            <Route path="/portfolio">
-                <Portfolio />  
-            </Route>
-            <Route path="/contents">
-                <Contents/>  
-            </Route>
-            <Route path="/about">
-                <About/>  
-            </Route>
+                <Route path="/quote"  element={ <Quote />} />
+                
+                    
+                <Route path="/blockchain"  element={ <Blockchain /> } />
+                
+                    
+                <Route path="/blog"  element={ <Blog /> } />
+                
+                    
+                <Route path="/ecommerce"  element={<Ecommerce /> } />
+                
+                    
+                <Route path="/debug"  element={<Debugging /> } />
+                
+                    
+                <Route path="/portfolio" element={ <Portfolio /> } />
+                    
+                <Route path="/contents"  element={ <Contents/>} />
+                
+                    
+                <Route path="/about"  element={ <About/> } />
+                
+                    
+                <Route path="/forgotpassword"  element={ <Forgotpassword />} />
+                    
+                    
+                <Route path="/terms"  element={<TermsandConditions /> } />
+                    
+                    
 
-           
+                <Route path="/privacy"  element={ <Privacypolicy />} />
+                    
+                    
 
-            <Route path="/">
-                <Home />  
-            </Route>
+                <Route path="/register"  element={<Register /> } />
+                <Route path="/dashboard"  element={<Dashboard /> } />
 
-        </Switch>
+                    
+
+                <Route path="/"  element={<Home />} />
+                    
+
+            </ Routes>
 
 
 
-       
-      </div>
-    </Router>
-  );
+        
+        </div>
+        <Footer />
+        </Router>
+        <ToastContainer />
+        </>
+
+    );
 }
 
 export default App;
