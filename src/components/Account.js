@@ -27,7 +27,7 @@ function Account() {
         e.preventDefault();
         setSubmitting(true);
      
-        const response = await fetch('http://localhost:8000/users/login' , {
+        const response = await fetch('https://digibuzzapi.herokuapp.com/users/login' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
