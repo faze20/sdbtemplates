@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function Header({userPayload}) {
+function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [showSubProfileMenu, setShowSubProfileMenu] = useState(false);
@@ -26,11 +26,9 @@ function Header({userPayload}) {
         }else{
             setUser(loggedInUser);
             setIsLoggedIn(false)
-            console.log("header change storage")
         }
        }, [])
 
-    console.log(user.firstName)
 
     const logout = (e)=>{
         localStorage.clear();

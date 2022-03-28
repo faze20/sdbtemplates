@@ -3,6 +3,28 @@
 }
 .utilities_subheader {
   padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+.donate_button{
+  margin-right: 1rem;
+}
+.donate_button button{
+  padding: 0.2rem 1.2rem ;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1.3rem;
+  background: green;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.donate_button button:hover{
+  background: wheat;
+  color: green;
+  letter-spacing: 2px;
+  border: 1px solid green;
 }
 .utilities_p {
   color: #fff;

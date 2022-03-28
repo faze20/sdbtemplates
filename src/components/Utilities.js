@@ -25,7 +25,7 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import LinkIcon from '@mui/icons-material/Link';
 import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 import '../Utilities.css';
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
 
 
 function Utilities() {
@@ -35,6 +35,8 @@ function Utilities() {
         "7 Ways to Optimise Email list."
     ]
     const [index, setIndex] = React.useState(0);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         const intervalId = setInterval(() =>
@@ -45,17 +47,19 @@ function Utilities() {
       }, []);
   return (
     <div className="utilities" >
-                    <div className='utility_divider'></div>
+        <div className='utility_divider'></div>
 
         <div className="utilities_subheader">
-            {/* <p > */}
-                <TextTransition
-                    text={ TEXTS[index % TEXTS.length] }
-                    springConfig={ presets.gentle }
-                    
-                />
+            <TextTransition
+                text={ TEXTS[index % TEXTS.length] }
+                springConfig={ presets.gentle }
+            />
+            <div className="donate_button">
+                <button onClick={()=> navigate("/payment")}>Donate</button>
+            </div>
+
+
                
-            {/* </p> */}
         </div>
         <div className='utility_divider'></div>
 

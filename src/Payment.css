@@ -1,0 +1,8 @@
+.payment{
+    margin-top: 4.5rem;
+
+}
+.donate_buttons{
+    display: flex;
+    justify-content: space-between;
+}

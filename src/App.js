@@ -2,11 +2,7 @@ import React  from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes , Route} from "react-router-dom";
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Account from './components/Account';
@@ -30,6 +26,7 @@ import Register from './components/Register';
 import Forgotpassword from './components/Forgotpassword';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
+import Payment from './components/Payment';
 
 function App() {
     return (
@@ -38,7 +35,7 @@ function App() {
         <Header  />
         <div className="App">        
         
-            < Routes>
+            <Routes>
                 <Route path="/websites" element={<Websites />} />
                     
                 <Route path="/software" element={ <Softwares />} />
@@ -58,7 +55,7 @@ function App() {
                     
                     
 
-            <Route path="/account"  element={ <Account /> } />
+                 <Route path="/account"  element={ <Account /> } />
                 
                     
             
@@ -98,13 +95,15 @@ function App() {
 
                 <Route path="/register"  element={<Register /> } />
                 <Route path="/dashboard"  element={<Dashboard /> } />
+                <Route path="/payment"  element={<Payment /> } />
+
 
                     
 
                 <Route path="/"  element={<Home />} />
                     
 
-            </ Routes>
+            </Routes>
 
 
 

@@ -27,7 +27,7 @@ function Account() {
         e.preventDefault();
         setSubmitting(true);
      
-        const response = await fetch('https://digibuzzapi.herokuapp.com/users/login' , {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/users/login` , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -37,7 +37,6 @@ function Account() {
         });
         const result = await response.json()
         localStorage.setItem('user', JSON.stringify(result))
-        console.log(result);
         refreshPage()
         
     }
