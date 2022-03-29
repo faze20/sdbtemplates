@@ -18,7 +18,7 @@ function Header() {
 
     const[ user , setUser ] = useState('')
     const navs = useSelector(selectNavs)
-    const loggedInUser = JSON.parse(localStorage.getItem("user")) 
+    const loggedInUser = JSON.parse(JSON.stringify(localStorage.getItem("user"))) 
 
     useEffect(() => {
         if (loggedInUser === undefined || loggedInUser === null ) {

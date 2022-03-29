@@ -5,6 +5,18 @@ import '../Payment.css';
 
 const Payment = () => {
     const  [showInputBox , setShowInputBox] = useState(false)
+    const [donation, setDonation ] = useState(0)
+    const [otheramount , setOtherAmount ] = useState(0)
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        setDonation(parseFloat(donation) + parseFloat(otheramount))
+    }
+    const makePayment = async ()=>{
+        await fetch('http://localhost:8000/payments')
+        .then(()=> console.log('paidi n full'))
+
+    }
   return (
     <div className='payment'>
         <h1>
@@ -32,20 +44,21 @@ const Payment = () => {
                 </div>
                 <div className="donate_buttons">
                     <div className="button">
-                        <button>$5 Paypal</button>
+                        <button onClick={()=> setDonation(donation + 5)}>$5 Paypal</button>
                     </div>
                     <div className="button">
-                        <button>$10 Paypal</button>
+                        <button onClick={()=> setDonation(donation + 10)}>$10 Paypal</button>
                     </div>
                     <div className="button">
-                        <button>$15 Paypal</button>
+                        <button onClick={()=> setDonation(donation + 15)}>$15 Paypal</button>
                         
                     </div>
                     <div className="button">
                         <button onClick={()=> setShowInputBox(true)}>$Custom</button>
                         {showInputBox && 
-                        <form>
-                            <input type="number" name="otheramount" id="other" />
+                        <form onSubmit={handleSubmit}>
+                            <input onChange={(e)=> setOtherAmount(e.target.value)}
+                            type="number" name="otheramount" id="other" />
                             <button type="submit">Donate</button> 
                         </form>
                         }
@@ -69,6 +82,8 @@ const Payment = () => {
                     <div className="payment_subcontent">
                         <div className="subcontent">
                             <h2>Order Summary</h2>
+                            <p>{donation}</p>
+                            <button onClick={makePayment}> Pay now </button>
                         </div>
 
                         <div className="form_creditcard">
