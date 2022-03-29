@@ -1,28 +1,47 @@
 .payment {
   margin-top: 4.5rem;
 }
+.payment h1{
+    text-align: center;
+    margin: 8rem 0 4rem 0;
+}
 .payment_container {
   display: flex;
   margin: 0 6rem;
-  padding: 0 2rem;
+  padding: 2rem;
+  background: aliceblue;
+  border-radius: 1rem;
+
 }
 .donations {
-  background: #7bb1e1;
+  /* background: #d1dbe4; */
+  border: 1px solid #d1dbe4;
   flex: 0.2;
+  padding: 1rem;
+  border-top-right-radius: .2rem;
+  border-top-left-radius: 0.2rem;
 }
-
+.donations  h2{
+    text-align: center;
+    margin: 1rem 0;
+}
 .text_container p {
   font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 .donate_buttontext,
 .cashapp {
-  background-color: green;
+  background-color: rgba(64, 187, 64, 0.74);
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0.5rem;
   font-style: italic;
+}
+.cashapp span {
+    color: yellow;
+    margin-right: 0.4rem;
 }
 
 .donate_buttons {
@@ -60,4 +79,22 @@
 }
 .payment_subcontent {
   display: flex;
+}
+@media (max-width: 768px) {
+    .payment_container{
+        margin: .3rem;
+        padding: 0.2rem;
+        flex-direction: column;
+    }
+    .payment h1{
+        margin: 6rem 0 2rem 0;
+    }
+    .payment_subcontent{
+        flex-direction: column;
+    }
+
+
+
+
+
 }

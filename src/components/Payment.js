@@ -8,7 +8,7 @@ const Payment = () => {
   return (
     <div className='payment'>
         <h1>
-            Payment
+            Donations &amp; Payment
         </h1>
         <div className="payment_container">
 
@@ -52,7 +52,10 @@ const Payment = () => {
                 </div>
                 <div className="cashapp">
                     <a href="https://cash.app/$AfeezBadmos">
-                    Cashapp $AfeezBadmos
+                        <span>
+                           Cashapp
+                        </span>
+                         $AfeezBadmos
                     </a>
                         
                     </div>
@@ -62,6 +65,10 @@ const Payment = () => {
                 <div className="payment_paypal">
                     
                     <div className="payment_subcontent">
+                        <div className="subcontent">
+                            <h2>Order Summary</h2>
+                        </div>
+
                         <div className="form_creditcard">
                               <h2>
                                 Paypal
@@ -88,10 +95,7 @@ const Payment = () => {
                             </form>
                            
                         </div>
-                        <div className="subcontent">
-                            <h2>Order Summary</h2>
-
-                        </div>
+                       
                     </div>
                 </div>
             </div>
