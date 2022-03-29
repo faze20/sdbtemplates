@@ -31,8 +31,8 @@ import { Link , useNavigate } from 'react-router-dom'
 function Utilities() {
     const TEXTS = [
         "  This our way of giving back to the community",
-        "Free Seo Checklist",
-        "7 Ways to Optimise Email list."
+        "With Your help, we have the support to maintain the applications free.",
+        "Your commitment made this happen."
     ]
     const [index, setIndex] = React.useState(0);
     const navigate = useNavigate();

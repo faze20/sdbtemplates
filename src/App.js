@@ -41,7 +41,7 @@ function App() {
                 <Route path="/software" element={ <Softwares />} />
                     
                     
-                <Route path="/applications " element={<Applications />} />
+                <Route path="/applications" element={<Applications />} />
                     
                     
                 <Route path="/data"  element={ <Clouddata /> } />
