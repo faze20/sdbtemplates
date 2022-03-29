@@ -24,6 +24,7 @@ const Payment = () => {
                         without distracting adverts like 
                         most free-application providing 
                         websites .
+
                     </p>
                     <div className="donate_buttontext">
                         Donate today
@@ -38,6 +39,7 @@ const Payment = () => {
                     </div>
                     <div className="button">
                         <button>$15 Paypal</button>
+                        
                     </div>
                     <div className="button">
                         <button onClick={()=> setShowInputBox(true)}>$Custom</button>
