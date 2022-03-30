@@ -27,6 +27,8 @@ import Forgotpassword from './components/Forgotpassword';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
 import Payment from './components/Payment';
+import Pricing from './components/Pricing';
+
 
 function App() {
     return (
@@ -96,6 +98,8 @@ function App() {
                 <Route path="/register"  element={<Register /> } />
                 <Route path="/dashboard"  element={<Dashboard /> } />
                 <Route path="/payment"  element={<Payment /> } />
+                <Route path="/pricing"  element={<Pricing /> } />
+
 
 
                     

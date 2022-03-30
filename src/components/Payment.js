@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { PayPalButton } from "react-paypal-button-v2";
+import {  useNavigate } from 'react-router-dom';
+
 import '../Payment.css';
 
 
@@ -7,16 +10,14 @@ const Payment = () => {
     const  [showInputBox , setShowInputBox] = useState(false)
     const [donation, setDonation ] = useState(0)
     const [otheramount , setOtherAmount ] = useState(0)
+    const navigate = useNavigate();
+
 
     const handleSubmit = (e) =>{
         e.preventDefault()
         setDonation(parseFloat(donation) + parseFloat(otheramount))
     }
-    const makePayment = async ()=>{
-        await fetch('http://localhost:8000/payments')
-        .then(()=> console.log('paidi n full'))
-
-    }
+  
   return (
     <div className='payment'>
         <h1>
@@ -81,38 +82,31 @@ const Payment = () => {
                     
                     <div className="payment_subcontent">
                         <div className="subcontent">
+                            <div className='subcontent_header'>
                             <h2>Order Summary</h2>
-                            <p>{donation}</p>
-                            <button onClick={makePayment}> Pay now </button>
+                            <button onClick={() => navigate("/makepayment")}> Pay now ${donation} </button>
+                            {/* <p> Pay Now {donation}</p> */}
+                            </div>
+                            <div className='payment_portal'>
+                                
+                                <PayPalButton
+                                    options={{
+                                    clientId:"Af0hsDbQMrzfPTnYx_wSGEOs3J3Q07op0fHSG0KsEuum8n8kEc7-LwYuAO9H4kXcFZcSEc7AumjMAAR1",
+
+                                    currency: "USD",
+                                    }}
+                                    amount={donation}
+                                    onSuccess={(details, data) => {
+                                    alert("Transaction completed by " + details.payer.name.given_name);
+
+                                    console.log({ details, data });
+                                    }}
+                                />
+                            </div>
+
                         </div>
 
-                        <div className="form_creditcard">
-                              <h2>
-                                Paypal
-                              </h2>
-                            <form action="">
-                                <div className="ccard_content">
-                                    <input type="text" placeholder='Credit Card Number' />
-                                </div>
-                                <div className="ccard_other">
-                                <div className="ccard_content">
-                                    <input type="text" placeholder='Expiring MM/YY' />
-                                </div>
-                                <div className="ccard_content">
-                                    <input type="text" placeholder='CVV Code' />
-                                </div>
-                                <div className="ccard_content">
-                                    <input type="text" placeholder='Postal Code' />
-                                </div>
-
-                                </div>
-                                <div className="submit_button">
-                                    <button type="submit"> Pay </button>
-                                </div>
-                            </form>
-                           
-                        </div>
-                       
+                      
                     </div>
                 </div>
             </div>
@@ -122,3 +116,33 @@ const Payment = () => {
 }
 
 export default Payment
+
+
+//   {/* <div className="form_creditcard">
+// REACT_APP_PAYPAL_CLIENT_ID
+//                               <h2>
+//                                 Paypal
+//                               </h2>
+//                             <form action="">
+//                                 <div className="ccard_content">
+//                                     <input type="text" placeholder='Credit Card Number' />
+//                                 </div>
+//                                 <div className="ccard_other">
+//                                 <div className="ccard_content">
+//                                     <input type="text" placeholder='Expiring MM/YY' />
+//                                 </div>
+//                                 <div className="ccard_content">
+//                                     <input type="text" placeholder='CVV Code' />
+//                                 </div>
+//                                 // <div className="ccard_content">
+//                                     <input type="text" placeholder='Postal Code' />
+//                                 </div>
+
+//                                 </div>
+//                                 <div className="submit_button">
+//                                     <button type="submit"> Pay </button>
+//                                 </div>
+//                             </form>
+                           
+                        // </div> */}
+                       
