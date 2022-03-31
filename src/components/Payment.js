@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PayPalButton } from "react-paypal-button-v2";
+// import { PayPalButton } from "react-paypal-button-v2";
 import {  useNavigate } from 'react-router-dom';
 
 import '../Payment.css';
@@ -89,7 +89,7 @@ const Payment = () => {
                             </div>
                             <div className='payment_portal'>
                                 
-                                <PayPalButton
+                                {/* <PayPalButton
                                     options={{
                                     clientId:"Af0hsDbQMrzfPTnYx_wSGEOs3J3Q07op0fHSG0KsEuum8n8kEc7-LwYuAO9H4kXcFZcSEc7AumjMAAR1",
 
@@ -101,7 +101,7 @@ const Payment = () => {
 
                                     console.log({ details, data });
                                     }}
-                                />
+                                /> */}
                             </div>
 
                         </div>

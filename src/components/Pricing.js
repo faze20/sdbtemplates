@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import CheckIcon from '@material-ui/icons/Check';
+import ClearIcon from '@mui/icons-material/Clear';
 import '../Pricing.css';
 
 
 export default function Pricing() {
-  const [state, setState] = useState(0);
   return (
     <div className="pricing_container">
       <div className="pricing_contents">
@@ -55,80 +56,80 @@ export default function Pricing() {
                 </tr>
                 <tr>
                   <th scope="row">Hosting and registration (1 domain)</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Revisions Per Month</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Premium Website Analytics</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Responsive Design (Mobile Friendly)</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Keyword Analysis</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Search Engine Optimized Images</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">XML and HTML Sitemaps</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Website Support Team Available</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">1 Custom Email Address (Optional)</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Access To Content Management System</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">High Quality Graphics</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">
@@ -136,24 +137,31 @@ export default function Pricing() {
                    Biogs, Google Maps, pop forms and 
                    Social Media Sharing
                   </th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">Lead Conversion Forms</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="red"><ClearIcon /></td>
+                  <td className="green"><CheckIcon /></td>
                 </tr>
                 <tr>
                   <th scope="row">SSL Certificates (Add-On)</th>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
-                  <td>&#10003;</td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                  <td className="green"><CheckIcon /></td>
+                </tr>
+                <tr>
+                <th scope="row">Price</th>
+                  <td>Free</td>
+                  <td>$850</td>
+                  <td>$1750</td>
+                  <td>$4000</td>
                 </tr>
                 <tr className="button_row">
                   <th scope="row" >Minimum 1 Year Contract</th>

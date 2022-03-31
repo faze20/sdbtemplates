@@ -53,6 +53,13 @@ thead th:nth-child(5) {
   width: 15%;
   color: rgb(0, 117, 0);
 }
+.red > svg {
+  color: red;
+}
+.green > svg {
+  color: green;
+}
+
 tr {
   border-bottom: 1px solid #cd9b0e;
 }
