@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import { PayPalButton } from "react-paypal-button-v2";
 import {  useNavigate } from 'react-router-dom';
 
 import '../Payment.css';
@@ -8,14 +7,23 @@ import '../Payment.css';
 
 const Payment = () => {
     const  [showInputBox , setShowInputBox] = useState(false)
-    const [donation, setDonation ] = useState(0)
     const [otheramount , setOtherAmount ] = useState(0)
     const navigate = useNavigate();
+
+    const fifteen=()=>{
+        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
+    }
+    const ten=()=>{
+        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
+    }
+    const five=()=>{
+        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
+    }
 
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        setDonation(parseFloat(donation) + parseFloat(otheramount))
+        navigate('/button',{state:{price:otheramount,quantity:1 ,description:`Thank you for ${otheramount} donation`}});
     }
   
   return (
@@ -45,13 +53,13 @@ const Payment = () => {
                 </div>
                 <div className="donate_buttons">
                     <div className="button">
-                        <button onClick={()=> setDonation(donation + 5)}>$5 Paypal</button>
+                        <button onClick={()=>{five()}}>$5 Paypal</button>
                     </div>
                     <div className="button">
-                        <button onClick={()=> setDonation(donation + 10)}>$10 Paypal</button>
+                        <button onClick={()=>{ten()}}>$10 Paypal</button>
                     </div>
                     <div className="button">
-                        <button onClick={()=> setDonation(donation + 15)}>$15 Paypal</button>
+                        <button onClick={()=>{fifteen()}}>$15 Paypal</button>
                         
                     </div>
                     <div className="button">
@@ -84,25 +92,9 @@ const Payment = () => {
                         <div className="subcontent">
                             <div className='subcontent_header'>
                             <h2>Order Summary</h2>
-                            <button onClick={() => navigate("/makepayment")}> Pay now ${donation} </button>
-                            {/* <p> Pay Now {donation}</p> */}
+                            <button onClick={() => navigate("/makepayment")}> Pay now </button>
                             </div>
-                            <div className='payment_portal'>
-                                
-                                {/* <PayPalButton
-                                    options={{
-                                    clientId:"Af0hsDbQMrzfPTnYx_wSGEOs3J3Q07op0fHSG0KsEuum8n8kEc7-LwYuAO9H4kXcFZcSEc7AumjMAAR1",
-
-                                    currency: "USD",
-                                    }}
-                                    amount={donation}
-                                    onSuccess={(details, data) => {
-                                    alert("Transaction completed by " + details.payer.name.given_name);
-
-                                    console.log({ details, data });
-                                    }}
-                                /> */}
-                            </div>
+                           
 
                         </div>
 

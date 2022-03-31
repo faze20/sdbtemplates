@@ -1,0 +1,16 @@
+.button_container {
+  margin-top: 4.5rem;
+}
+.button_items {
+  display: flex;
+  justify-content: space-between;
+}
+.order_details {
+  flex: 0.4;
+  height: 100vh;
+}
+.button_payment {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+}

@@ -28,6 +28,8 @@ import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
 import Payment from './components/Payment';
 import Pricing from './components/Pricing';
+import Button from './components/Button';
+
 
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
         <>
         <Router>
         <Header  />
-        <div className="App">        
+        {/* <div className="App">         */}
         
             <Routes>
                 <Route path="/websites" element={<Websites />} />
@@ -99,6 +101,8 @@ function App() {
                 <Route path="/dashboard"  element={<Dashboard /> } />
                 <Route path="/payment"  element={<Payment /> } />
                 <Route path="/pricing"  element={<Pricing /> } />
+                <Route path="/button"  element={<Button /> } />
+
 
 
 
@@ -112,7 +116,7 @@ function App() {
 
 
         
-        </div>
+        {/* </div> */}
         <Footer />
         </Router>
         <ToastContainer />

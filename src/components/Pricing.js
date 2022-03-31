@@ -2,10 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CheckIcon from '@material-ui/icons/Check';
 import ClearIcon from '@mui/icons-material/Clear';
+import {  useNavigate } from 'react-router-dom';
+
 import '../Pricing.css';
 
 
 export default function Pricing() {
+  const navigate = useNavigate();
+
+  const basic =()=>{
+    navigate('/button',{state:{price:0,quantity:1 ,description:'Free Basic Package '}});
+  }
+
+  const standard =()=>{
+    navigate('/button',{state:{price:850,quantity:1 ,description:'Standard Package '}});
+  }
+  const gold=()=>{
+      navigate('/button',{state:{price:1750,quantity:1 ,description:'Gold Package '}});
+  }
+  const platinum=()=>{
+      navigate('/button',{state:{price:4000,quantity:1 ,description:'Platinum Package '}});
+  }
+
   return (
     <div className="pricing_container">
       <div className="pricing_contents">
@@ -165,10 +183,10 @@ export default function Pricing() {
                 </tr>
                 <tr className="button_row">
                   <th scope="row" >Minimum 1 Year Contract</th>
-                  <td> <button className="basic">Subscribe</button> </td>
-                  <td><button className="standard">Subscribe</button></td>
-                  <td><button className="gold">Subscribe</button></td>
-                  <td><button className="platinum">Subscribe</button></td>
+                  <td> <button onClick={()=>{basic()}} className="basic">Subscribe</button> </td>
+                  <td><button onClick={()=>{standard()}} className="standard">Subscribe</button></td>
+                  <td><button  onClick={()=>{gold()}} className="gold">Subscribe</button></td>
+                  <td><button  onClick={()=>{platinum()}} className="platinum">Subscribe</button></td>
                 </tr>
 
               </tbody>
