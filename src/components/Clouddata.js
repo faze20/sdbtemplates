@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade'
 function Clouddata() {
     return (
         <div className="clouddata">
-            <header style= {{ background :"url('/assets/cloudbnr.png') center center" } }>
+            <header style= {{ background :"url('/assets/sdbnew2.png') center center" } }>
                 <div className="header_content">
                 <Fade right>
                     <div className="left">

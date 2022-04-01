@@ -1,0 +1,116 @@
+.websites_container {
+  margin-top: 4.5rem;
+  position: relative;
+}
+.websites_contents header {
+  height: 100vh;
+}
+.websites_subheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+}
+.website_divider {
+  height: 1px;
+  background-color: #bebfc1;
+}
+
+.pricing_button > button {
+  padding: 0.2rem 1.2rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1.3rem;
+  background: green;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.pricing_button > button:hover {
+  background: wheat;
+  color: green;
+  letter-spacing: 2px;
+  border: 1px solid green;
+}
+.websites_subnav {
+  background-color: #9fa3ac;
+}
+.website_ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.website_ul li > a {
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  background: #fff;
+  cursor: pointer;
+}
+.website_ul li > a:hover {
+  background: #028a36;
+  color: #fff;
+}
+.websiteheader_content {
+  padding-top: 5rem;
+  max-width: 28rem;
+  min-width: 17rem;
+  margin-left: 1rem;
+}
+.fade_p {
+  max-width: 20rem;
+  line-height: 1.6rem;
+}
+.fade_h1 {
+  font-size: 3rem;
+}
+.fade_p {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.fade_button {
+  background-color: #028a36;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  width: 80%;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.fade_button:hover {
+  background-color: aliceblue;
+  letter-spacing: 0.25rem;
+  color: #282c34;
+  transition: ease-in-out;
+}
+.mini_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 1rem 0;
+}
+.mini_header div {
+  height: 2px;
+  background-color: yellow;
+  width: 1.6rem;
+  margin: 0 0.9rem;
+}
+.sub_header {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.benefits_contents {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.benefit_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit_item img {
+  width: 10rem;
+  height: 10rem;
+}

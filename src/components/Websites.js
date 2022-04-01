@@ -1,36 +1,135 @@
-import React from 'react'
-import '../App.css'
-import { Link } from 'react-router-dom'
+import React , {  useEffect} from 'react'
+import '../Websites.css'
+import { Link , useNavigate } from 'react-router-dom'
+import TextTransition, { presets } from "react-text-transition";
+
 import Fade from 'react-reveal/Fade'
 
 
 
 
 function Websites() {
+    const TEXTS = [
+        "WordPress , Wix ,CMS  ",
+        "Customised Web App",
+        "E-commerce ,shopify ,Etsy , Squarespace."
+    ]
+    const [index, setIndex] = React.useState(0);
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+          setIndex(index => index + 1),
+          3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+      }, []);
     return (
-        <div className="websites">
-            <header style= {{ background :"url('/assets/websitebnr.png') center center" } }>
-            <div className="header_content">
-                <Fade right>
-                    <div className="left">
-                        <p>Optimise your Site</p>
-                        <p> Web Application </p>
+        <div className="websites_container">
+            <div className="websites_contents">
+            <div className='website_divider'></div>
+
+                <div className="websites_subheader">
+                    <TextTransition
+                        text={ TEXTS[index % TEXTS.length] }
+                        springConfig={ presets.gentle }
+                    />
+                    <div className="pricing_button">
+                        <button onClick={()=> navigate("/pricing")}>Pricing</button>
                     </div>
-                    <button><Link  to="/contact">Get In Touch </Link> </button>
-                    </Fade>
-             </div>
+
+
+                
+                 </div>
+                 <div className="websites_subnav">
+                    <ul className='website_ul'>
+                        <li>
+                            <Link to="/utilities">
+                            Image Optimisation
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                           Domain name checker
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                           Website Redesign
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                               SEO
+                            </Link>
+                        </li>
+                    </ul>
+                             
+                </div>
+       
+
+            
+            <header style= {{ background :"url('/assets/sdbnew3.png') center center" } }>
+                <div className="website_header">
+                        <div className="websiteheader_content">
+                            <Fade right>
+                            <h1 className='fade_h1'>Create Your Own Web Masterpiece </h1>
+                            <p className='fade_p'>Every user is like a potential buyer or
+                                partner, uses the Internet to search 
+                                for information about goods and services.
+                                At their disposal are thousands of offers, 
+                                instant consultations of experts, forums,
+                                opinions and advice.</p>
+                           
+                       
+                              <button onClick={()=> navigate("/contact")} className='fade_button'>Start Now  </button>
+                             </Fade>
+                        </div>
+                </div>
 
             </header>
-            <div className="subnav">
-                <div> <h2> Web services</h2> </div>
-                <a href="#top"> I have a website </a>
-                <a href="#top"> I need a website </a>
-                <a href="#top"> Website Applications </a>                
-            </div>
+           <div className="mini_header">
+                <div> </div>
+                <p>What We Offer</p>
+                <div> </div>
 
-            <h2>Website | Web Application</h2>
-            <div className="applications-contents">
-                <div className="content-right">
+           </div>
+            <h1 className='sub_header'>Your Main Features &amp; Benefits</h1>
+            <div className="benefits_container">
+                <div className="benefits_contents">
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
+                        <h5>Branding</h5>
+                        <p>
+                        We provide everything your site needs
+                         to perform at it’s highest capabilities
+                          on the major search engines.
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
+                        <h5>Branding</h5>
+                        <p>
+                        We provide everything your site needs
+                         to perform at it’s highest capabilities
+                          on the major search engines.
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
+                        <h5>Branding</h5>
+                        <p>
+                        We provide everything your site needs
+                         to perform at it’s highest capabilities
+                          on the major search engines.
+                        </p>
+                        <p>https://www.motocms.com/website-templates/demo/90625.html</p>
+                    </div>
+                </div>
+            </div>
+            <div className="websiteother_main">
+                <div className="website_right">
                     <p>The First point of call for over 75% of customers that want to experience an
                          effortless shopping with safety and 
                         satisfaction, will make or plan to make such transactions  on the internet . It is imperative
@@ -164,7 +263,7 @@ function Websites() {
 
             
 
-            
+            </div>
         </div>
     )
 }
