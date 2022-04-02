@@ -99,32 +99,30 @@ function Websites() {
             <div className="benefits_container">
                 <div className="benefits_contents">
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
+                        <img src="/assets/resultgoal.jpg" alt="branding" />
                         <h5>Branding</h5>
                         <p>
                         We provide everything your site needs
-                         to perform at it’s highest capabilities
+                         to perform at it&#39;s highest capabilities
                           on the major search engines.
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
-                        <h5>Branding</h5>
+                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <h5>24/7 Dev Team</h5>
                         <p>
-                        We provide everything your site needs
-                         to perform at it’s highest capabilities
-                          on the major search engines.
+                        We do have a round-the-clock development
+                        team to support your software solutions.
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="" srcset="" />
-                        <h5>Branding</h5>
+                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <h5>Performance Report</h5>
                         <p>
-                        We provide everything your site needs
-                         to perform at it’s highest capabilities
-                          on the major search engines.
+                        Periodic reports on  websites
+                        to help with next decision-making
+                        process when its time to scale.
                         </p>
-                        <p>https://www.motocms.com/website-templates/demo/90625.html</p>
                     </div>
                 </div>
             </div>

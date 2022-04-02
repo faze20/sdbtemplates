@@ -104,13 +104,19 @@
 .benefits_contents {
   display: flex;
   margin-bottom: 2rem;
+  justify-content: space-evenly;
 }
 .benefit_item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 18rem;
+  text-align: center;
 }
 .benefit_item img {
   width: 10rem;
   height: 10rem;
+}
+.benefit_item h5 {
+  margin: 2rem 0;
 }
