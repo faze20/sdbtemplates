@@ -21,7 +21,8 @@
   background-color: #bebfc1;
 }
 
-.pricing_button > button {
+.pricing_button > button
+ {
   padding: 0.2rem 1.2rem;
   border-radius: 0.2rem;
   border: none;
@@ -31,7 +32,8 @@
   cursor: pointer;
   transition: 0.2s;
 }
-.pricing_button > button:hover {
+.pricing_button > button:hover 
+{
   background: wheat;
   color: green;
   letter-spacing: 2px;
@@ -207,6 +209,64 @@ font-size: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
+.website_aboutme{
+  padding: 1px;
+
+}
+.website_aboutme h2{
+  text-align: center;
+  margin: 2rem 0;
+
+}
+.aboutme_content{
+  display: flex;
+}
+.image img{
+  width: 25rem;
+  height: 25rem;
+}
+.about_text{
+  margin: 0 8rem;
+}
+.about_text h4{
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.about_text p{
+  line-height: 2rem;
+
+}
+.acheivements{
+  display: flex;
+  margin: 1rem 0 1rem 2rem;
+  align-items: center;
+}
+.acheivements ul >li{
+  list-style: disc;
+  color: #ffc600;
+  line-height: 1rem;
+}
+.buttons{
+  display: flex;
+  width: 60%;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.buttons > button{
+  border: 2px solid #ffc600;
+  padding: .8rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1rem;
+
+}
+.buttons > button:hover{
+  background: #ffc600;
+  color: #fff;
+
+}
+
 @media (max-width: 768px) {
   .pricing_button > button {
     font-size: 0.7rem;
@@ -280,6 +340,25 @@ font-size: 3rem;
 }
 .websitecard h4{
   font-size: 1.5rem;
+}
+.aboutme_content{
+  flex-direction: column;
+}
+.image{
+  width: 100%;
+  text-align: center;
+
+}
+.image img{
+  width: 50%;
+  height: 50%;
+
+}.about_text{
+  margin: 1rem;
+}.about_text p{
+  font-size: .8rem;
+}.buttons{
+  width: 100%;
 }
 
 }

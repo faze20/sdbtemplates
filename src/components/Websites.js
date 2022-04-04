@@ -284,6 +284,60 @@ function Websites() {
                         <img src="/assets/drawio.jpg" alt="drawio" />
                     </div>
                 </div>
+
+                <div className="mini_header">
+                <div> </div>
+                <p>We passionate about</p>
+                <div> </div>
+
+                     </div>
+
+
+                <div className="website_aboutme">
+                <h2>About Me</h2>
+                    <div className="aboutme_content">
+                    <div className="image">
+                              <img src="/assets/profile-pic.png" alt="afeez badmos" />
+                        </div>
+                       
+                        <div className="about_text">
+                            
+                            <h4>
+                            I am Afeez Badmos, I'm a passionate web designer 
+                            &amp; developer with 12 Years of Experience.
+                            </h4>
+                            <p>
+                            As a passionate front-end developer,
+                             I prefer to run my own business rather than routine office
+                              work. Such lifestyle helps me enjoy my favourite hobbie 
+                              traveling. Being able to do your job in every corner of our
+                               planet is amazing!
+                            </p>
+                            <div className="acheivements">
+                               
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div>
+                                <h5>Best UI/UX end point Dev</h5>
+                                <h5>Overall Mobile responsiveness</h5>
+                                <h5>Best time ticketer User-response</h5>
+                                <h5>
+                                https://www.motocms.com/website-templates/demo/90625.html
+                                </h5>
+                                </div>
+                            </div>
+                            <div className="buttons">
+                                <button>Request a Call</button>
+                                <button>Contact Me</button>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
             </div>
 
             
