@@ -70,7 +70,7 @@ function Websites() {
        
 
             
-            <header style= {{ background :"url('/assets/sdbnew3.png') center center" } }>
+            <header >
                 <div className="website_header">
                         <div className="websiteheader_content">
                             <Fade right>
@@ -128,133 +128,160 @@ function Websites() {
             </div>
             <div className="websiteother_main">
                 <div className="website_right">
-                    <p>The First point of call for over 75% of customers that want to experience an
-                         effortless shopping with safety and 
-                        satisfaction, will make or plan to make such transactions  on the internet . It is imperative
-                        that not only your website be secure, it has got to be appealing to Customers online.
-                        Now , every Customer is unique , then how can you guarantee satisfaction to these diverse
-                        demographics of users crawling through your website.
-                    </p>
-                    <p>
-                        From a Landing page to a fully functional dynamic Web application , we always make 
-                        sure that it's developed with full accessibility , responsiveness , security and scalability.
-                        You want to Improve your website ? and skeptical about the downtime , we take the worry 
-                        from your hands and simplify the entire scalability , responsiveness that best fit your website
-                        to increase the clients satisfaction level with little Or NO Website Downtime.
+                    <div className="right_contents">
+                        <div className="right_items">
+                            <h2>Our Process</h2>
+                            <div className="rightitem_content">
+                            <img src="/assets/ourprocess.jpg" alt="process" />
 
+                            <p>The First point of call for over 75% of customers that want to experience an
+                                effortless shopping with safety and 
+                                satisfaction, will make or plan to make such transactions  on the internet . It is imperative
+                                that not only your website be secure, it has got to be appealing to Customers online.
+                                Now , every Customer is unique , then how can you guarantee satisfaction to these diverse
+                                demographics of users crawling through your website.
+                            </p>
 
-                    </p>
-                    <p>
-                        Get that peace of mind when you kmow your Website performance is at the level your allocated 
-                        recources supports . The supports measured in terms of customer acquisitions , enhanced user experiences
-                        accross multiple platforms and having a happy repeat customer followed with good recommendations.
-                    </p>
-                    <h4>Optimisation Process ......</h4>
-                    <p>
-                        We will get the initial performance of your website in its current state , enhance the media items and 
-                        code syntax of the page with most visits and make a technical evaluation.
-                        For Web Apps , the situation might require a migration of database , changing Api call point depending 
-                        on the initial technical report from your Web Application.
-                    </p>
-                    <h4>Next ...</h4> 
-                    <p>
-                        Media does affect Site performance a lot , so all img tags will be completely optimised and make sure they 
-                        still retain their picture perfect pixelate levels. Followed by Headings  and titles with broken links.
-                        For Web Applications , a simple change from an Array list to a Linked list might significantly Improve the 
-                        performance overall.
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Development Process</h2>
+                            <div className="rightitem_content">
+                        <p>
+                            From a Landing page to a fully functional dynamic Web application , we always make 
+                            sure that it's developed with full accessibility , responsiveness , security and scalability.
+                            You want to Improve your website ? and skeptical about the downtime , we take the worry 
+                            from your hands and simplify the entire scalability , responsiveness that best fit your website
+                            to increase the clients satisfaction level with little Or NO Website Downtime.
+                            Get that peace of mind when you know your Website performance is at the level your allocated 
+                            recources supports . The supports measured in terms of customer acquisitions , enhanced user experiences
+                            accross multiple platforms and having a happy repeat customer followed with good recommendations.
                         </p>
-                    <h4>The Effects ...</h4>
-                    <p> are increased loading times , improved responsiveness and a fully scalable Website or Appllication as your
-                        project entails which will make your customers spend more quality time on your website. The more time the Client spend
-                         on your site due to this improved efficiency , the more inflow of business and increased profit.
-                    </p>
-                    <div className="subItems">
-                      <section >
-                         <h2 id="top"> Services</h2>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Optimisation Process .....</h2>
+                            <div className="rightitem_content">
+                            <p>
+                            We will get the initial performance of your website in its current state , enhance the media items and 
+                            code syntax of the page with most visits and make a technical evaluation.
+                            For Web Apps , the situation might require a migration of database , changing Api call point depending 
+                            on the initial technical report from your Web Application.
+                        </p>
+                        <img src="/assets/optimisationnew.png" alt="process" />
+
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Next ...</h2>
+                            <div className="rightitem_content">
+                            <img src="/assets/next.png" alt="process" />
+                            <p>
+                            Media does affect Site performance a lot , so all img tags will be completely optimised and make sure they 
+                            still retain their picture perfect pixelate levels. Followed by Headings  and titles with broken links.
+                            For Web Applications , a simple change from an Array list to a Linked list might significantly Improve the 
+                            performance overall.
+                            </p>
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Effect and Results ...</h2>
+                            <div className="rightitem_content">
+                            <p>The effects are noticed on increased loading times , improved responsiveness and a fully scalable Website or Appllication as your
+                            project entails which will make your customers spend more quality time on your website. The more time the Client spend
+                            on your site due to this improved efficiency , the more inflow of business and increased profit.
+                        </p>
+                        <img src="/assets/resultimg.png" alt="results" />
+                            </div>
+                        </div>
                         
-                      </section>
-                      <section className="card_container">
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> I have A Site</h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/cms2.jpg" alt="" />
-                              <p>We maintain, add new features, optimise images, update deprecated codes, 
-                                  refactor codes and install plugins to make your site user-friendly
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card">I need A Site </h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/siteimg.jpg" alt="" />
-                              <p>Our focus is solely on how your clients interacts with your Application
-                                  ensuring it is User-friendly. 
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-                              <h4 id="card"> Web Applications </h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/webapp.jpg" alt="" />
-                              <p>Full stack application with real time interactions with backend architecture 
-                                  and complete customisation to achieve your goals.
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Landing Pages</h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/landingpage.jpg" alt="" />
-                              <p>Our team of experts build effective pages for products, designs ,real estate ,
-                                  newsletters, personal or welcome Landing pages.
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-                      </section>
                     </div>
 
+                    <div className="websites_services">
+                     
+                         <h2 id="top">Our Services</h2>
+                        
+                     
+                      <section className="websitecard_container">
+                          <div className="websitecard">
+                              <h4 id="card"> Digital Marketing </h4>
+                                 <Link  to="/contact">  
 
+                                 <img className='card_image' src="/assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>We maintain, add new features, optimise images, update deprecated keywords, 
+                                  update xml files and google indexing. We install plugins to make your site user-friendly
+                                  and fix seo performance issues.
+                                  
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Websites </h4>
+                                 <Link  to="/contact">  
+                                 <img className='card_image' src="/assets/landingpage.jpg" alt="seo" />
 
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 
+                              <p>We give your customers an awesome website experience regardless of the
+                                  device they are on .you get high end designs helping your business to
+                                  grow.
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Web Applications</h4>
+                                 <Link  to="/contact">  
 
+                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 
+                              <p>We develop progressive web app for your business that helps you manage 
+                                  your clients in one place , user friendly ,end-to-end management with 
+                                  authorisations, verifications and streamlined accessibility .
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Landing Pages and Funnels </h4>
+                                 <Link  to="/contact">  
+                                 <img className='card_image' src="/assets/websitenew.jpg" alt="seo" />
+
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>We build professionally designed ,conversion-optimised pages to help you close 
+                                  deals faster and turn leads from prospects into customers.
+                              </p>
+                             
+                          </div>
+
+                         
+                      </section>
+                    </div>
                 </div>
-                <div className="content-left">
+                <div className="Websitecontent-left">
                     <h3>Technologies</h3>
-                    <div className="content_img">
-                        <img src="/assets/mongo.jpg" alt="" />
-                        <img src="/assets/php.jpg" alt="" />
-                        <img src="/assets/python.jpg" alt="" />
-                        <img src="/assets/sketch.jpg" alt="" />
-                        <img src="/assets/node.jpg" alt="" />
-                        <img src="/assets/sql.jpg" alt="" />
-                        <img src="/assets/git.jpg" alt="" />
-                        <img src="/assets/github.jpg" alt="" />
-                        <img src="/assets/figma.jpg" alt="" />
-                        <img src="/assets/drawio.jpg" alt="" />
-
-
-
-
-
+                    <div className="websitecontentleft_img">
+                        <img src="/assets/mongo.jpg" alt="mongodb" />
+                        <img src="/assets/php.jpg" alt="php" />
+                        <img src="/assets/python.jpg" alt="python" />
+                        <img src="/assets/sketch.jpg" alt="sketch" />
+                        <img src="/assets/node.jpg" alt="node" />
+                        <img src="/assets/sql.jpg" alt="sql" />
+                        <img src="/assets/git.jpg" alt="git" />
+                        <img src="/assets/github.jpg" alt="github" />
+                        <img src="/assets/figma.jpg" alt="figma" />
+                        <img src="/assets/drawio.jpg" alt="drawio" />
                     </div>
                 </div>
             </div>

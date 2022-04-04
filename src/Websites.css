@@ -4,7 +4,13 @@
 }
 .websites_contents header {
   height: 100vh;
+  background: url("/assets/sdbnew3.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+  
 .websites_subheader {
   display: flex;
   justify-content: space-between;
@@ -119,4 +125,161 @@
 }
 .benefit_item h5 {
   margin: 2rem 0;
+}
+.websiteother_main{
+  margin-top: 5rem;
+}
+.right_items{
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.right_items h2{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.rightitem_content{
+  display: flex;
+  align-items: center;
+  border: 1px solid #bebfc1;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+.rightitem_content p{
+  line-height: 4rem;
+}
+.websites_services{
+  margin-top: 5rem;
+}
+.websites_services h2{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.websitecard_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  row-gap: 5rem;
+  margin-bottom: 6rem;
+}
+.websitecard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.websitecard h4{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.websitecard p{
+  max-width: 25rem;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.card_image{
+  width: 25rem;
+}
+.websitecard_button{
+  opacity: 0;
+  background: green;
+  padding: 0.8rem 0;
+  color: #fff;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1rem;
+  width: 50%;
+  position: absolute;
+}
+.websitecard_button:hover{
+  opacity: 1;
+}
+.Websitecontent-left h3{
+text-align: center;
+margin-bottom: 3rem;
+font-size: 3rem;
+}
+.websitecontentleft_img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+@media (max-width: 768px) {
+  .pricing_button > button {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.3rem;
+  }
+  .websites_subheader {
+    height: 40px;
+  }
+  .websites_subnav {
+    display: none;
+  }
+  .fade_h1{
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+  }
+  .websiteheader_content{
+    margin-left: 3rem;
+    padding-top: 16rem;
+  }
+  .fade_p{
+    color: black;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .fade_button{
+    width: 90%;
+  }
+  .sub_header{
+    font-size: 2rem;
+  }
+  .mini_header{
+    margin-bottom: 2rem;
+  }
+  .benefits_contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit_item{
+    margin-bottom: 3rem;
+  }
+  .benefit_item h5{
+    margin: 0;
+  }
+  .benefit_item p{
+    font-size: 0.7rem;
+  }
+  .websiteother_main{
+    margin: 0;
+  }
+  .right_items h2{
+    font-size: 1.8rem;
+  }
+  .rightitem_content p{
+    line-height: 2rem;
+    font-size: 0.9rem;
+  }
+  .rightitem_content{
+    flex-direction: column;
+  }
+  .rightitem_content img {
+    width: 20rem;
+  }
+  .websitecontentleft_img{
+    grid-template-columns: 1fr 1fr;
+  }
+  .websitecard_container{
+    grid-template-columns: 1fr;
+  }
+.card_image{
+  width: 23rem;
+}
+.websitecard h4{
+  font-size: 1.5rem;
+}
+
 }

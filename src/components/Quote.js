@@ -1,6 +1,7 @@
 import React,  { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import emailjs from 'emailjs-com';
+import '../Contact.css'
 
 
 function Quote() {
@@ -23,12 +24,9 @@ function Quote() {
     }
 
     return (
-        <div className="quote">
-            <header style= {{ background :"url('/assets/contactbnr.jpg') center center" } }>
-                <div className="header_content">
-                </div>
-
-            </header>
+        <div className="quote_container">
+            <div className='quote_header' style= {{ background :"url('/assets/contactbnr.jpg') center center" } }>
+                
 
 
            <div className="contact_item">
@@ -97,6 +95,7 @@ function Quote() {
                        
                    </form>
                </div>
+           </div>
            </div>
 
         </div>
