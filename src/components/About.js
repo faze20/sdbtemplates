@@ -23,21 +23,39 @@ function About() {
     
 
     return (
-        <div className="aboutapp"  style= {{ background :"url('/assets/banner1.jpg') center center" } }>
-            <div className="about_details">
-            <TextTransition
-                text={ TEXTS[index % TEXTS.length] }
-                springConfig={ presets.gentle }
-            />
+        <div className="aboutapp"  >
+            <div className="aboutcontext_container" style= {{ background :"url('/assets/banner1.jpg') center center" } } >
+                <div className="about_details">
+                <TextTransition
+                    text={ TEXTS[index % TEXTS.length] }
+                    springConfig={ presets.gentle }
+                />
 
-                 
+                    
+                </div>
+                <div className="about_buttons">
+                    <Fade left>
+                        <a href="https://afeez-portfolio.herokuapp.com/"> PortFolio </a>
+                        {/* <Link   to="/contact"> Contact </Link>  */}
+                    </Fade>
+
+                </div>
+
             </div>
-            <div className="about_buttons">
-                <Fade left>
-                    <a href="https://afeez-portfolio.herokuapp.com/"> PortFolio </a>
-                    {/* <Link   to="/contact"> Contact </Link>  */}
-                </Fade>
-
+            <div className="aboutcontext_staff">
+                <div className="staff_container">
+                    <img className='user_image image1' src="/assets/profile-pic.png" alt="Afeez Badmos" />
+                    <img className='user_image image2' src="/assets/profileme.jpg" alt="Afeez Badmos" />
+                    <img className='user_image image3' src="/assets/profile-pic.png" alt="Afeez Badmos" />
+                    <img className='user_image image4' src="/assets/profileme.jpg" alt="Afeez Badmos" />
+                </div>
+                <div className="staff_container">
+                    <div className='user_image div1' ></div>
+                    <div className='user_image div2'   ></div>
+                    <div className='user_image div3'   ></div>
+                    <div className='user_image div4'   ></div>
+                    <div className='user_image div5'   ></div>
+                </div>
             </div>
 
 

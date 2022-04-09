@@ -87,7 +87,7 @@ function Footer() {
             <hr className="footer_divide"/>
             <div className="copyright">
                 <p>Privacy Policy | Terms </p>
-                <p>&copy;  2021 SOFTWARE DEVELOPMENT BYTES. </p>
+                <p>&copy;  {`${new Date().getFullYear()}`} SOFTWARE DEVELOPMENT BYTES. </p>
                 <p>All rights reserved.</p>
             </div>
         </div>
