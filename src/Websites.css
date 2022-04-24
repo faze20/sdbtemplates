@@ -20,7 +20,11 @@
   height: 1px;
   background-color: #bebfc1;
 }
-
+ #video{
+   position: fixed;
+   z-index: -1;
+   width: 100%;
+ }
 .pricing_button > button
  {
   padding: 0.2rem 1.2rem;

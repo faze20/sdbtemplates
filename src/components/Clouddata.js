@@ -1,178 +1,304 @@
-import React from 'react'
-import '../App.css'
-import { Link } from 'react-router-dom'
+import React , {  useEffect} from 'react'
+import '../Websites.css'
+import { Link , useNavigate } from 'react-router-dom'
+import TextTransition, { presets } from "react-text-transition";
 import Fade from 'react-reveal/Fade'
 
 
 
 function Clouddata() {
+    const TEXTS = [
+        "Fast Turn Around Time ",
+        "All-in-one Data Insights",
+        "Big Data Solutions."
+    ]
+    const [index, setIndex] = React.useState(0);
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+          setIndex(index => index + 1),
+          3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+      }, []);
     return (
-        <div className="clouddata">
-            <header style= {{ background :"url('/assets/sdbnew2.png') center center" } }>
-                <div className="header_content">
-                <Fade right>
-                    <div className="left">
-                        <p>Migrate Operations </p>
-                        <p> Integrate Operations </p>
-                    </div>
-                    <button><Link  to="/contact">Get In Touch </Link> </button>
-                    </Fade>
-                </div>
-                
-
-            </header>
-            <div className="subnav">
-            <div> <h2> DATA :</h2> </div>
-
-                
-                <a href="#top"> Business Data </a>
-                <a href="#top"> Consumer Data </a>
-                <a href="#top"> Acquisition |  intelligence </a>                
+        <div className="websites_container">
+            <div className="websites_contents">
+                <div className="website_divider"></div>
             </div>
-    
-            <h2>Cloud Services</h2>
-            <div className="clouddata-contents">
-                <div className="content-right">
-                    <p>
-                        The Cloud Technology has evolved and has continue to become more 
-                        established making it another top driving force in the quest of companies
-                        to meet up with their client's ever-increasing demands.
-                        </p>
-                    <p>
-                        Right Now, Focus is ever more on customers hence  your resources
-                        should be channeled into proffering customised solutions for your
-                        clienteles' instead of dealing with hardware resources which your
-                        business might be currently implementing . </p>
-                    <p>
-                   
-                        Cloud Migration can be worrisome, costly, or a huge disaster if not done
-                        right from on-set.
-                    
-                        You might be worried about some possible occurences that might pop up during
-                        Migration or Integration of your services into the cloud.
-                        We take out the stress off you by Simplifying your cloud moving experience.
-                        
-                       
-                    </p><Link  to="/contact"> <h3>Get your Cloud service quote</h3> </Link>
-
-                    <h4>How We Do it ......</h4>
-
-                    <p>If your goal is to use cloud for Infrastructure as a Service or Platform as a
-                        Service, We take you through that Cloud Path in phases avoiding disruption to your 
-                        operations and not just expanding what the cloud will do for your firm. However, be aware
-                        that moving to the cloud does not mean you no longer need IT Management and Monitoring tools.
-                    </p>
-
-                    <h4>Then ...</h4>
-
-                    <p>We supply fast reliable technical support Onsite or Remotely. </p>
-
-                    <h4>And ...</h4>
-
-                    <p>We recommend the best-fit automation tools for your set up such as 
-                        Window Virtual desktop.
-                    </p><Link  to="/contact"> <h3>Get your Cloud service quote</h3> </Link>
-                    
-                    
-                    <div className="subItems">
-                      <section >
-                         <h2 id="top">Data</h2>
-                         <p>
-                             The Data related challenges most companies will go through,  or experiencing curently or
-                             will be faced in the future includes how to eliminate waste, avoid 
-                             allocating resources to out-of-date contacts and increase efficiency of  the response
-                             rates. These issues cost your company or will become expensive if not factored into
-                             business setup at an early stage of the company. 
-                             We build  customised data tools set for your company to mitigate against all of these 
-                             challenges enabling you to optimize your client's digital transformation in a cost-efficient 
-                             way which increases your productivity. <br /><br />
-                             It's becoming a one-button-click events this days to collect data from various sources
-                             which might includes different file format and even those that don't give your company
-                             any significant value.
-                             Does your company store data ON-Site , in the Cloud or a combination of both? <br />
-                             Our developers have the expertise to implement data storage and migration solutions that
-                             will give you a secured access to your data in a much more convinient way built around your
-                             business model and our solutions incoporate analytic tools and processsses to help you 
-                             sort through the most used data,isolate and address issues before it brings down the system.
-                             Overall this gives you a fast tracking process to make informed decisions.
-                         </p>
-                         <p>
-                             The global market is data drivien and creating value from data is what we stand for.
-                            You make more money from our solutions as it autoscale to meet your demands,gets you quality
-                            ,accurate and consistent data process delivery.
-                         </p>
-                      </section>
-                      <section className="card_container">
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Consumer Data</h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/dataanalysis.jpg" alt="" />
-                              <p>We combine your data from different sources and analyse against industry benchmark. 
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Business Data </h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/bigdata.jpg" alt="" />
-                              <p>We proffer business solutions that indicates how your data can grow your company. 
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-                              <h4 id="card"> Data Automation</h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/dataautomate.jpg" alt="" />
-                              <p>Automate your data transfer and focus on what matters. 
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Foot Print</h4>
-                              <div className="card_divider"></div>
-                              <img src="/assets/datafootprint.jpg" alt="" />
-                              <p>Calculate your foot print and we recommend right processes .
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-                      </section>
-                    
-                     </div>
-
-
-                </div>
-                
-
-
-
-
-                <div className="content-left">
-                    <h3>Technologies</h3>
-                    <div className="content_img">
-                        <img src="/assets/azure.png" alt="" />
-                        <img src="/assets/awscloud.jpg" alt="" />
-                        <img src="/assets/firebase.jpg" alt="" />
-                        <img src="/assets/ibm.png" alt="" />
-
+            <div className="websites_subheader">
+                    <TextTransition
+                        text={ TEXTS[index % TEXTS.length] }
+                        springConfig={ presets.gentle }
+                    />
+                    <div className="pricing_button">
+                        <button onClick={()=> navigate("/pricing")}>Pricing</button>
                     </div>
+            </div>
+            <div className="websites_subnav">
+                    <ul className='website_ul'>
+                        <li>
+                            <Link to="/utilities">
+                            Data Migration
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                            Data Automation
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                            Business Data
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                            Acquisition |  intelligence 
+                            </Link>
+                        </li>
+                    </ul>
+                             
+                </div>
+            <section>
+                 <div className="website_header">
+                       {/* <div>
+                           <video autoPlay loop muted id='video'>
+                               <source src="/databgrnd.mp4"/>
+                           </video>
+                       </div> */}
+                        <div className="websiteheader_content">
+                            <Fade right>
+                            <h1 className='fade_h1'>Make Data <br />
+                            Make Sense
+                             </h1>
+                            <p className=''>We partner with the world's most valuable 
+                            brands to build digital solutions that provides and inside 
+                            look at consumers key motivations and expectations along the 
+                            path to purchase.
+                            </p>
+                           
+                       
+                              <button onClick={()=> navigate("/contact")} className='fade_button'>Start Now  </button>
+                             </Fade>
+                        </div>
+                </div>
+            </section>
+            <div className="mini_header">
+                <div> </div>
+                <p>What We Offer</p>
+                <div> </div>
+
+           </div>
+           <h1 className='sub_header'>Your Main Features &amp; Benefits</h1>
+            <div className="benefits_container">
+                <div className="benefits_contents">
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <h5>Consulting</h5>
+                        <p>
+                        You need a sound strategy to transform your 
+                        whiteboard concepts into reality and our cloud 
+                        consulting offerings do just that. Sit back and 
+                        relax as our experts do a complete operations and 
+                        financial assessment for you and build a reference PoC.
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <h5>Devops</h5>
+                        <p>
+                        Our cloud automation offerings will keep all your 
+                        DevOps and SysOps worries at bay. We do all the hard 
+                        work like continuous integration, configuration management,
+                         containerization, and custom automation, so your business 
+                         becomes more agile.
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <h5>B2B Connectivity</h5>
+                        <p>
+                        We take care of all your mundane responsibilities, so 
+                        you can focus on what matters the most for your business 
+                        – innovation. Offload the daily management and administration
+                         of your IT security to a trusted partner and take your 
+                         business to new heights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="websiteother_main">
+                <div className="website_right">
+                <div className="right_contents">
+                <div className="right_items">
+                            <h2>Our Process</h2>
+                            <div className="rightitem_content">
+                            <img src="/assets/ourprocess.jpg" alt="process" />
+
+                            <p>
+                                We focus on the data that matters by sorting the background 
+                                data out to reveal the best methodology which enables you 
+                                to make the best 
+                                business decision about where , when and how you need the 
+                                data in order to optimize your client's digital transformation in a 
+                                cost-efficient way which increases your productivity.
+
+                                
+                            </p>
+
+                            </div>
+                    </div>
+                    <div className="right_items">
+                            <h2>Big Data Processing </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        Our remote data solutions allow you to retrieve information
+                         from your preferred access points, delivering flexible data 
+                         via client portals, partner platforms, and proprietary API 
+                         integrations.
+                         While experiencing rapid real-time record retrieval and instant 
+                         database solutions that bring you the data you need, when you
+                          need it.
+                          Find the data-driven insights you need to make the best judgement
+                          call for scaling your business 
+                          all from a single provider with full-source customer service!
+
+                            
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Cloud Architecture</h2>
+                            <div className="rightitem_content">
+                            <p>
+                            All your business transformations right from planning and 
+                            assessments to migration of workloads are seamless with our
+                             scalable and flexible cloud migration offerings. We can help you
+                              identify the potential migration challenges and risks, do a capacity
+                               assessment, and weigh potential outcomes. 
+                               We supply fast reliable technical support Onsite or Remotely and 
+                               recommend the best-fit automation tools for your set up such as 
+                               Window Virtual desktop.
+                            
+                        </p>
+                        <img src="/assets/optimisationnew.png" alt="process" />
+
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Next ...</h2>
+                            <div className="rightitem_content">
+                            <img src="/assets/next.png" alt="process" />
+                            <p>
+                                We recommend the best-fit automation tools for your setup 
+                                such as Azure, Window virtual desktop .Which exposes your
+                                business to a range of benefits 
+                                 including saving space on your physical
+                                resources , substantial cost savings in the long term
+                            
+                            </p>
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>Effect and Results ...</h2>
+                            <div className="rightitem_content">
+                            <p>
+                                We can guarantee a system which fulfills your business needs and sets the stage for future growth for 
+                                your client to scale up their infrastructure to meet the growing demand in the usage of their product.
+                                The complete infrastructure has a solid disaster recovery plan, flexibility in terms of 
+                                IT hosting and the generated data enhances your customers experience
+                        </p>
+                        <img src="/assets/resultimg.png" alt="results" />
+                            </div>
+                        </div>
+
+                        <div className="websites_services">
+                        <h2 id="top">Our Services</h2>
+
+                        <section className="websitecard_container">
+                        <div className="websitecard">
+                              <h4 id="card"> Consumer Data </h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                              We combine your data from different sources and analyse against industry benchmark. 
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Business Data  </h4>
+                                 <Link  to="/contact">  
+                                 <img className='card_image' src="/assets/landingpage.jpg" alt="seo" />
+
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              We proffer business solutions that indicates how your data can grow your company. 
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Data Automation</h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              Automate your data transfer and focus on what matters. 
+                              </p>
+                             
+                          </div>
+
+                          <div className="websitecard">
+                              <h4 id="card"> Foot Print</h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              Calculate your foot print and we recommend right processes .
+                              </p>
+                             
+                          </div>
+
+
+                        </section>
+                         </div>
+                </div>
+
+                <div className="Websitecontent-left">
+                    <h3>Technologies</h3>
+                    <div className="websitecontentleft_img">
+                        <img src="/assets/mongo.jpg" alt="mongodb" />
+                        <img src="/assets/php.jpg" alt="php" />
+                        <img src="/assets/python.jpg" alt="python" />
+                        <img src="/assets/sketch.jpg" alt="sketch" />
+                        <img src="/assets/node.jpg" alt="node" />
+                        <img src="/assets/sql.jpg" alt="sql" />
+                        <img src="/assets/git.jpg" alt="git" />
+                        <img src="/assets/github.jpg" alt="github" />
+                        <img src="/assets/figma.jpg" alt="figma" />
+                        <img src="/assets/drawio.jpg" alt="drawio" />
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
