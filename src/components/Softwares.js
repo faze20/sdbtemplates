@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade'
 function Softwares() {
     return (
         <div className="softwares">
-            <header style= {{ background :"url('/assets/apps.png') center center" } }>
+            <header style= {{ background :"url('assets/apps.png') center center" } }>
                 <div className="header_content">
                   <Fade right>
                     <div className="left">
@@ -74,7 +74,7 @@ function Softwares() {
 
                               <h4 id="card"> Enterprise Apps</h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/enterpr2.png" alt="" />
+                              <img src="assets/enterpr2.png" alt="" />
                               <p>Development of Enterprise apps, including Complex ERP, CRM, HRM, automated
                                   billing and payment systems. 
                              
@@ -88,7 +88,7 @@ function Softwares() {
 
                               <h4 id="card"> Custom Dev </h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/custom2.jpg" alt="" />
+                              <img src="assets/custom2.jpg" alt="" />
                               <p>Our focus is solely on how your clients interacts with your Application
                                   ensuring it is User-friendly. 
                              
@@ -101,7 +101,7 @@ function Softwares() {
                           <Link  to="/contact">  
                               <h4 id="card"> Testing </h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/swtest.jpg" alt="" />
+                              <img src="assets/swtest.jpg" alt="" />
                               <p>Our target is always ensuring best quality while doing compatibility testing
                                   or cross platform testing and creating expert reports.
                               
@@ -115,7 +115,7 @@ function Softwares() {
 
                               <h4 id="card"> Iaas | Saas</h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/saas.jpg" alt="" />
+                              <img src="assets/saas.jpg" alt="" />
                               <p>We create a lifecycle operation that enlist processes such as metrics report,
                                    ongoing billing ,making changes , information access .
                               
@@ -136,13 +136,13 @@ function Softwares() {
                 <div className="content-left">
                     <h3>Technologies</h3>
                     <div className="content_img">
-                        <img src="/assets/mongo.jpg" alt="" />
-                        <img src="/assets/awsapp.jpg" alt="" />
-                        <img src="/assets/python.jpg" alt="" />
-                        <img src="/assets/oracle.jpg" alt="" />
-                        <img src="/assets/node.jpg" alt="" />
-                        <img src="/assets/sql.jpg" alt="" />
-                        <img src="/assets/git.jpg" alt="" />
+                        <img src="assets/mongo.jpg" alt="" />
+                        <img src="assets/awsapp.jpg" alt="" />
+                        <img src="assets/python.jpg" alt="" />
+                        <img src="assets/oracle.jpg" alt="" />
+                        <img src="assets/node.jpg" alt="" />
+                        <img src="assets/sql.jpg" alt="" />
+                        <img src="assets/git.jpg" alt="" />
                     </div>
                 </div>
             </div>

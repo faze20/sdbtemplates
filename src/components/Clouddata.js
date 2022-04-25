@@ -27,7 +27,7 @@ function Clouddata() {
         <div className="websites_container">
             <div className="websites_contents">
                 <div className="website_divider"></div>
-            </div>
+           
             <div className="websites_subheader">
                     <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
@@ -61,32 +61,37 @@ function Clouddata() {
                         </li>
                     </ul>
                              
-                </div>
-            <section>
+            </div>
+
+            <section className='data_header'>
                  <div className="website_header">
-                       {/* <div>
+                       <div className='video_content'>
                            <video autoPlay loop muted id='video'>
-                               <source src="/databgrnd.mp4"/>
+                               <source src="databgrnd.mp4"/>
                            </video>
-                       </div> */}
-                        <div className="websiteheader_content">
-                            <Fade right>
-                            <h1 className='fade_h1'>Make Data <br />
-                            Make Sense
-                             </h1>
-                            <p className=''>We partner with the world's most valuable 
-                            brands to build digital solutions that provides and inside 
-                            look at consumers key motivations and expectations along the 
-                            path to purchase.
-                            </p>
-                           
                        
-                              <button onClick={()=> navigate("/contact")} className='fade_button'>Start Now  </button>
+                        <div className="dataheader_content">
+                            <Fade right>
+                                <div className='dataheader_items'>
+                                    <h1 className='clouddatafade_h1'>Make Data <br />
+                                    Make Sense
+                                    </h1>
+                                    <p className='data_p'>We partner with the world's most valuable 
+                                    brands to build digital solutions that provides and inside 
+                                    look at consumers key motivations and expectations along the 
+                                    path to purchase.
+                                    </p>
+                                
+                            
+                                    <button type='button' onClick={()=> navigate("/contact")} className='fade_button'>Start Now  </button>
+
+                                </div>
                              </Fade>
+                        </div>
                         </div>
                 </div>
             </section>
-            <div className="mini_header">
+            <div className="mini_header data_miniheader">
                 <div> </div>
                 <p>What We Offer</p>
                 <div> </div>
@@ -286,20 +291,21 @@ function Clouddata() {
                 <div className="Websitecontent-left">
                     <h3>Technologies</h3>
                     <div className="websitecontentleft_img">
-                        <img src="/assets/mongo.jpg" alt="mongodb" />
-                        <img src="/assets/php.jpg" alt="php" />
-                        <img src="/assets/python.jpg" alt="python" />
-                        <img src="/assets/sketch.jpg" alt="sketch" />
-                        <img src="/assets/node.jpg" alt="node" />
-                        <img src="/assets/sql.jpg" alt="sql" />
-                        <img src="/assets/git.jpg" alt="git" />
-                        <img src="/assets/github.jpg" alt="github" />
-                        <img src="/assets/figma.jpg" alt="figma" />
-                        <img src="/assets/drawio.jpg" alt="drawio" />
+                        <img src="assets/mongo.jpg" alt="mongodb" />
+                        <img src="assets/php.jpg" alt="php" />
+                        <img src="assets/python.jpg" alt="python" />
+                        <img src="assets/sketch.jpg" alt="sketch" />
+                        <img src="assets/node.jpg" alt="node" />
+                        <img src="assets/sql.jpg" alt="sql" />
+                        <img src="assets/git.jpg" alt="git" />
+                        <img src="assets/github.jpg" alt="github" />
+                        <img src="assets/figma.jpg" alt="figma" />
+                        <img src="assets/drawio.jpg" alt="drawio" />
                     </div>
                 </div>
 
                 </div>
+            </div>
             </div>
         </div>
     )

@@ -4,7 +4,6 @@
 }
 .websites_contents header {
   height: 100vh;
-  background: url("/assets/sdbnew3.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,12 +15,18 @@
   justify-content: space-between;
   padding: 0.3rem 1rem;
 }
+.data_header{
+  height: 100vh;
+}
 .website_divider {
   height: 1px;
   background-color: #bebfc1;
 }
+.video_content{
+  position: relative;
+}
  #video{
-   position: fixed;
+   position: absolute;
    z-index: -1;
    width: 100%;
  }
@@ -61,23 +66,37 @@
   background: #028a36;
   color: #fff;
 }
-.websiteheader_content {
+.websiteheader_content ,
+.dataheader_content {
   padding-top: 5rem;
   max-width: 28rem;
   min-width: 17rem;
   margin-left: 1rem;
 }
-.fade_p {
+.dataheader_items{
+  background-color: black;
+  opacity: 0.4;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.fade_p ,
+.data_p{
   max-width: 20rem;
   line-height: 1.6rem;
-}
-.fade_h1 {
-  font-size: 3rem;
-}
-.fade_p {
-  color: #fff;
   margin-bottom: 0.5rem;
 }
+.fade_h1,
+.clouddatafade_h1
+  {
+  font-size: 3rem;
+}
+.clouddatafade_h1,
+.data_p{
+  color: rgb(171, 242, 29);
+
+
+}
+
 .fade_button {
   background-color: #028a36;
   padding: 0.8rem;
@@ -101,6 +120,9 @@
   align-items: center;
   justify-content: center;
   margin: 3rem 0 1rem 0;
+}
+.data_miniheader{
+  margin-top: 6rem;
 }
 .mini_header div {
   height: 2px;
@@ -290,6 +312,11 @@ font-size: 3rem;
     margin-left: 3rem;
     padding-top: 16rem;
   }
+  .dataheader_content{
+    margin: 0 1rem;
+    padding-top: 16rem;
+
+  }
   .fade_p{
     color: black;
     margin: 0;
@@ -363,6 +390,18 @@ font-size: 3rem;
   font-size: .8rem;
 }.buttons{
   width: 100%;
+}
+#video{
+  width: 0%;
+}
+
+.data_header {
+  height: 100vh;
+  background: url("/assets/datamobilenew.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 }

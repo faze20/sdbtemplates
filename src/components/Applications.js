@@ -71,7 +71,7 @@ function Applications() {
                               <h4 id="card"> Mobile Development </h4>
                               <div className="card_divider"></div>
 
-                              <img src="/assets/pixel.png" alt="" />
+                              <img src="assets/pixel.png" alt="pixellate" />
                               <p>We strive to make your application user-friendly and functional using best 
                                   practices to align with the policies of the two major app stores in the market.
                              
@@ -85,7 +85,7 @@ function Applications() {
 
                               <h4 id="card">IOS </h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/ios.png" alt="" />
+                              <img src="assets/ios.png" alt="ios" />
                               <p>Geting your App on Apple store is not a small feat but our IOS experts have you
                                   covered from the design to app deployment  
                                   on the apple market make clients interaction more satisfying.                          
@@ -98,7 +98,7 @@ function Applications() {
                           <Link  to="/contact">  
                               <h4 id="card"> Android </h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/android2.jpg" alt="" />
+                              <img src="assets/android2.jpg" alt="android" />
                               <p>Our Mobile Professional developers take you through each phase of the development
                                   process and guide you through the process of registering your app on playstore 
                                   following best practices.                            
@@ -112,7 +112,7 @@ function Applications() {
 
                               <h4 id="card"> Cross Platform </h4>
                               <div className="card_divider"></div>
-                              <img src="/assets/wearable.png" alt="" />
+                              <img src="assets/wearable.png" alt="wearables" />
                               <p>Our team of experts build effective wearable applications,
                                    best fit on different devices for everyday challenges.
                               
@@ -138,10 +138,10 @@ function Applications() {
                 <div className="content-left">
                     <h3>Technologies</h3>
                     <div className="content_img">
-                        <img src="/assets/mobiledev.jpg" alt="" />
-                        <img src="/assets/flutter.jpg" alt="" />
-                        <img src="/assets/kotlin.jpg" alt="" />
-                        <img src="/assets/sqlite.jpg" alt="" />
+                        <img src="assets/mobiledev.jpg" alt="development" />
+                        <img src="assets/flutter.jpg" alt="flutter" />
+                        <img src="assets/kotlin.jpg" alt="kotlin" />
+                        <img src="assets/sqlite.jpg" alt="sql lite" />
 
                     </div>
                 </div>
