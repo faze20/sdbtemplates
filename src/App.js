@@ -30,94 +30,38 @@ import Payment from './components/Payment';
 import Pricing from './components/Pricing';
 import Button from './components/Button';
 
-
-
 function App() {
     return (
         <>
         <Router>
-        <Header  />
-        {/* <div className="App">         */}
-        
+            <Header  />
             <Routes>
                 <Route path="/websites" element={<Websites />} />
-                    
                 <Route path="/software" element={ <Softwares />} />
-                    
-                    
-                <Route path="/applications" element={<Applications />} />
-                    
-                    
+                <Route path="/App's" element={<Applications />} />
                 <Route path="/data"  element={ <Clouddata /> } />
-                    
-                    
                 <Route path="/utilities"  element={ <Utilities />} />
-                    
-                    
-
                 <Route path="/contact"  element={ <Contact /> } />
-                    
-                    
-
-                 <Route path="/account"  element={ <Account /> } />
-                
-                    
-            
+                <Route path="/account"  element={ <Account /> } />
                 <Route path="/quote"  element={ <Quote />} />
-                
-                    
                 <Route path="/blockchain"  element={ <Blockchain /> } />
-                
-                    
                 <Route path="/blog"  element={ <Blog /> } />
-                
-                    
                 <Route path="/ecommerce"  element={<Ecommerce /> } />
-                
-                    
                 <Route path="/debug"  element={<Debugging /> } />
-                
-                    
                 <Route path="/portfolio" element={ <Portfolio /> } />
-                    
                 <Route path="/contents"  element={ <Contents/>} />
-                
-                    
                 <Route path="/about"  element={ <About/> } />
-                
-                    
                 <Route path="/forgotpassword"  element={ <Forgotpassword />} />
-                    
-                    
                 <Route path="/terms"  element={<TermsandConditions /> } />
-                    
-                    
-
                 <Route path="/privacy"  element={ <Privacypolicy />} />
-                    
-                    
-
                 <Route path="/register"  element={<Register /> } />
                 <Route path="/dashboard"  element={<Dashboard /> } />
                 <Route path="/payment"  element={<Payment /> } />
                 <Route path="/pricing"  element={<Pricing /> } />
                 <Route path="/button"  element={<Button /> } />
-
-
-
-
-                    
-
                 <Route path="/"  element={<Home />} />
-                    
-
             </Routes>
-
-
-
-        
-        {/* </div> */}
-        <Footer />
+            <Footer />
         </Router>
         <ToastContainer />
         </>

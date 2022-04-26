@@ -1,8 +1,24 @@
 import React , {  useEffect} from 'react'
 import '../Websites.css'
 import { Link , useNavigate } from 'react-router-dom'
-import TextTransition, { presets } from "react-text-transition";
+// import TextTransition, { presets } from "react-text-transition";
 import Fade from 'react-reveal/Fade'
+import { Transition } from "react-transition-group";
+
+const duration = 300;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+  color: 'red'
+};
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 }
+};
 
 
 
@@ -13,10 +29,12 @@ function Clouddata() {
         "Big Data Solutions."
     ]
     const [index, setIndex] = React.useState(0);
+    const [inProp, setInProp] =  React.useState(false);
     const navigate = useNavigate();
 
 
     useEffect(() => {
+        setInProp(!inProp);
         const intervalId = setInterval(() =>
           setIndex(index => index + 1),
           3000 // every 3 seconds
@@ -29,10 +47,22 @@ function Clouddata() {
                 <div className="website_divider"></div>
            
             <div className="websites_subheader">
-                    <TextTransition
+            <Transition in={inProp} timeout={50}>
+                {(state) => (
+                <div
+                    style={{
+                    ...defaultStyle,
+                    ...transitionStyles[state]
+                    }}
+                >
+                      {TEXTS[index % TEXTS.length]}
+                </div>
+                )}
+            </Transition>
+                    {/* <TextTransition
                         text={ TEXTS[index % TEXTS.length] }
                         springConfig={ presets.gentle }
-                    />
+                    /> */}
                     <div className="pricing_button">
                         <button onClick={()=> navigate("/pricing")}>Pricing</button>
                     </div>

@@ -286,10 +286,10 @@ function Websites() {
 
 
                 <div className="website_aboutme">
-                <h2>About Me</h2>
+                    <h2>About Me</h2>
                     <div className="aboutme_content">
-                    <div className="image">
-                              <img src="assets/profile-pic.png" alt="afeez badmos" />
+                        <div className="image">
+                                <img src="assets/profile-pic.png" alt="afeez badmos" />
                         </div>
                        
                         <div className="about_text">
@@ -326,10 +326,9 @@ function Websites() {
                                 <button  type='button'>Contact Me</button>
                             </div>
                         </div>
-                       
-                        
                     </div>
                 </div>
+                
             </div>
 
             

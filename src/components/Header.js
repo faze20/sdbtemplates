@@ -43,7 +43,7 @@ function Header() {
        
         <Container>
            <Link to="/">
-                <img src="/assets/logo145.png" alt="Logo" />
+                <img src="assets/logo145.png" alt="Logo" />
             </Link>
             <Menu>
                 {navs && navs.map((car,index)=> (

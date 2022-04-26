@@ -1,153 +1,423 @@
-import React from 'react'
-import '../App.css'
-import { Link } from 'react-router-dom'
+import React , {  useEffect} from 'react'
+import { Link , useNavigate } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
+import { Transition } from "react-transition-group";
+import '../Websites.css'
+
+const duration = 300;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+  color: 'red'
+};
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 }
+};
+
 
 
 
 
 function Applications() {
+    const TEXTS = [
+        "Cross Platform Mobile development ",
+        "Native Mobile Development",
+        "IOS Mobile development",
+        "Hybrid Mobile Development"
+    ]
+    const SPANS = [
+        "IOS",
+        "Android",
+        "Cross Platform",
+        "Hybrid"
+    ]
+    const [index, setIndex] = React.useState(0);
+    const [inProp, setInProp] =  React.useState(false);
+    const navigate = useNavigate();
+
+
+    useEffect(() => {
+        setInProp(!inProp);
+        const intervalId = setInterval(() =>
+          setIndex(index => index + 1),
+          3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+      }, []);
     return (
-        <div className="applications">
-            <header className='application_banner' >
-            <div className="header_content">
-                  <Fade right>
-                    <div className="left">
-                        <p>Native Applications </p>
-                        <p> MultiPlatform Apps </p>
+        <div className="websites_container">
+             <div className="websites_contents">
+                <div className="website_divider"></div>
+                <div className="websites_subheader">
+                    <Transition in={inProp} timeout={50}>
+                        {(state) => (
+                        <div
+                            style={{
+                            ...defaultStyle,
+                            ...transitionStyles[state]
+                            }}
+                        >
+                            {TEXTS[index % TEXTS.length]}
+                        </div>
+                        )}
+                    </Transition>
+                    {/* <TextTransition
+                        text={ TEXTS[index % TEXTS.length] }
+                        springConfig={ presets.gentle }
+                    /> */}
+                    <div className="pricing_button">
+                        <button onClick={()=> navigate("/pricing")}>Pricing</button>
                     </div>
-                    <button><Link  to="/contact">Get In Touch </Link> </button>
-                    </Fade>
-                </div>
-
-            </header>
-            <div className="subnav">
-            <div> <h2>Categories</h2> </div>
-               
-                <a href="#top"> IOS </a>
-                <a href="#top"> Android </a>
-                <a href="#top"> Cross Platform </a>                
             </div>
-
-            <h2>Application Development</h2>
-            <div className="applications-contents">
-                <div className="content-right">
-                    <p>Customer Satisfaction: A key to the survival of any business. With the 
-                        surge in mobile traffic , your business should be gearing towards a fully mobile compliance
-                        for that guaranteed customer satisfaction. Our Team of developers will
-                        design and build an accessible, responsive and secure application for your 
-                        client base that are constantly on  the mobile environment..
-                    </p>
-                    <p>
-                        We are fully equipped, experienced with the latest technology to meet that particular
-                        need to satisfy your customer base . Most of our development process includes 
-                        Full-Life cycle management for either the IOS or Android based platforms which 
-                        comprises of prototying , deployment and full testing ( UI/UX and database ) .                       
-                    </p>
-                    <h4>Our Process ......</h4>
-                    <p>
-                        We will scope your custom application development requiremnets and list
-                        the market moving ideas so we can create a road map best fit for your project.
-                    </p>
-                    <h4>Next ...</h4>
-                    <p>
-                        We design and implement the most client friendly interfaces for the application
-                        </p>
-                    <h4>Resulting in ...</h4>
-
-                    <p> The fact that the choices made is the best possible chance for a long-term success
-                        for your application which will be the base foundation for any future version updates.
-                        Version Updates, Technically will be reflection of feedbacks from your users and the market .
-                    </p>
-                    <div className="subItems">
-                      <section >
-                         <h2 id="top"> Categories </h2>
-                        
-                      </section>
-                      <section className="card_container">
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Mobile Development </h4>
-                              <div className="card_divider"></div>
-
-                              <img src="assets/pixel.png" alt="pixellate" />
-                              <p>We strive to make your application user-friendly and functional using best 
-                                  practices to align with the policies of the two major app stores in the market.
+            <div className="websites_subnav">
+                    <ul className='website_ul'>
+                        <li>
+                            <Link to="/utilities">
+                            Android App Development
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                            IOS App Development
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                            Web App Development
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/utilities">
+                           UI/UX 
+                            </Link>
+                        </li>
+                    </ul>
                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
+            </div>
+            
+            <section className='data_header'>
+                 <div className="website_header">
+                       <div className='video_content'>
+                           <video autoPlay loop muted id='video'>
+                               <source src="mobileappdev.mp4"/>
+                           </video>
+                       
+                        <div className="dataheader_content">
+                            <Fade right>
+                                <div className='dataheader_items'>
+                                    <h1 className='clouddatafade_h1'>Breathing Tech <br />
+                                    Into Your Ideas
+                                    </h1>
+                                    <div className='fade_p '>
+                                        Success starts with building
+                                         the right
+                                    <div className='appfade'>
+                                    <Transition in={inProp} timeout={50}>
+                                        {(state) => (
+                                        <div
+                                            style={{
+                                            ...defaultStyle,
+                                            ...transitionStyles[state]
+                                            }}
+                                        >
+                                            {SPANS[index % TEXTS.length]}
+                                        </div>
+                                        )}
+                                    </Transition>
+                                    <span className='app_span'>App.</span>
+                                  
+                                   
 
-                          <div className="card">
-                          <Link  to="/contact">  
+                                    </div>
+                                    </div>
+                                
+                            
+                                    <button type='button' onClick={()=> navigate("/contact")} className='fade_button'>
+                                        Get Quote in 24hrs
+                                     </button>
 
-                              <h4 id="card">IOS </h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/ios.png" alt="ios" />
-                              <p>Geting your App on Apple store is not a small feat but our IOS experts have you
-                                  covered from the design to app deployment  
-                                  on the apple market make clients interaction more satisfying.                          
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-                              <h4 id="card"> Android </h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/android2.jpg" alt="android" />
-                              <p>Our Mobile Professional developers take you through each phase of the development
-                                  process and guide you through the process of registering your app on playstore 
-                                  following best practices.                            
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Cross Platform </h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/wearable.png" alt="wearables" />
-                              <p>Our team of experts build effective wearable applications,
-                                   best fit on different devices for everyday challenges.
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-                      </section>
-                    </div>
-
-
-
-
-
-
+                                </div>
+                             </Fade>
+                        </div>
+                        </div>
                 </div>
+            </section>
+            <div className="mini_header data_miniheader">
+                <div> </div>
+                <p>Where We Turned Ideas into Reality</p>
+                <div> </div>
 
-
-
-
-
-
-                <div className="content-left">
-                    <h3>Technologies</h3>
-                    <div className="content_img">
-                        <img src="assets/mobiledev.jpg" alt="development" />
-                        <img src="assets/flutter.jpg" alt="flutter" />
-                        <img src="assets/kotlin.jpg" alt="kotlin" />
-                        <img src="assets/sqlite.jpg" alt="sql lite" />
-
+           </div>
+           <h1 className='sub_header'>Your Main Features &amp; Benefits</h1>
+            <div className="benefits_container">
+                <div className="benefits_contents">
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <h5>Source Code &amp; Documentation</h5>
+                        <p>
+                        We will do a Bitbucket repository transfer with the source
+                         code to your account and provide the document that describes 
+                         app architecture, modules and components of your app.
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <h5>UX/UI Design &amp; Prototype </h5>
+                        <p>
+                        User-centred, clean, easy to use and intuitive user interface 
+                        designs in Figma and  prototype with configured screens links 
+                        and animations
+                       
+                        </p>
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <h5>Builds for publishing</h5>
+                        <p>
+                        We provide Ready-to-be-published in App Store and Google
+                         Play app builds with App icon and screens compliant with
+                          App Store and Google Play Identity Guidelines
+                        </p>
                     </div>
                 </div>
             </div>
+            <div className="websiteother_main">
+                <div className="website_right">
+                <div className="right_contents">
 
-            
+                <div className="right_items">
+                            <h2>Full-cycle app development</h2>
+                            <div className="rightitem_content">
+                            <img src="/assets/ourprocess.jpg" alt="process" />
+
+                            <p>
+                                <span>BUSINESS ANALYSIS</span>
+                            To start with, we will identify MVP goals and target
+                             audience.Then we will propose our ideas regarding 
+                             functionality and technologies. Having all the
+                              information gathered, we will create a requirements
+                               specification approved by you.
+
+                                
+                            </p>
+
+                            </div>
+                </div>
+
+
+                <div className="right_items">
+                            <h2>BUSINESS ANALYSIS </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        To start with, we will identify MVP goals and target
+                             audience.Then we will propose our ideas regarding 
+                             functionality and technologies. Having all the
+                              information gathered, we will create a requirements
+                               specification approved by you.
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+                        <div className="right_items">
+                            <h2>UI/UX DESIGN AND PROTOTYPING </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        Our designers will develop wireframes of the app key
+                         screens in Figma. When the design is approved we 
+                         will also create a clickable prototype and prepare
+                          all the graphic materials for the development team.
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+
+                        <div className="right_items">
+                            <h2>DEVELOPMENT </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        Under the guidance of the Project Manager responsible
+                         for your product, the team of developers will join the
+                          work. You will be receiving reports and intermediate
+                           builds biweekly.
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+
+
+
+                        <div className="right_items">
+                            <h2>PRODUCT DEMO </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        When the final version is ready, the Project Manager will
+                         conduct a demo presentation of the developed application.
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+
+
+                        <div className="right_items">
+                            <h2>PUBLISHING PREPARATION </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        We will help you to create and configure accounts in both AppStore
+                         and Play Market, design and upload screenshots, icon and other 
+                         graphic materials needed for the publishing as well as provide 
+                         basic ASO consulting.
+
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+
+                        
+                        <div className="right_items">
+                            <h2>APP PUBLISHING </h2>
+                            <div className="rightitem_content">
+                        <p>
+                        Everything is set! Accounts are configured, builds are uploaded 
+                        and reviewed. Congrats! But we are not a goodbye. We will be in
+                         touch ever after and ready to answer your questions.
+
+                           
+                        </p>
+                            <img src="/assets/webperformance.png" alt="performance" />
+
+                            
+
+                            </div>
+                        </div>
+
+                        <div className="right_items">
+                            <h2>Post Project Delivery...</h2>
+                            <div className="rightitem_content">
+                            <p>
+                            All assets created by our team belong to you and only you.
+                            All intellectual property created in the process of MVP 
+                            development belongs to the customer
+                        </p>
+                        <img src="/assets/resultimg.png" alt="results" />
+                            </div>
+                        </div>
+
+                        <div className="websites_services">
+                        <h2 id="top">Our Services</h2>
+
+                        <section className="websitecard_container">
+                        <div className="websitecard">
+                              <h4 id="card"> IOS Development </h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                              We leverage the strength of the iOS platform to help our clients solve 
+                              their most complicated business challenges. During these years,
+                               our dedicated iOS developers have delivered apps to over 100 customers.                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Android Development  </h4>
+                                 <Link  to="/contact">  
+                                 <img className='card_image' src="/assets/landingpage.jpg" alt="seo" />
+
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              Our mobile app developers know how to create top-notch user experiences
+                               on Android. We design applications with attention to detail, and
+                                have deep expertise in every aspect of Android app development, 
+                                resulting in extraordinary digital experiences.                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card"> Web App Development</h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              We build modern web apps to help our clients solve their most complicated
+                               business challenges. Our solutions are productive, responsive,
+                                easy to maintain, and implement flawlessly across devices, browsers,
+                                 and operating systems – your app can be everywhere your users are.                              </p>
+                             
+                          </div>
+
+                          <div className="websitecard">
+                              <h4 id="card">Tech Consulting</h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                              </Link>
+                              <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+
+                              <p>
+                              If you have an app idea but don’t know what to start with, business analysis
+                               is a good first step to take! We have business analysts who can create 
+                               a business strategy for you.
+
+                            We conduct an in-depth analysis of ongoing business processes in order to 
+                            define what kind of technological decision is going to take your 
+                            business to the next level.                            
+                              </p>
+                             
+                          </div>
+
+
+                        </section>
+                         </div>
+                </div>
+                <div className="Websitecontent-left">
+                    <h3>Technologies</h3>
+                    <div className="websitecontentleft_img">
+                        <img src="assets/mongo.jpg" alt="mongodb" />
+                        <img src="assets/php.jpg" alt="php" />
+                        <img src="assets/python.jpg" alt="python" />
+                        <img src="assets/sketch.jpg" alt="sketch" />
+                        <img src="assets/node.jpg" alt="node" />
+                        <img src="assets/sql.jpg" alt="sql" />
+                        <img src="assets/git.jpg" alt="git" />
+                        <img src="assets/github.jpg" alt="github" />
+                        <img src="assets/figma.jpg" alt="figma" />
+                        <img src="assets/drawio.jpg" alt="drawio" />
+                    </div>
+                </div>
+
+                </div>
+                </div>
+            </div>
         </div>
     )
 }

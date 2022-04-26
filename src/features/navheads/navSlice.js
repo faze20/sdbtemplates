@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    navs: ["Software","Websites","Applications","Data", "Utilities"]
+    navs: ["Software","Websites","App's","Data", "Utilities"]
 }
 
 const navSlice = createSlice({

@@ -1,155 +1,376 @@
-import React from 'react'
-import '../App.css'
-import { Link } from 'react-router-dom'
-import Fade from 'react-reveal/Fade'
+import React , {  useEffect} from 'react'
+import '../Websites.css'
+import { Link , useNavigate } from 'react-router-dom'
+import { Transition } from "react-transition-group";
+import Quote from './Quote';
 
+
+
+const duration = 300;
+const fontSize = 1.3;
+
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+  color: 'green',
+  fontSize: `${fontSize}rem`
+};
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 }
+};
 
 
 
 function Softwares() {
-    return (
-        <div className="softwares">
-            <header style= {{ background :"url('assets/apps.png') center center" } }>
-                <div className="header_content">
-                  <Fade right>
-                    <div className="left">
-                        <p>Custom Engineering </p>
-                        <p> Continous Integration </p>
-                    </div>
-                    <button><Link  to="/contact">Get In Touch </Link> </button>
-                    </Fade>
-                </div>               
-            </header>
-            <div className="subnav">
-                <div>
-                <h2 className="subnav_h2" > Enterprise Applications </h2> </div>
-                <a href="#top"> Custom Application Development </a>
-                <a href="#top"> Software Testing </a>
-                <a href="#top"> Saas Development |  Iaas  Development</a>                
-            </div>
+    const TEXTS = [
+        "Scalable High-load Systems ",
+        "End-to-End Software products",
+        "Data-Driven applications",
+        "Big Data Engineering"
+    ]
+    const [index, setIndex] = React.useState(0);
+    const [inProp, setInProp] =  React.useState(false);
+    const navigate = useNavigate();
 
-           <h2>Software</h2>
-           <div className="applications-contents">
-                <div className="content-right">
-                    <p>Our Expertise for custom application development services cover third party integration, Mobile,
+
+    useEffect(() => {
+        setInProp(!inProp);
+        const intervalId = setInterval(() =>
+          setIndex(index => index + 1),
+          3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+      }, []);
+    return (
+        <div className="websites_container">
+        <div className="websites_contents">
+            <div className="website_divider"></div>
+           
+            <header style= {{ background :"url('assets/apps.png') no-repeat center center fixed " } }>
+                <div className="website_header">
+                    <div className="softwareheader_content">
+                        <div className="side_one">
+                            <div className="sideone_content">
+                            <h2>
+                                <span className='softwareheader_span'>SOFTWARE </span>
+                            DEVELOPMENT BYTES 
+                            </h2>
+                            <div className="transitions">
+                            <Transition in={inProp} timeout={50}>
+                                {(state) => (
+                                <div
+                                    style={{
+                                    ...defaultStyle,
+                                    ...transitionStyles[state]
+                                    }}
+                                >
+                                    {TEXTS[index % TEXTS.length]}
+                                </div>
+                                )}
+                            </Transition>
+                            </div>
+                            <p>
+                            We're powered by transparency, technology-driven customer 
+                            interaction process, and highly proficient teams. 
+                            </p>
+                            <div className="sideone_button">
+                            <button className='quote_button' type="submit">Get in Touch</button>
+
+                            </div>
+                            </div>
+                        </div>
+                        <div className="side_two">
+                            <div className="form">
+                                <h3> <span className='softwareheader_span'>Email Us</span>  your project details and we'll contact
+                                    you within 24 hours
+                                </h3>
+
+                                <Quote />
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                           
+            </header>
+
+            <div className="mini_header data_miniheader">
+                <div> </div>
+                <p>Where We Turn Ideas into Reality</p>
+                <div> </div>
+
+           </div>
+           <h1 className='sub_header'>Features &amp; <span className='softwareheader_span'>Benefits</span> </h1>
+           <div className="benefits_container">
+                <div className="benefits_contents">
+                    <div className="benefit_item">
+                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <h5>Building Your Product</h5>
+                        <p>Our Expertise for custom application development services cover third party integration, Mobile,
                         desktop, Web, and so on.
                         We will evaluate your project's scope and map out plans that is most efficicent with regards to
                         the solution your software wants to deliver as end product ensuring the best chance for a prolong
                         solution delivery. 
                     </p>
-                    <p>
-                       Most beneficial in majority of cases to develop a full cycle on each project-application , this ensures that all components
-                       of the application is delivering as expected.
-
-                    </p>
-                   
-                    <h4>Integration Process ......</h4>
-                    <p>
-                        We will get the initial performance of your website in its current state , enhance the media items and 
-                        code syntax of the page with most interactions and create a technical evaluation.
-                        For Web Apps ,the situation might require a migration of database, changing Api call point depending 
-                        on the initial technical report on your Web Application
-                    </p>
-                    <h4>Next ...</h4> 
-                    <p>
-                        Third-party library dependencies does affect softwares in an unexpected manner , so we endevour to use 
-                        more of legacy codes from scratch , reduce redundancy and unneccesary resource call back from 
-                        functions or objects. Each project differs , so we scope project on whether a more object oriented
-                        programming is best fit or a more functional programming. So also, a simple change from an Array list
-                         to a Linked list might significantly Improve the performance overall.
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <h5>Scaling Your Tech Team </h5>
+                        <p>
+                        Accelerate and transform your business with comprehensive DevOps services. We provide end-to-end
+                         solutions to attain higher code standards, faster delivery, automation, efficiency, and innovation.
+                       
                         </p>
-                    <h4>The Effects ...</h4>
-                    <p> are increased loading times , improved responsiveness and a fully scalable Website or Appllication as your
-                        project entails which will make your customers spend more time using your solution. The more time Client depends 
-                         on your solution as a result of the improved efficiency, the more profitable the solution becomes.
-                    </p>
-                    <div className="subItems">
-                      <section >
-                         <h2 id="top"> Services</h2>
-                        
-                      </section>
-                      <section className="card_container">
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Enterprise Apps</h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/enterpr2.png" alt="" />
-                              <p>Development of Enterprise apps, including Complex ERP, CRM, HRM, automated
-                                  billing and payment systems. 
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Custom Dev </h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/custom2.jpg" alt="" />
-                              <p>Our focus is solely on how your clients interacts with your Application
-                                  ensuring it is User-friendly. 
-                             
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-                              <h4 id="card"> Testing </h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/swtest.jpg" alt="" />
-                              <p>Our target is always ensuring best quality while doing compatibility testing
-                                  or cross platform testing and creating expert reports.
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-
-                          <div className="card">
-                          <Link  to="/contact">  
-
-                              <h4 id="card"> Iaas | Saas</h4>
-                              <div className="card_divider"></div>
-                              <img src="assets/saas.jpg" alt="" />
-                              <p>We create a lifecycle operation that enlist processes such as metrics report,
-                                   ongoing billing ,making changes , information access .
-                              
-                              </p>
-                              <p>More info: Get in touch </p>
-                              </Link>
-                          </div>
-                      </section>
-
-            </div>
-
-
-
-
-
-
-                </div>
-                <div className="content-left">
-                    <h3>Technologies</h3>
-                    <div className="content_img">
-                        <img src="assets/mongo.jpg" alt="" />
-                        <img src="assets/awsapp.jpg" alt="" />
-                        <img src="assets/python.jpg" alt="" />
-                        <img src="assets/oracle.jpg" alt="" />
-                        <img src="assets/node.jpg" alt="" />
-                        <img src="assets/sql.jpg" alt="" />
-                        <img src="assets/git.jpg" alt="" />
+                    </div>
+                    <div className="benefit_item">
+                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <h5>Product Strategy</h5>
+                        <p>
+                        Using Agile Development &amp; Project Management we ensure that 
+                        when you build something, it’s something people want
+                        and we try to figure out what to build
+                         without burning budget.
+                         The outcome - alignment on the vision and features of your product.
+                        </p>
                     </div>
                 </div>
             </div>
-           
+            <div className="websiteother_main">
+               <div className="website_right">
+                <div className="right_contents">
+                <div className="right_items">
+                    <h2>Complete-Cycle <span className='softwareheader_span'> Software development</span></h2>
+                    <div className="rightitem_content">
+                        <img src="/assets/ourprocess.jpg" alt="process" />
+                        <p>
+                        We have
+                        thorough understanding of critical milestones that must
+                        be accomplished to advance to the next stage of
+                        growth. Our commitment to contemporary Agile
+                        practices helps to tackle development goals in a time
+                        sensitive manner delivering market ready solutions to our
+                        </p>
+                    </div>
+            </div>
+
+            <div className="right_items">
+                <h2>Flexible Engagement Models </h2>
+             <div className="rightitem_content">
+                <p>
+                We work with you and your team to determine the best engagement
+                 approach for your startup. We have a thorough understanding
+                  of critical milestones that must be accomplished to advance 
+                  to the next stage of growth. Our commitment to contemporary
+                   Agile practices helps to tackle development goals in a time
+                    sensitive manner delivering market ready solutions to our
+                     clients.
+                    
+                </p>
+                <img src="/assets/webperformance.png" alt="performance" />
+                </div>
+            </div>
+
+            <div className="right_items">
+                <h2><span className='softwareheader_span'>Software </span>  QA  </h2>
+             <div className="rightitem_content">
+                <p>
+                We work with you to assess your current Quality Assurance
+                 processes and help you define and build the best QA strategy
+                  with the right frameworks and tools.
+                  The goal of an effective QA process is to quickly identify
+                   and correct defects. We will help you define your test plan
+                    for both manual and automated testing across the entire
+                     software development lifecycle: from requirements through
+                      design, development, deployment and maintenance.
+                    
+                </p>
+                <img src="/assets/webperformance.png" alt="performance" />
+                </div>
+            </div>
+
+            <div className="right_items">
+                <h2>Software Testing  </h2>
+             <div className="rightitem_content">
+                <p>
+                In the age of Agile Development and Continuous Integration it has
+                 become important for developers to write and integrate Unit Tests 
+                 into their coding workflow.Software DevBytes works with your development team 
+                 to create and integrate the Unit Test Execution Bench that minimizes
+                  the extra efforts for developers to use unit testing without 
+                  decreasing the power of unit tests.
+                    
+                </p>
+                <img src="/assets/webperformance.png" alt="performance" />
+                </div>
+            </div>
+
+            <div className="right_items">
+                <h2>Test <span className='softwareheader_span'> Automation </span>  </h2>
+             <div className="rightitem_content">
+                <p>
+                We help you identify the best areas for testing automation 
+                and develop the scripts to enable and automate a script 
+                execution platform. We work with you to choose the right
+                 frameworks and tools to enable your QA strategy and to embed
+                  it in your development lifecycle.
+                    
+                </p>
+                <img src="/assets/webperformance.png" alt="performance" />
+                </div>
+            </div>
+                
+                </div>
+
+                <div className="websites_services">
+                     <h2 id="top">Our Services</h2>
+                     <section className="websitecard_container">
+                          <div className="websitecard">
+                              <h4 id="card">Security </h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                                  Identify and eliminate application and network
+                                   vulnerabilities to comply with regulatory
+                                    requirements and mitigate risk.
+                                  
+                              </p>
+                             
+                          </div>
+                          <div className="websitecard">
+                              <h4 id="card">PERFORMANCE </h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                              We have the skills and methodology to plan, conduct, and chart
+                               the results of in-depth testing of scalability and resource
+                                usage of your software solution. We conduct Load, Stability
+                                , Stress, Volume and Configuration testing and create detailed
+                                 charts and graphs to illustrate the results for your 
+                                 stakeholders.
+                                  
+                              </p>
+                             
+                          </div>
+
+                          <div className="websitecard">
+                              <h4 id="card">COMPATIBILITY </h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                              Ensure data integrity, flawless functionality and compatibility across
+                               a variety of platforms, devices, hardware, OSs. Particularly common
+                                is testing compatibility between multiple browsers running on a 
+                                variety of desktop and mobile environments.
+                              </p>
+                             
+                          </div>
+
+                          <div className="websitecard">
+                              <h4 id="card">LOCALIZATION</h4>
+                                 <Link  to="/contact">  
+
+                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                              </Link>
+                              <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
+                              <p>
+                              We test language, characters, idioms, language-based layout
+                               and information flow to ensure that your localized software
+                                works perfectly in all of its multi-national incarnations.
+                                 We are well versed in cultural peculiarities of the local
+                                  audience to help you customize the software, apps and 
+                                  websites for customers in a particular location
+                              </p>
+                             
+                          </div>
+                    </section>
+               </div>
+                </div>
+                <div className="Websitecontent-left">
+                    <h3>Technologies</h3>
+                    <div className="websitecontentleft_img">
+                        <img src="assets/mongo.jpg" alt="mongodb" />
+                        <img src="assets/php.jpg" alt="php" />
+                        <img src="assets/python.jpg" alt="python" />
+                        <img src="assets/sketch.jpg" alt="sketch" />
+                        <img src="assets/node.jpg" alt="node" />
+                        <img src="assets/sql.jpg" alt="sql" />
+                        <img src="assets/git.jpg" alt="git" />
+                        <img src="assets/github.jpg" alt="github" />
+                        <img src="assets/figma.jpg" alt="figma" />
+                        <img src="assets/drawio.jpg" alt="drawio" />
+                    </div>
+                </div>
+                <div className="mini_header">
+                    <div> </div>
+                    <p>We passionate about</p>
+                    <div> </div>
+                </div>
+
+                <div className="website_aboutme">
+                    <h2>About Me</h2>
+                    <div className="aboutme_content">
+                        <div className="image">
+                                <img src="assets/profile-pic.png" alt="afeez badmos" />
+                        </div>
+                       
+                        <div className="about_text">
+                            
+                            <h4>
+                            I am Afeez Badmos, I'm a passionate web designer 
+                            &amp; developer with 12 Years of Experience.
+                            </h4>
+                            <p>
+                            As a passionate front-end developer,
+                             I prefer to run my own business rather than routine office
+                              work. Such lifestyle helps me enjoy my favourite hobbie 
+                              traveling. Being able to do your job in every corner of our
+                               planet is amazing!
+                            </p>
+                            <div className="acheivements">
+                               
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div>
+                                <h5>Best UI/UX end point Dev</h5>
+                                <h5>Overall Mobile responsiveness</h5>
+                                <h5>Best time ticketer User-response</h5>
+                                <h5>
+                                https://www.motocms.com/website-templates/demo/90625.html
+                                </h5>
+                                </div>
+                            </div>
+                            <div className="buttons">
+                                <button type='button'>Request a Call</button>
+                                <button  type='button'>Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
 
 
-        </div>
     )  
 }
 

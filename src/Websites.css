@@ -73,6 +73,44 @@
   min-width: 17rem;
   margin-left: 1rem;
 }
+.softwareheader_content{
+  display: flex;
+  justify-content: space-between;
+}
+.sideone_content{
+  background: aliceblue;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 25rem;
+}
+.sideone_content p
+{
+  margin: 2rem 0;
+  line-height: 2rem;
+}
+.sideone_content h2{
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+}
+.softwareheader_span{
+  color: #fe7448;
+}
+.side_one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+}
+.sideone_button{
+  display: none;
+}
+.form h3{
+  color: aliceblue;
+}
+
+.side_two{
+  padding-right: 1rem;
+}
 .dataheader_items{
   background-color: black;
   opacity: 0.4;
@@ -93,10 +131,13 @@
 .clouddatafade_h1,
 .data_p{
   color: rgb(171, 242, 29);
-
-
 }
-
+.appfade{
+  display: flex;
+}
+.app_span{
+  margin: 0 0.5rem;
+}
 .fade_button {
   background-color: #028a36;
   padding: 0.8rem;
@@ -402,6 +443,22 @@ font-size: 3rem;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.sideone_content{
+  opacity: 0.7;
+}
+.softwareheader_content{
+  flex-direction: column;
+}
+.side_one{
+  margin-top: 12rem;
+  padding: 0;
+}
+.side_two{
+  display: none;
+}
+.sideone_button{
+  display: block;
 }
 
 }
