@@ -155,7 +155,7 @@ function Websites() {
                                     recources supports . The supports measured in terms of customer acquisitions , enhanced user experiences
                                     accross multiple platforms and having a happy repeat customer followed with good recommendations.
                                 </p>
-                                <img src="assets/webperformance.png" alt="performance" />
+                                <img src="performance2.png" alt="performance" />
                             </div>
                         </div>
                         <div className="right_items">

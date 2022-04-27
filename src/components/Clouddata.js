@@ -131,7 +131,7 @@ function Clouddata() {
             <div className="benefits_container">
                 <div className="benefits_contents">
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <img src="consulting.png" alt="consulting" />
                         <h5>Consulting</h5>
                         <p>
                         You need a sound strategy to transform your 
@@ -153,7 +153,7 @@ function Clouddata() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <img src="b2b.png" alt="presentation"  />
                         <h5>B2B Connectivity</h5>
                         <p>
                         We take care of all your mundane responsibilities, so 
@@ -203,7 +203,7 @@ function Clouddata() {
 
                             
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="big-data.png" alt="performance" />
 
                             
 
@@ -223,7 +223,7 @@ function Clouddata() {
                                Window Virtual desktop.
                             
                         </p>
-                        <img src="/assets/optimisationnew.png" alt="process" />
+                        <img src="cloud.png" alt="process" />
 
 
                             </div>
@@ -264,7 +264,7 @@ function Clouddata() {
                               <h4 id="card"> Consumer Data </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="consumerdata.png" alt="seo" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>
@@ -275,7 +275,7 @@ function Clouddata() {
                           <div className="websitecard">
                               <h4 id="card"> Business Data  </h4>
                                  <Link  to="/contact">  
-                                 <img className='card_image' src="/assets/landingpage.jpg" alt="seo" />
+                                 <img className='card_image' src="startegy.png" alt="seo" />
 
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
@@ -289,7 +289,7 @@ function Clouddata() {
                               <h4 id="card"> Data Automation</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                                 <img className='card_image' src="dataautomation.png" alt="seo" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 
@@ -303,7 +303,7 @@ function Clouddata() {
                               <h4 id="card"> Foot Print</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                                 <img className='card_image' src="digital-footprint.png" alt="seo" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 

@@ -89,7 +89,7 @@ function Softwares() {
                                     you within 24 hours
                                 </h3>
 
-                                <Quote />
+                                <Quote  text='Talk to our Engineer'/>
 
                             </div>
                         </div>
@@ -111,7 +111,7 @@ function Softwares() {
            <div className="benefits_container">
                 <div className="benefits_contents">
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <img src="proto.png" alt="branding" />
                         <h5>Building Your Product</h5>
                         <p>Our Expertise for custom application development services cover third party integration, Mobile,
                         desktop, Web, and so on.
@@ -121,7 +121,7 @@ function Softwares() {
                     </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <img src="teambuild.png" alt="marketing"  />
                         <h5>Scaling Your Tech Team </h5>
                         <p>
                         Accelerate and transform your business with comprehensive DevOps services. We provide end-to-end
@@ -130,7 +130,7 @@ function Softwares() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <img src="startegy.png" alt="presentation"  />
                         <h5>Product Strategy</h5>
                         <p>
                         Using Agile Development &amp; Project Management we ensure that 
@@ -148,7 +148,7 @@ function Softwares() {
                 <div className="right_items">
                     <h2>Complete-Cycle <span className='softwareheader_span'> Software development</span></h2>
                     <div className="rightitem_content">
-                        <img src="/assets/ourprocess.jpg" alt="process" />
+                        <img src="cycleprocess.png" alt="process" />
                         <p>
                         We have
                         thorough understanding of critical milestones that must
@@ -173,7 +173,7 @@ function Softwares() {
                      clients.
                     
                 </p>
-                <img src="/assets/webperformance.png" alt="performance" />
+                <img src="engagementmodel.png" alt="performance" />
                 </div>
             </div>
 
@@ -191,7 +191,7 @@ function Softwares() {
                       design, development, deployment and maintenance.
                     
                 </p>
-                <img src="/assets/webperformance.png" alt="performance" />
+                <img src="quality.png" alt="performance" />
                 </div>
             </div>
 
@@ -207,7 +207,7 @@ function Softwares() {
                   decreasing the power of unit tests.
                     
                 </p>
-                <img src="/assets/webperformance.png" alt="performance" />
+                <img src="software testing.png" alt="performance" />
                 </div>
             </div>
 
@@ -222,7 +222,7 @@ function Softwares() {
                   it in your development lifecycle.
                     
                 </p>
-                <img src="/assets/webperformance.png" alt="performance" />
+                <img src="test automation.png" alt="performance" />
                 </div>
             </div>
                 
@@ -235,7 +235,7 @@ function Softwares() {
                               <h4 id="card">Security </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="security.png" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>
@@ -247,10 +247,10 @@ function Softwares() {
                              
                           </div>
                           <div className="websitecard">
-                              <h4 id="card">PERFORMANCE </h4>
+                              <h4 id="card">Performance </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="performance2.png" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>
@@ -269,7 +269,7 @@ function Softwares() {
                               <h4 id="card">COMPATIBILITY </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="puzzle.png" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>
@@ -285,7 +285,7 @@ function Softwares() {
                               <h4 id="card">LOCALIZATION</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="localisation.png" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>

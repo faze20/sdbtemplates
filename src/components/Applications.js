@@ -157,7 +157,7 @@ function Applications() {
             <div className="benefits_container">
                 <div className="benefits_contents">
                     <div className="benefit_item">
-                        <img src="/assets/resultgoal.jpg" alt="branding" />
+                        <img src="soucrcode.png" alt="branding" />
                         <h5>Source Code &amp; Documentation</h5>
                         <p>
                         We will do a Bitbucket repository transfer with the source
@@ -166,7 +166,7 @@ function Applications() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <img src="proto.png" alt="marketing"  />
                         <h5>UX/UI Design &amp; Prototype </h5>
                         <p>
                         User-centred, clean, easy to use and intuitive user interface 
@@ -176,7 +176,7 @@ function Applications() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/presentation.png" alt="presentation"  />
+                        <img src="buildpublish.png" alt="presentation"  />
                         <h5>Builds for publishing</h5>
                         <p>
                         We provide Ready-to-be-published in App Store and Google
@@ -193,7 +193,7 @@ function Applications() {
                 <div className="right_items">
                             <h2>Full-cycle app development</h2>
                             <div className="rightitem_content">
-                            <img src="/assets/ourprocess.jpg" alt="process" />
+                            <img src="full cycle.png" alt="process" />
 
                             <p>
                                 <span>BUSINESS ANALYSIS</span>
@@ -221,7 +221,7 @@ function Applications() {
                                specification approved by you.
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="buss analysis.png" alt="performance" />
 
                             
 
@@ -237,7 +237,7 @@ function Applications() {
                           all the graphic materials for the development team.
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="proto.png" alt="performance" />
 
                             
 
@@ -254,7 +254,7 @@ function Applications() {
                            builds biweekly.
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="software testing.png" alt="performance" />
 
                             
 
@@ -271,7 +271,7 @@ function Applications() {
                          conduct a demo presentation of the developed application.
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="soucrcode.png" alt="performance" />
 
                             
 
@@ -290,7 +290,7 @@ function Applications() {
 
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="iosdev.png" alt="performance" />
 
                             
 
@@ -308,7 +308,7 @@ function Applications() {
 
                            
                         </p>
-                            <img src="/assets/webperformance.png" alt="performance" />
+                            <img src="publish.png" alt="performance" />
 
                             
 
@@ -335,7 +335,7 @@ function Applications() {
                               <h4 id="card"> IOS Development </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="ios.png" alt="seo" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>
@@ -347,7 +347,7 @@ function Applications() {
                           <div className="websitecard">
                               <h4 id="card"> Android Development  </h4>
                                  <Link  to="/contact">  
-                                 <img className='card_image' src="/assets/landingpage.jpg" alt="seo" />
+                                 <img className='card_image' src="android.png" alt="seo" />
 
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
@@ -379,7 +379,7 @@ function Applications() {
                               <h4 id="card">Tech Consulting</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                                 <img className='card_image' src="consulting.png" alt="consulting" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 

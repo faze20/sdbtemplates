@@ -159,7 +159,7 @@ function Utilities() {
 
                     <div className="seo_solcontents">
                         <img src="/assets/keywordicon.jpg" alt="keyword" />
-                        <a href='https://www.softwaredevbytes.com'>  <h4>Keyword Research Tool</h4></a>
+                        <a href='https://ahrefs.com/'>  <h4>Keyword Research Tool</h4></a>
 
                     </div>
                     <div className="seo_solcontents">
@@ -167,7 +167,7 @@ function Utilities() {
 
                         < KeyIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'><h4>Bulk Keyword Tool</h4></a>
+                        <a href='https://www.semrush.com/'><h4>Bulk Keyword Tool</h4></a>
 
                        
                     </div>
@@ -176,13 +176,13 @@ function Utilities() {
 
                         <QuestionAnswerIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'><h4>Question Explorer</h4></a>
+                        <a href='https://answerthepublic.com/'><h4>Question Explorer</h4></a>
 
                         
                     </div>
                     <div className="seo_solcontents">
                     <img src="/assets/backlinkicon.jpg" alt="backlinks" />
-                    <a href='https://www.softwaredevbytes.com'>  <h4>High CPC Keyword Explorer</h4></a>
+                    <a href='https://ahrefs.com/'>  <h4>High CPC Keyword Explorer</h4></a>
 
                        
                     </div>
@@ -191,13 +191,13 @@ function Utilities() {
 
                         <AddLinkIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'> <h4>Free Backlinks List</h4></a>
+                        <a href='https://www.semrush.com/features/link-building-and-prospecting-tools/'> <h4>Free Backlinks List</h4></a>
 
                        
                     </div>
                     <div className="seo_solcontents">
                     <img src="/assets/backlinkicon.jpg" alt="backlink" />
-                    <a href='https://www.softwaredevbytes.com'> <h4>SEO Analyzer</h4></a>
+                    <a href='https://www.semrush.com/features/technical-seo-tools/'> <h4>SEO Analyzer</h4></a>
 
                         
                     </div>
@@ -215,7 +215,7 @@ function Utilities() {
                             <div>
                             <YouTubeIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'><h4>YouTube Keyword Tool</h4></a>
+                            <a href='https://ahrefs.com/youtube-keyword-tool'><h4>YouTube Keyword Tool</h4></a>
 
                            
                         </div>
@@ -224,7 +224,7 @@ function Utilities() {
 
                         <YoutubeSearchedForIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'> <h4>YouTube Top Keyword Explorer</h4></a>
+                            <a href='https://ahrefs.com/youtube-keyword-tool'> <h4>YouTube Top Keyword Explorer</h4></a>
 
                            
                         </div>
@@ -243,7 +243,7 @@ function Utilities() {
 
                         <TranslateIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'><h4>AI Content Generator</h4></a>
+                        <a href='https://zyro.com/ai/content-generator'><h4>AI Content Generator</h4></a>
 
                         
                     </div>
@@ -252,7 +252,7 @@ function Utilities() {
 
                         <TuneIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'><h4>AI Paragraph Translator</h4></a>
+                        <a href='https://zyro.com/tools/slogan-generator'><h4>AI Paragraph Translator</h4></a>
 
                         
                     </div>
@@ -272,7 +272,7 @@ function Utilities() {
 
                         <ViewComfyIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'>  <h4>Programs Explorer</h4></a>
+                        <a href='https://www.semrush.com/features/technical-seo-tools/'>  <h4>Programs Explorer</h4></a>
 
                        
                     </div>
@@ -331,7 +331,7 @@ function Utilities() {
 
                         <AttachEmailIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'>  <h4>Email Validation Tool</h4></a>
+                        <a href='https://www.email-validator.net/'>  <h4>Email Validation Tool</h4></a>
 
                        
                     </div>
@@ -340,7 +340,7 @@ function Utilities() {
 
                         <EmailIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'> <h4>Bulk Email  Validation</h4></a>
+                        <a href='https://www.email-validator.net/'> <h4>Bulk Email  Validation</h4></a>
 
                         
                     </div>
@@ -349,7 +349,7 @@ function Utilities() {
 
                         <Filter9PlusIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'> <h4>Email Text Extractor</h4></a>
+                        <a href='https://email-checker.net/email-extractor'> <h4>Email Text Extractor</h4></a>
 
                        
                     </div>
@@ -358,7 +358,7 @@ function Utilities() {
 
                         <WebhookIcon />
                         </div>
-                        <a href='https://www.softwaredevbytes.com'> <h4>Warmup Schedule Generator</h4></a>
+                        <a href='https://www.visme.co/schedule-maker/'> <h4>Warmup Schedule Generator</h4></a>
 
                        
                     </div>
@@ -376,7 +376,7 @@ function Utilities() {
 
                                 <PollIcon/>
                                 </div>
-                                <a href='https://www.softwaredevbytes.com'> <h4>Programs Explorer</h4></a>
+                                <a href='https://www.softwaredevbytes.com/blog'> <h4>Programs Explorer</h4></a>
 
                                
                             </div>
@@ -395,7 +395,7 @@ function Utilities() {
 
                             <PolicyIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'> <h4>Privacy Policy Generator Tool</h4></a>
+                            <a href='https://www.termsfeed.com/privacy-policy-generator/'> <h4>Privacy Policy Generator Tool</h4></a>
 
                             
                         </div>
@@ -404,7 +404,7 @@ function Utilities() {
 
                             <GavelIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'><h4>Terms &amp; Conditions Generator Tool</h4></a>
+                            <a href='https://www.termsandconditionsgenerator.com/'><h4>Terms &amp; Conditions Generator Tool</h4></a>
 
                             
                         </div>
@@ -413,7 +413,7 @@ function Utilities() {
 
                             <AirIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'><h4>WEB Scrapper</h4></a>
+                            <a href='https://scrapestack.com/product?utm_source=Guru99&utm_medium=ThirdParties&utm_content=ScrapeStack-ProductListing'><h4>WEB Scrapper</h4></a>
 
                             
                         </div>
@@ -422,7 +422,7 @@ function Utilities() {
 
                             <CalendarMonthIcon />
                             </div>
-                            <a href='https://www.softwaredevbytes.com'><h4>Calender</h4></a>
+                            <a href='https://calendly.com/'><h4>Calender</h4></a>
 
                             
                         </div>
@@ -440,7 +440,7 @@ function Utilities() {
 
                                 <LocalPoliceIcon />
                                 </div>
-                                <a href='https://www.softwaredevbytes.com'> <h4>Super Sender License</h4></a>
+                                <a href='https://www.similarweb.com/'> <h4>Super Sender License</h4></a>
 
                                 
                             </div>
@@ -449,7 +449,7 @@ function Utilities() {
 
                                 <LinkIcon />
                                 </div>
-                                <a href='https://www.softwaredevbytes.com'> <h4>Link Shortener</h4></a>
+                                <a href='https://free-url-shortener.rb.gy/'> <h4>Link Shortener</h4></a>
 
                                 
                             </div>
@@ -458,7 +458,7 @@ function Utilities() {
 
                                 <AnalyticsIcon />
                                 </div>
-                                <a href='https://www.softwaredevbytes.com'><h4>InQuickSTicks</h4></a>
+                                <a href='https://www.similarweb.com/'><h4>InQuick Sticks</h4></a>
 
                                 
                             </div>
@@ -467,7 +467,7 @@ function Utilities() {
 
                                 <ModeStandbyIcon />
                                 </div>
-                                <a href='https://www.softwaredevbytes.com '> <h4>SDB-Tutors</h4></a>
+                                <a href='https://www.softwaredevbytes.com/blog '> <h4>SDB-Tutors</h4></a>
 
 
                                
