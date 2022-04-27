@@ -13,7 +13,7 @@ function Blog() {
              </div>
 
 
-                <div className="blog_app"  style= {{ background :"url('/assets/banner1.jpg') center " } }>
+                <div className="blog_app"  style= {{ background :"url('banner1.jpg') center " } }>
                     <div className="blog_textcontent">
                         <h2>
                             Hello! Welcome to Software Dev Bytes Blog With Creative Contents and
@@ -30,7 +30,7 @@ function Blog() {
                                         
                                     </div>
                                     <h4>Websites Ethics</h4> 
-                                    <img src="/assets/laptop.png" alt="Seo" />
+                                    <img src="laptop.png" alt="laptop" />
                                 </div>
                                 <h3>Best Web Practices</h3>
                                 <div className="blog_description">
@@ -45,7 +45,7 @@ function Blog() {
                                         
                                     </div>
                                     <h4>Software Solutions</h4>
-                                    <img src="/assets/ecommercenew.png" alt="Seo" />
+                                    <img src="ecommercenew.png" alt="online shopping" />
                                 </div>
                                 <h3>Solutions Online</h3>
                                 <div className="blog_description">
@@ -61,7 +61,7 @@ function Blog() {
                                        
                                     </div>
                                     <h4>SEO Indexing</h4> 
-                                    <img src="/assets/seo.jpg" alt="Seo" />
+                                    <img src="seo.jpg" alt="Seo" />
                                 </div>
                                 <h3>Best Seo Practices</h3>
                                 <div className="blog_description">
@@ -81,7 +81,7 @@ function Blog() {
                 <h4>5 Tips for Successful E-commerce store</h4>
                     <Link to="/">
                         
-                        <img src="/assets/shopping.jpg" alt="" />
+                        <img src="shopping.jpg" alt="online shopping" />
                     </Link>
                         <p>
                         Whether you’ve been running an online store for 6 months or 6+ years, it’s a never-ending battle to win conversions.
@@ -100,7 +100,7 @@ function Blog() {
                 <h4>How to Blog 2021</h4>
                     <Link to="/">
                        
-                        <img src="/assets/mobiledevblog.jpg" alt="" />
+                        <img src="mobiledevblog.jpg" alt="mobile dev" />
 
                     </Link>
                         <p>
@@ -118,7 +118,7 @@ function Blog() {
                 <h4>Social Media New age</h4>
                     <Link to="/">
                        
-                        <img src="/assets/virtual reality.jpg" alt="" />
+                        <img src="virtualreality.jpg" alt="virtual reality" />
                     </Link>
                         <p>
                            Just your presence on Social media is not enough.WHY? over 4 billion users are on social meiums and businessess irrespective of the 
@@ -135,7 +135,7 @@ function Blog() {
                 <h4>N F T new Crypto currency</h4>
                     <Link to="/">
                        
-                        <img src="/assets/Technology.jpg" alt="" />
+                        <img src="Technology.jpg" alt="tech" />
                     </Link>
                         <p>
                         A cryptocurrency, crypto-currency, or crypto is a binary data designed to work as a medium of exchange
@@ -151,7 +151,7 @@ function Blog() {
                 <h4>How to Buy N F T</h4>
                     <Link to="/">
                         
-                        <img src="/assets/crypto.jpg" alt="" />
+                    <img src="art.png" alt="nft" />
                     </Link>
                         <p>
                           NFT- Non Fungible Token. You will need a Metamask wallet as this is the only wallet that supports NFT currently.
@@ -166,7 +166,7 @@ function Blog() {
                 <div className="blogItemList_content">
                 <h4>How to Get a  crypto Wallet 2021</h4>
                     <Link to="/">
-                        <img src="/assets/crypto.jpg" alt="" />
+                    <img src="crypto.jpg" alt="crypto" />
                        
                     </Link>
                         <p>
@@ -183,7 +183,7 @@ function Blog() {
                 <h4>Custodial Wallet VS Non Custodial Wallet</h4>
                     <Link to="/">
                        
-                        <img src="/assets/crypto.jpg" alt="" />
+                    <img src="crypto.jpg" alt="crypto" />
                     </Link>
                         <p>
                            Custodial Wallet or Hosted Wallet :it is when third party keep your crypto for you The main benefit of
@@ -200,7 +200,7 @@ function Blog() {
                 <h4>How to Create N F T's</h4>
                     <Link to="/">
                        
-                        <img src="/assets/artificial Intelligence.jpg" alt="" />
+                        <img src="artificial Intelligence.jpg" alt="ai" />
                     </Link>
                         <p>
                         Before you start, you will need to decide on which blockchain you want to issue your NFTs.Each blockchain has

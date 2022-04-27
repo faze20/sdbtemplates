@@ -10,7 +10,7 @@ import Fade from 'react-reveal/Fade'
 
 function Blockchain() {
     return (
-        <div className="blockapp"  style= {{ background :"url('/assets/blockchain.png') center center" } }>
+        <div className="blockapp"  style= {{ background :"url('blockchain.png') center center" } }>
              <Fade left>
              <p> BLOCKCHAIN WEB SERVICES</p>
              </Fade>

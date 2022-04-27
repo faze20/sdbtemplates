@@ -149,7 +149,7 @@ function Applications() {
             </section>
             <div className="mini_header data_miniheader">
                 <div> </div>
-                <p>Where We Turned Ideas into Reality</p>
+                <p>Where We Turn Ideas into Reality</p>
                 <div> </div>
 
            </div>
@@ -196,7 +196,7 @@ function Applications() {
                             <img src="full cycle.png" alt="process" />
 
                             <p>
-                                <span>BUSINESS ANALYSIS</span>
+                               
                             To start with, we will identify MVP goals and target
                              audience.Then we will propose our ideas regarding 
                              functionality and technologies. Having all the

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 
 function Portfolio() {
     return (
-        <div className="blockapp"  style= {{ background :"url('/assets/portfolio22.png') " } }>
+        <div className="blockapp"  style= {{ background :"url('portfolio22.png') " } }>
             <Fade left>
 
              <p> BEST PORTFOLIO SERVICES</p>

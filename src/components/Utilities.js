@@ -107,7 +107,7 @@ function Utilities() {
                     </li>
                 </ul>
             </div>
-        <div className='utility_pagecontent'  style= {{ background :"url('assets/sdbnew.png') center center" } }>
+        <div className='utility_pagecontent'  style= {{ background :"url('sdbnew.png') center center" } }>
            <div className='content_left'>
 
                <h1>

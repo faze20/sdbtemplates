@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 
 function Ecommerce() {
     return (
-        <div className="blockapp"  style= {{ background :"url('/assets/ecommerceseo.png') " } }>
+        <div className="blockapp"  style= {{ background :"url('ecommerceseo.png') " } }>
              <Fade left>
              <p> E Commerce Store </p>
              </Fade>

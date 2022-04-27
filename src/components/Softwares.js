@@ -50,7 +50,7 @@ function Softwares() {
         <div className="websites_contents">
             <div className="website_divider"></div>
            
-            <header style= {{ background :"url('assets/apps.png') no-repeat center center fixed " } }>
+            <header  style= {{ background :"url('assets/apps.png')   " } }>
                 <div className="website_header">
                     <div className="softwareheader_content">
                         <div className="side_one">

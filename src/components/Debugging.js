@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 
 function Debugging() {
     return (
-        <div className="blockapp"  style= {{ background :"url('/assets/refactor.png') " } }>
+        <div className="blockapp"  style= {{ background :"url('refactor.png') " } }>
             <Fade left>
              <p> REFACTORING | DEBUGGING SERVICES</p>
              </Fade>

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 
 function Contents() {
     return (
-        <div className="blockapp"  style= {{ background :"url('/assets/contentms.png') " } }>
+        <div className="blockapp"  style= {{ background :"url('contentms.png') " } }>
              <Fade left>
              <p> CONTENT MANAGEMENT SYSTEMS</p>
              </Fade>

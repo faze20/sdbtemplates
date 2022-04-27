@@ -24,7 +24,7 @@ function About() {
 
     return (
         <div className="aboutapp"  >
-            <div className="aboutcontext_container" style= {{ background :"url('/assets/banner1.jpg') center center" } } >
+            <div className="aboutcontext_container" style= {{ background :"url('banner1.jpg') center center" } } >
                 <div className="about_details">
                 <TextTransition
                     text={ TEXTS[index % TEXTS.length] }
@@ -44,10 +44,10 @@ function About() {
             </div>
             <div className="aboutcontext_staff">
                 <div className="staff_container">
-                    <img className='user_image image1' src="/assets/profile-pic.png" alt="Afeez Badmos" />
-                    <img className='user_image image2' src="/assets/profileme.jpg" alt="Afeez Badmos" />
-                    <img className='user_image image3' src="/assets/profile-pic.png" alt="Afeez Badmos" />
-                    <img className='user_image image4' src="/assets/profileme.jpg" alt="Afeez Badmos" />
+                    <img className='user_image image1' src="profile-pic.png" alt="Afeez Badmos" />
+                    <img className='user_image image2' src="profileme.jpg" alt="Afeez Badmos" />
+                    <img className='user_image image3' src="profile-pic.png" alt="Afeez Badmos" />
+                    <img className='user_image image4' src="profileme.jpg" alt="Afeez Badmos" />
                 </div>
                 <div className="staff_container">
                     <div className='user_image div1' ></div>
