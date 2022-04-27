@@ -50,7 +50,7 @@ function Softwares() {
         <div className="websites_contents">
             <div className="website_divider"></div>
            
-            <header  style= {{ background :"url('assets/apps.png')   " } }>
+            <header  style= {{ background :"url('apps.png')   " } }>
                 <div className="website_header">
                     <div className="softwareheader_content">
                         <div className="side_one">
@@ -304,16 +304,18 @@ function Softwares() {
                 <div className="Websitecontent-left">
                     <h3>Technologies</h3>
                     <div className="websitecontentleft_img">
-                        <img src="assets/mongo.jpg" alt="mongodb" />
-                        <img src="assets/php.jpg" alt="php" />
-                        <img src="assets/python.jpg" alt="python" />
-                        <img src="assets/sketch.jpg" alt="sketch" />
-                        <img src="assets/node.jpg" alt="node" />
-                        <img src="assets/sql.jpg" alt="sql" />
-                        <img src="assets/git.jpg" alt="git" />
-                        <img src="assets/github.jpg" alt="github" />
-                        <img src="assets/figma.jpg" alt="figma" />
-                        <img src="assets/drawio.jpg" alt="drawio" />
+                        <img src="mongo.jpg" alt="mongodb" />
+                        <img src="php.jpg" alt="php" />
+                        <img src="python.jpg" alt="python" />
+                        <img src="sketch.jpg" alt="sketch" />
+                        <img src="node.jpg" alt="node" />
+                        <img src="sql.jpg" alt="sql" />
+                        <img src="git.jpg" alt="git" />
+                        <img src="github.jpg" alt="github" />
+                        <img src="figma.jpg" alt="figma" />
+                        <img src="drawio.jpg" alt="drawio" />
+                        <img src="flutter.jpg" alt="flutter" />
+                        <img src="sqlite.jpg" alt="sqlite" />
                     </div>
                 </div>
                 <div className="mini_header">
@@ -326,7 +328,7 @@ function Softwares() {
                     <h2>About Me</h2>
                     <div className="aboutme_content">
                         <div className="image">
-                                <img src="assets/profile-pic.png" alt="afeez badmos" />
+                                <img src="profile-pic.png" alt="afeez badmos" />
                         </div>
                        
                         <div className="about_text">

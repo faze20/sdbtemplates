@@ -402,16 +402,18 @@ function Applications() {
                 <div className="Websitecontent-left">
                     <h3>Technologies</h3>
                     <div className="websitecontentleft_img">
-                        <img src="assets/mongo.jpg" alt="mongodb" />
-                        <img src="assets/php.jpg" alt="php" />
-                        <img src="assets/python.jpg" alt="python" />
-                        <img src="assets/sketch.jpg" alt="sketch" />
-                        <img src="assets/node.jpg" alt="node" />
-                        <img src="assets/sql.jpg" alt="sql" />
-                        <img src="assets/git.jpg" alt="git" />
-                        <img src="assets/github.jpg" alt="github" />
-                        <img src="assets/figma.jpg" alt="figma" />
-                        <img src="assets/drawio.jpg" alt="drawio" />
+                        <img src="mongo.jpg" alt="mongodb" />
+                        <img src="php.jpg" alt="php" />
+                        <img src="python.jpg" alt="python" />
+                        <img src="sketch.jpg" alt="sketch" />
+                        <img src="node.jpg" alt="node" />
+                        <img src="sql.jpg" alt="sql" />
+                        <img src="git.jpg" alt="git" />
+                        <img src="github.jpg" alt="github" />
+                        <img src="figma.jpg" alt="figma" />
+                        <img src="drawio.jpg" alt="drawio" />
+                        <img src="flutter.jpg" alt="flutter" />
+                        <img src="sqlite.jpg" alt="sqlite" />
                     </div>
                 </div>
 

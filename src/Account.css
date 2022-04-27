@@ -7,7 +7,8 @@
   justify-content: center;
   justify-items: center;
   margin-top: 70px;
-  background-image: url("/assets/contactbgrd.jpg");
+  background: url("/contactbackground.jpg");
+  background-size: cover;
 }
 .wrap a {
   text-decoration: underline;
