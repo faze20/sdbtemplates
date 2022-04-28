@@ -142,7 +142,7 @@ function Clouddata() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="/assets/teamwork.jpg" alt="marketing"  />
+                        <img src="teamwork.jpg" alt="marketing"  />
                         <h5>Devops</h5>
                         <p>
                         Our cloud automation offerings will keep all your 
@@ -171,7 +171,7 @@ function Clouddata() {
                 <div className="right_items">
                             <h2>Our Process</h2>
                             <div className="rightitem_content">
-                            <img src="/assets/ourprocess.jpg" alt="process" />
+                            <img src="ourprocess.jpg" alt="process" />
 
                             <p>
                                 We focus on the data that matters by sorting the background 
@@ -231,7 +231,7 @@ function Clouddata() {
                         <div className="right_items">
                             <h2>Next ...</h2>
                             <div className="rightitem_content">
-                            <img src="/assets/next.png" alt="process" />
+                            <img src="next.png" alt="process" />
                             <p>
                                 We recommend the best-fit automation tools for your setup 
                                 such as Azure, Window virtual desktop .Which exposes your
@@ -252,7 +252,7 @@ function Clouddata() {
                                 The complete infrastructure has a solid disaster recovery plan, flexibility in terms of 
                                 IT hosting and the generated data enhances your customers experience
                         </p>
-                        <img src="/assets/resultimg.png" alt="results" />
+                        <img src="resultimg.png" alt="results" />
                             </div>
                         </div>
 

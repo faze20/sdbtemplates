@@ -125,7 +125,7 @@ function Utilities() {
                 <h4> 264M</h4>
                 <p>Emails <br /> verified</p>
                 <div className="content_icon">
-                    <img src="/assets/emailnw.jpg" alt="email" />
+                    <img src="emailnw.jpg" alt="email" />
                 </div>
 
             </div>
@@ -133,7 +133,7 @@ function Utilities() {
             <h4> 705M</h4>
                 <p>Keyword <br /> Analyzed</p>
                 <div className="content_icon">
-                    <img src="/assets/searchnew.jpg" alt="search" />
+                    <img src="searchnew.jpg" alt="search" />
                 </div>
 
             </div>
@@ -141,7 +141,7 @@ function Utilities() {
                 <h4> 117K</h4>
                 <p>Happy <br /> Users</p>
                 <div className="content_icon">
-                    <img src="/assets/boy.png" alt="boy" />
+                    <img src="boy.png" alt="boy" />
                 </div>
 
             </div>
@@ -158,7 +158,7 @@ function Utilities() {
                 <div className="seo_items">
 
                     <div className="seo_solcontents">
-                        <img src="/assets/keywordicon.jpg" alt="keyword" />
+                        <img src="keywordicon.jpg" alt="keyword" />
                         <a href='https://ahrefs.com/'>  <h4>Keyword Research Tool</h4></a>
 
                     </div>
@@ -181,7 +181,7 @@ function Utilities() {
                         
                     </div>
                     <div className="seo_solcontents">
-                    <img src="/assets/backlinkicon.jpg" alt="backlinks" />
+                    <img src="backlinkicon.jpg" alt="backlinks" />
                     <a href='https://ahrefs.com/'>  <h4>High CPC Keyword Explorer</h4></a>
 
                        
@@ -196,7 +196,7 @@ function Utilities() {
                        
                     </div>
                     <div className="seo_solcontents">
-                    <img src="/assets/backlinkicon.jpg" alt="backlink" />
+                    <img src="backlinkicon.jpg" alt="backlink" />
                     <a href='https://www.semrush.com/features/technical-seo-tools/'> <h4>SEO Analyzer</h4></a>
 
                         
@@ -485,34 +485,34 @@ function Utilities() {
                               </h4>
                               <div className="placeholder_content">
                                   <img
-                                   src="assets/sdbnew6.png"
+                                   src="sdbnew6.png"
                                     alt="adverts"
                                      />
                                      <p>Arabian leather</p>
                               </div><div className="placeholder_content">
                                   <img
-                                   src="assets/sdbnew6.png"
+                                   src="sdbnew6.png"
                                     alt="leather"
                                      />
                                      <p>Travel the world.</p>
                               </div>
                               <div className="placeholder_content">
                                   <img
-                                   src="assets/sdbnew2.png"
+                                   src="sdbnew2.png"
                                     alt="content"
                                      />
                                      <p>Contents.</p>
                               </div>
                               <div className="placeholder_content">
                                   <img
-                                   src="assets/sdbnew4.png"
+                                   src="sdbnew4.png"
                                     alt="refactoring"
                                      />
                                      <p>Refactorinng.</p>
                               </div>
                               <div className="placeholder_content">
                                   <img
-                                   src="assets/sdbnew5.png"
+                                   src="sdbnew5.png"
                                     alt="freelancing"
                                      />
                                      <p>Finance for freelancer.</p>

@@ -70,7 +70,7 @@ function Websites() {
        
 
             
-            <header  style= {{ background :"url('assets/sdbnew3.png') no-repeat center center fixed" } } >
+            <header  style= {{ background :"url('sdbnew3.png') no-repeat center center fixed" } } >
                 <div className="website_header">
                         <div className="websiteheader_content">
                             <Fade right>
@@ -99,7 +99,7 @@ function Websites() {
             <div className="benefits_container">
                 <div className="benefits_contents">
                     <div className="benefit_item">
-                        <img src="assets/resultgoal.jpg" alt="branding" />
+                        <img src="resultgoal.jpg" alt="branding" />
                         <h5>Branding</h5>
                         <p>
                         We provide everything your site needs
@@ -108,7 +108,7 @@ function Websites() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="assets/teamwork.jpg" alt="marketing"  />
+                        <img src="teamwork.jpg" alt="marketing"  />
                         <h5>24/7 Dev Team</h5>
                         <p>
                         We do have a round-the-clock development
@@ -116,7 +116,7 @@ function Websites() {
                         </p>
                     </div>
                     <div className="benefit_item">
-                        <img src="assets/presentation.png" alt="presentation"  />
+                        <img src="presentation.png" alt="presentation"  />
                         <h5>Performance Report</h5>
                         <p>
                         Periodic reports on  websites
@@ -132,7 +132,7 @@ function Websites() {
                         <div className="right_items">
                             <h2>Our Process</h2>
                             <div className="rightitem_content">
-                                <img src="assets/ourprocess.jpg" alt="process" />
+                                <img src="ourprocess.jpg" alt="process" />
                                 <p>The First point of call for over 75% of customers that want to experience an
                                     effortless shopping with safety and 
                                     satisfaction, will make or plan to make such transactions  on the internet . It is imperative
@@ -167,13 +167,13 @@ function Websites() {
                                     For Web Apps , the situation might require a migration of database , changing Api call point depending 
                                     on the initial technical report from your Web Application.
                                 </p>
-                                 <img src="assets/optimisationnew.png" alt="process" />
+                                 <img src="optimisationnew.png" alt="process" />
                             </div>
                         </div>
                         <div className="right_items">
                             <h2>Next ...</h2>
                             <div className="rightitem_content">
-                            <img src="assets/next.png" alt="process" />
+                            <img src="next.png" alt="process" />
                             <p>
                             Media does affect Site performance a lot , so all img tags will be completely optimised and make sure they 
                             still retain their picture perfect pixelate levels. Followed by Headings  and titles with broken links.
@@ -190,7 +190,7 @@ function Websites() {
                             project entails which will make your customers spend more quality time on your website. The more time the Client spend
                             on your site due to this improved efficiency , the more inflow of business and increased profit.
                         </p>
-                        <img src="assets/resultimg.png" alt="results" />
+                        <img src="resultimg.png" alt="results" />
                             </div>
                         </div>
                         
@@ -206,7 +206,7 @@ function Websites() {
                               <h4 id="card"> Digital Marketing </h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/newseo.jpg" alt="seo" />
+                                 <img className='card_image' src="newseo.jpg" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
                               <p>We maintain, add new features, optimise images, update deprecated keywords, 
@@ -219,7 +219,7 @@ function Websites() {
                           <div className="websitecard">
                               <h4 id="card"> Websites </h4>
                                  <Link  to="/contact">  
-                                 <img className='card_image' src="assets/landingpage.jpg" alt="seo" />
+                                 <img className='card_image' src="landingpage.jpg" alt="seo" />
 
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
@@ -234,7 +234,7 @@ function Websites() {
                               <h4 id="card"> Web Applications</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="assets/webapp.png" alt="seo" />
+                                 <img className='card_image' src="webapp.png" alt="seo" />
                               </Link>
                               <button  type='button' onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 
@@ -247,7 +247,7 @@ function Websites() {
                           <div className="websitecard">
                               <h4 id="card"> Landing Pages and Funnels </h4>
                                  <Link  to="/contact">  
-                                 <img className='card_image' src="assets/websitenew.jpg" alt="seo" />
+                                 <img className='card_image' src="websitenew.jpg" alt="seo" />
 
                               </Link>
                               <button onClick={()=> navigate("/contact")}  type='button' className='websitecard_button'>Get quote</button>
@@ -291,7 +291,7 @@ function Websites() {
                     <h2>About Me</h2>
                     <div className="aboutme_content">
                         <div className="image">
-                                <img src="assets/profile-pic.png" alt="afeez badmos" />
+                                <img src="profile-pic.png" alt="afeez badmos" />
                         </div>
                        
                         <div className="about_text">

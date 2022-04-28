@@ -323,7 +323,7 @@ function Applications() {
                             All intellectual property created in the process of MVP 
                             development belongs to the customer
                         </p>
-                        <img src="/assets/resultimg.png" alt="results" />
+                        <img src="resultimg.png" alt="results" />
                             </div>
                         </div>
 
@@ -363,7 +363,7 @@ function Applications() {
                               <h4 id="card"> Web App Development</h4>
                                  <Link  to="/contact">  
 
-                                 <img className='card_image' src="/assets/webapp.png" alt="seo" />
+                                 <img className='card_image' src="webapp.png" alt="seo" />
                               </Link>
                               <button onClick={()=> navigate("/contact")} className='websitecard_button'>Get quote</button>
 

@@ -156,7 +156,7 @@ function Blog() {
                         <p>
                           NFT- Non Fungible Token. You will need a Metamask wallet as this is the only wallet that supports NFT currently.
                           when you get your wallet, next step is to fund the wallet with eth, etherum for purchase.once these two steps
-                          are completed, go to <www className="opensea io">Open sea</www> to look for an NFT of your choice and DONE.
+                          are completed, go to <a className="opensea io" href='https://www.opensea.com'>Open sea</a> to look for an NFT of your choice and DONE.
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
