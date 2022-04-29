@@ -25,7 +25,6 @@ function Register() {
     }); 
 
     const navigate = useNavigate()
-
     
     const handleSubmit = async (e)=>{
         e.preventDefault()
@@ -37,7 +36,7 @@ function Register() {
                 phoneNumber,
                 password,
             }
-            const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/users` , {
+            const response = await fetch( `${process.env.REACT_APP_BACKEND_API}/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
