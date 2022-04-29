@@ -68,12 +68,10 @@ function Header() {
                 : (
                     
                     <Profile>
-                        <PersonIcon /> {user}
+                        <PersonIcon /> 
                         <div onClick={dropProfileMenu} >
-
-                        <span>{user.firstName}</span>
-                        <ArrowDropDownIcon />
-
+                            <span>{user}</span>
+                            <ArrowDropDownIcon />
                         </div>
                         {showSubProfileMenu && 
                             <SubProfile>
@@ -242,6 +240,11 @@ div{
     justify-contents:center;
     margin:0 0.5rem;
    
+}
+@media (max-width: 768px){
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items:center;
 }
 `
 
