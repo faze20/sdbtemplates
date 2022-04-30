@@ -97,7 +97,10 @@ function Clouddata() {
                  <div className="website_header">
                        <div className='video_content'>
                            <video autoPlay loop muted id='video'>
-                               <source src="databgrnd.mp4"/>
+                               <source 
+                               src="databgrnd.mp4"
+                               type="video/mp4"
+                               />
                            </video>
                        
                         <div className="dataheader_content">

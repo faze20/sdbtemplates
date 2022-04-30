@@ -11,7 +11,7 @@ export default function Pricing() {
   const navigate = useNavigate();
 
   const basic =()=>{
-    navigate('/button',{state:{price:0,quantity:1 ,description:'Free Basic Package '}});
+    navigate('/button',{state:{price:'Free',quantity:1 ,description:'Free Basic Package '}});
   }
 
   const standard =()=>{

@@ -1,7 +1,6 @@
 {
   "name": "digibuzz",
   "version": "0.1.0",
-  "homepage": "https://faze20.github.io/sdbtemplates/",
   "private": true,
   "type": "module",
   "dependencies": {

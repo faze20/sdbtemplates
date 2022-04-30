@@ -13,11 +13,10 @@ function Quote({text}) {
 
     emailjs.sendForm('service_abp3xof', 'bog_contact', e.target, 'user_zVskoVQi6GgYNK1h7NzD5')
       .then((result) => {
-          console.log(result.text);
           e.target.reset();
           setClassStyle('success')
       }, (error) => {
-          console.log(error.text);
+          alert(error.text);
       });
 
     }
