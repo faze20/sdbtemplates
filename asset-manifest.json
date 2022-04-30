@@ -1,15 +1,15 @@
 {
-  "main.css": "/sdbtemplates/static/css/main.8348ce67.chunk.css",
-  "main.js": "/sdbtemplates/static/js/main.8b5bd231.chunk.js",
-  "main.js.map": "/sdbtemplates/static/js/main.8b5bd231.chunk.js.map",
-  "runtime~main.js": "/sdbtemplates/static/js/runtime~main.a2f706cc.js",
-  "runtime~main.js.map": "/sdbtemplates/static/js/runtime~main.a2f706cc.js.map",
-  "static/css/2.08aa4bc1.chunk.css": "/sdbtemplates/static/css/2.08aa4bc1.chunk.css",
-  "static/js/2.20307308.chunk.js": "/sdbtemplates/static/js/2.20307308.chunk.js",
-  "static/js/2.20307308.chunk.js.map": "/sdbtemplates/static/js/2.20307308.chunk.js.map",
-  "index.html": "/sdbtemplates/index.html",
-  "precache-manifest.8ab9a8eca1f69eccb29f359d21a7f548.js": "/sdbtemplates/precache-manifest.8ab9a8eca1f69eccb29f359d21a7f548.js",
-  "service-worker.js": "/sdbtemplates/service-worker.js",
-  "static/css/2.08aa4bc1.chunk.css.map": "/sdbtemplates/static/css/2.08aa4bc1.chunk.css.map",
-  "static/css/main.8348ce67.chunk.css.map": "/sdbtemplates/static/css/main.8348ce67.chunk.css.map"
+  "main.css": "./static/css/main.02c42f47.chunk.css",
+  "main.js": "./static/js/main.02bb5b15.chunk.js",
+  "main.js.map": "./static/js/main.02bb5b15.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+  "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+  "static/css/2.51aa26c0.chunk.css": "./static/css/2.51aa26c0.chunk.css",
+  "static/js/2.a1cc0c16.chunk.js": "./static/js/2.a1cc0c16.chunk.js",
+  "static/js/2.a1cc0c16.chunk.js.map": "./static/js/2.a1cc0c16.chunk.js.map",
+  "index.html": "./index.html",
+  "precache-manifest.3240f03e75022e6e44d9cccd0c12b375.js": "./precache-manifest.3240f03e75022e6e44d9cccd0c12b375.js",
+  "service-worker.js": "./service-worker.js",
+  "static/css/2.51aa26c0.chunk.css.map": "./static/css/2.51aa26c0.chunk.css.map",
+  "static/css/main.02c42f47.chunk.css.map": "./static/css/main.02c42f47.chunk.css.map"
 }
