@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+
 
 import '../Blog.css';
 
@@ -7,19 +13,58 @@ import '../Blog.css';
 function Blog() {
     return (
         <div className="blog_container">
-             <div className="blog_overlay" style= {{ background: "#12100E" } }></div>
              <div className="blogSubheader">
-                 <span>Blog &#8594; </span> <span>Category &#8594;</span> <span>Title</span>
+                 <div>
+                    <span>Blog &#8594; </span> <span>Category &#8594;</span> <span>Title</span>
+                 </div>
+                 <div className="social_media">
+                     <ul>
+                         <li><FacebookIcon /></li>
+                         <li><TwitterIcon /></li>
+                         <li><InstagramIcon /></li>
+                         <li><PinterestIcon /></li>
+                     </ul>
+
+                 </div>
              </div>
 
 
-                <div className="blog_app"  style= {{ background :"url('banner1.jpg') center " } }>
-                    <div className="blog_textcontent">
-                        <h2>
-                            Hello! Welcome to Software Dev Bytes Blog With Creative Contents and
-                             Use Cases.
-                        </h2>
-                    </div>
+                <div className="blog_app"  >
+                   <div className="header">
+                       <div className="backdrop" style= {{ background :"url('blogbackground.jpg') center " } }>
+                            <div className="blog_textcontent">
+                                <h2>
+                                    Hello! Welcome to Software Dev Bytes Blog With Creative Contents and
+                                    Use Cases.
+                                </h2>
+                            </div>
+
+                       </div>
+                       <div className="side_backdrop">
+                           <div className="news_list">
+                               <h2>LATEST STORIES</h2>
+                               <ul className='stories_list'>
+                                   <li className='list_item'>
+                                       <h4>MOMS</h4>
+                                       <p>3 Steps to Raising an Adventurous Non-Picky Eater</p>
+                                   </li>
+                                   <li className='list_item'>
+                                       <h4>DECOR</h4>
+                                       <p>10 Suprisinggly Classy Ways to Throw a PSL-Themed Wedding</p>
+                                   </li>
+                                   <li className='list_item'>
+                                       <h4>NEWS</h4>
+                                       <p>This Startup Wants to Help You Find Mistakes on Your Medical Bills</p>
+
+                                   </li>
+                                   <li className='list_item'>
+                                       <h4>NEWS</h4>
+                                       <p>Fans Are Loving The New Gilmore Girls Poster for One Classic Reason</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
                     <div className="blog_gallery">
                         <div className="blog_sectionArena">
                             <div className="blog_sectionContent">
