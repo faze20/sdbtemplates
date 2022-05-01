@@ -4,45 +4,15 @@
 .button_items {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
 }
 .order_details {
   flex: 0.4;
   height: 100vh;
-  margin: 3rem 0 1rem 2rem;
-  padding: 2rem;
 }
 .button_payment {
   flex: 0.6;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0 2rem;
-}
-.details_summary{
-  margin: 2rem 0;
-}
-.order_items{
-  border: 1px solid black;
-  margin: 2rem 0;
-  padding: 1rem 0.2rem;
-  border-radius: 0.5rem;
-  display: flex;
-}
-.order_items p{
-  width: 40%;
-}
-.payment_portal{
-  width: 100%;
-}
-.payment_banner{
-  display: flex;
-  background: gray;
-  padding: 2rem;
 }
 @media (max-width: 768px) {
-  .button_items {
-    flex-direction: column;
-  }
-
 }
