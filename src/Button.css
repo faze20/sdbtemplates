@@ -4,15 +4,82 @@
 .button_items {
   display: flex;
   justify-content: space-between;
+  height: 100vh;
 }
 .order_details {
   flex: 0.4;
   height: 100vh;
+  margin: 0 0 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 .button_payment {
   flex: 0.6;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  position: relative;
+
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: #000;
+  opacity: 0.4;
+}
+.overlay h4{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: red;
+}
+.payment_options  p{
+  text-align: center;
+}
+.payment_options h5{
+  font-size: 2rem;
+}
+.details_summary{
+  margin: 2rem 0;
+}
+.order_items{
+  border: 1px solid black;
+  margin: 2rem 0;
+  padding: 1rem 0.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.order_items p{
+  width: 40%;
+}
+.payment_portal{
+  width: 100%;
+  z-index: -1;
+
+}
+.payment_banner{
+  display: flex;
+  background: gray;
+  padding: 1rem;
+  align-items: center;
+}
+.payment_banner button{
+  padding: 0.5rem;
+  background: green;
+  color: beige;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  margin-left: 0.3rem;
+  cursor: pointer;
+
 }
 @media (max-width: 768px) {
+  .button_items {
+    flex-direction: column;
+  }
+
 }

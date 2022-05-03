@@ -1,4 +1,5 @@
-import React from 'react'
+import React , { useState , useEffect } from 'react'
+import axios from 'axios'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -9,12 +10,52 @@ import PinterestIcon from '@material-ui/icons/Pinterest';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Link } from 'react-router-dom'
 
+const baseUrl = 'http://localhost:8000'
 
 
 function Footer() {
+    const [visitorData, setVisitorData] = useState({
+        name: '',
+        count: 1,
+        ip_addr: ''
+    });
+
+   
+
+    const getData = async () => {
+        const res = await axios.get('https://geolocation-db.com/json/')
+        console.log(res.data);
+        setVisitorData({name: res.data.state,count:1, ip_addr:res.data.IPv4})
+    }
+
+
+    const showVisitors =  async () => {
+     
+        const response = await fetch(`${baseUrl}/visits` , {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(visitorData)
+
+        });
+        const result = await response.json()
+        console.log(result.message)
+        
+    }
+
+     useEffect( () => {
+        //passing getData method to the lifecycle method
+        showVisitors()
+        getData()
+
+    }, [])
+
+
+
     return (
         <div className="footer">
-            {/* <Contact /> */}
+            <button onClick={showVisitors}> click {visitorData.ip_addr}</button>
 
 
             <div className="footer_group">

@@ -12,11 +12,11 @@ function Contact() {
     return (
         <div className="contact_container">
             <div className="contact_contents">
-                <h2>Contact </h2>
+                <h2 className='contact_h2'>Contact </h2>
             <div className="contact_header">
                    <Fade right>
                    <div className="headercontent">
-                       <img src="/assets/signature.png" alt="Ready to sign NDA " />
+                       <img src="signature.png" alt="Ready to sign NDA " />
                        
                        <div className="headercontent_text">
                        All your ideas are 
@@ -26,7 +26,7 @@ function Contact() {
 
                    <div className="headercontent">
                        <div className="divider"></div>
-                       <img src="/assets/time.png" alt="Ready to sign NDA " />
+                       <img src="time.png" alt="Ready to sign NDA " />
                        <div className="headercontent_text">
                        We will respond to you within 24hours
                        </div>                     
@@ -34,7 +34,7 @@ function Contact() {
                    </div>
                    <div className="headercontent">
                    <div className="divider"></div>
-                       <img src="/assets/budget.png" alt="cost estimation " />
+                       <img src="budget.png" alt="cost estimation " />
                        <div className="headercontent_text">
                       Detailed time 
                        and cost estimation

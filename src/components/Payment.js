@@ -7,22 +7,28 @@ import '../Payment.css';
 
 const Payment = () => {
     const  [showInputBox , setShowInputBox] = useState(false)
+
+
     const [otheramount , setOtherAmount ] = useState(0)
     const navigate = useNavigate();
 
     const fifteen=()=>{
+        
         navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
     }
     const ten=()=>{
-        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
+       
+        navigate('/button',{state:{price:10,quantity:1 ,description:'Thank you for $10 donation '}});
     }
     const five=()=>{
-        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
+       
+        navigate('/button',{state:{price:5,quantity:1 ,description:'Thank you for $5 donation '}});
     }
 
 
     const handleSubmit = (e) =>{
         e.preventDefault()
+       
         navigate('/button',{state:{price:otheramount,quantity:1 ,description:`Thank you for ${otheramount} donation`}});
     }
   
@@ -34,7 +40,7 @@ const Payment = () => {
         <div className="payment_container">
 
             <div className="donations">
-                <h2>Donations</h2>
+                <h2>Donations </h2>
                 <div className="text_container">
                     <p>
                         Because of your donations, 
@@ -48,7 +54,10 @@ const Payment = () => {
 
                     </p>
                     <div className="donate_buttontext">
-                        Donate today
+                        <h4>
+
+                        Donations Welcome through CashApp , Paypal , Zelle
+                        </h4>
                     </div>
                 </div>
                 <div className="donate_buttons">
@@ -85,23 +94,7 @@ const Payment = () => {
                     </div>
             </div>
 
-            <div className="payment_content">
-                <div className="payment_paypal">
-                    
-                    <div className="payment_subcontent">
-                        <div className="subcontent">
-                            <div className='subcontent_header'>
-                            <h2>Order Summary</h2>
-                            <button onClick={() => navigate("/makepayment")}> Pay now </button>
-                            </div>
-                           
-
-                        </div>
-
-                      
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
   )
@@ -109,32 +102,3 @@ const Payment = () => {
 
 export default Payment
 
-
-//   {/* <div className="form_creditcard">
-// REACT_APP_PAYPAL_CLIENT_ID
-//                               <h2>
-//                                 Paypal
-//                               </h2>
-//                             <form action="">
-//                                 <div className="ccard_content">
-//                                     <input type="text" placeholder='Credit Card Number' />
-//                                 </div>
-//                                 <div className="ccard_other">
-//                                 <div className="ccard_content">
-//                                     <input type="text" placeholder='Expiring MM/YY' />
-//                                 </div>
-//                                 <div className="ccard_content">
-//                                     <input type="text" placeholder='CVV Code' />
-//                                 </div>
-//                                 // <div className="ccard_content">
-//                                     <input type="text" placeholder='Postal Code' />
-//                                 </div>
-
-//                                 </div>
-//                                 <div className="submit_button">
-//                                     <button type="submit"> Pay </button>
-//                                 </div>
-//                             </form>
-                           
-                        // </div> */}
-                       
