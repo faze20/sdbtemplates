@@ -27,6 +27,7 @@ function Footer() {
         console.log(res.data);
         setVisitorData({name: res.data.state,count:1, ip_addr:res.data.IPv4})
     }
+    console.log(visitorData)
 
 
     const showVisitors =  async () => {
@@ -46,8 +47,10 @@ function Footer() {
 
      useEffect( () => {
         //passing getData method to the lifecycle method
-        showVisitors()
         getData()
+        console.log(visitorData)
+
+        showVisitors(visitorData)
 
     }, [])
 

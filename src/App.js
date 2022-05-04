@@ -29,6 +29,8 @@ import Dashboard from './components/Dashboard';
 import Payment from './components/Payment';
 import Pricing from './components/Pricing';
 import Button from './components/Button';
+import Error404 from './components/Error404';
+
 
 function App() {
     return (
@@ -60,6 +62,7 @@ function App() {
                 <Route path="/pricing"  element={<Pricing /> } />
                 <Route path="/button"  element={<Button /> } />
                 <Route path="/"  element={<Home />} />
+                <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
         </Router>
