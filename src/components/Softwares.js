@@ -38,6 +38,12 @@ function Softwares() {
 
 
     useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Software Engineering' content='scalable programming softwares'/>
+        <meta name='software solutions' content='software development and engineering'/>
+        `
+        document.title = "Software";
+
         setInProp(!inProp);
         const intervalId = setInterval(() =>
           setIndex(index => index + 1),
@@ -45,6 +51,14 @@ function Softwares() {
         );
         return () => clearTimeout(intervalId);
       }, []);
+
+    //   useEffect(() => {
+    //     document.head.innerHTML+=`
+    //     <meta name='Data' content='Data Migration'/>
+    //     <meta name='database' content='Big data'/>
+    //     `
+    //     document.title = "Mobile Apps";
+    //   }, []);
     return (
         <div className="websites_container">
         <div className="websites_contents">

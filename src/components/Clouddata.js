@@ -32,6 +32,14 @@ function Clouddata() {
     const [inProp, setInProp] =  React.useState(false);
     const navigate = useNavigate();
 
+    useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Data' content='Data Migration'/>
+        <meta name='database' content='Big data'/>
+        `
+        document.title = "Data";
+      }, []);
+
 
     useEffect(() => {
         setInProp(!inProp);
@@ -41,6 +49,8 @@ function Clouddata() {
         );
         return () => clearTimeout(intervalId);
       }, []);
+
+
     return (
         <div className="websites_container">
             <div className="websites_contents">

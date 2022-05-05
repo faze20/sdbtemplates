@@ -49,6 +49,14 @@ function Applications() {
         );
         return () => clearTimeout(intervalId);
       }, []);
+
+      useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Data' content='Data Migration'/>
+        <meta name='database' content='Big data'/>
+        `
+        document.title = "Mobile Apps";
+      }, []);
     return (
         <div className="websites_container">
              <div className="websites_contents">

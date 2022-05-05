@@ -25,6 +25,14 @@ function Websites() {
         );
         return () => clearTimeout(intervalId);
       }, []);
+
+      useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Website ' content='Wix, shopify,etsy,squarespace'/>
+        <meta name='website development' content='scalable website developer'/>
+        `
+        document.title = "Websites";
+      }, []);
     return (
         <div className="websites_container">
             <div className="websites_contents">

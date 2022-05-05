@@ -37,14 +37,22 @@ function Utilities() {
     const [index, setIndex] = React.useState(0);
     const navigate = useNavigate();
 
-
     useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Utilities' content='free utility'/>
+        <meta name='web utility' content='free seo tools'/>
+        <meta id="meta-description" name="description" content="free seo tools." />
+        <meta id="og-image" property="og:image" content="logo.png" />
+        `
+        document.title = "Utilities";
         const intervalId = setInterval(() =>
           setIndex(index => index + 1),
           3000 // every 3 seconds
         );
         return () => clearTimeout(intervalId);
       }, []);
+
+      
   return (
     <div className="utilities" >
         <div className='utility_divider'></div>
