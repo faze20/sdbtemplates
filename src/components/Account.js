@@ -26,8 +26,8 @@ function Account() {
     const handleSubmit =  async (e) => {
         e.preventDefault();
         setSubmitting(true);
-     
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/users/login` , {
+        //`${process.env.REACT_APP_BACKEND_API}/users/login`
+        const response = await fetch('http://localhost:8000/users/login' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
