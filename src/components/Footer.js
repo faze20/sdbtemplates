@@ -9,56 +9,35 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Link } from 'react-router-dom'
-
-const baseUrl = 'http://localhost:8000'
+import VisitorCount from './visitorCount';
 
 
 function Footer() {
-    const [visitorData, setVisitorData] = useState({
-        name: '',
-        count: 1,
-        ip_addr: ''
-    });
+    // const [visitorCount, setShowVisitorCount] = useState('')
 
-   
-
-    const getData = async () => {
-        const res = await axios.get('https://geolocation-db.com/json/')
-        console.log(res.data);
-        setVisitorData({name: res.data.state,count:1, ip_addr:res.data.IPv4})
-    }
-    console.log(visitorData)
-
-
-    const showVisitors =  async () => {
-     
-        const response = await fetch(`${baseUrl}/visits` , {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(visitorData)
-
-        });
-        const result = await response.json()
-        console.log(result.message)
-        
-    }
-
-     useEffect( () => {
-        //passing getData method to the lifecycle method
-        getData()
-        console.log(visitorData)
-
-        showVisitors(visitorData)
-
-    }, [])
+    // useEffect( async () => {
+    //     //passing getData method to the lifecycle method
+    //     const res = await axios.get('https://geolocation-db.com/json/')
+    //     console.log(res.data);
+    //     const response = await fetch('http://localhost:8000/visits', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({name: res.data.state,count:1, ip_addr:res.data.IPv4})
+    //     })
+    //     const result = await response.json()
+    //     setShowVisitorCount(result.count)
+    //     console.log(result)
+    //     //eavh time a page is visited increment that  page count
+    // }, [])
 
 
 
     return (
         <div className="footer">
-            <button onClick={showVisitors}> click {visitorData.ip_addr}</button>
+            {/* <button > click {visitorCount}</button> */}
+            <VisitorCount page='Home' />
 
 
             <div className="footer_group">

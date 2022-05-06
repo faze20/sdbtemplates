@@ -451,11 +451,22 @@ font-size: 3rem;
 
   .data_header {
     height: 100vh;
-    background: url("/datamobilenew.jpg") no-repeat center center fixed;
+    background: url("/dataMobile.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+  .app_header{
+    height: 100vh;
+    background: url("/appMobile2.jpg") no-repeat center center fixed;
+    /* background: url("/dataMobile.jpg") no-repeat center center fixed; */
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
   }
   .sideone_content{
     opacity: 0.7;
