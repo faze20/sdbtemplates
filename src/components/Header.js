@@ -1,4 +1,6 @@
 import React , { useState , useEffect } from 'react'
+import axios from 'axios'
+
 import styled from 'styled-components'
 import  MenuIcon from '@material-ui/icons/Menu';
 import PersonIcon from '@mui/icons-material/Person';
@@ -19,16 +21,26 @@ function Header() {
     const[ user , setUser ] = useState('')
     const navs = useSelector(selectNavs)
     const loggedInUser = JSON.parse(JSON.stringify(localStorage.getItem("user"))) 
+   
 
-
-    useEffect(() => {
+    useEffect( async () => {
         if (loggedInUser === undefined || loggedInUser === null ) {
             setUser('')
         }else{
             setUser(loggedInUser.split('"')[7]);
             setIsLoggedIn(false)
-
         }
+        // api to get user ip and location
+        const res = await axios.get('https://geolocation-db.com/json/')
+        const response = await fetch( `${process.env.REACT_APP_BACKEND_API}/visits`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({state: res.data.state,country: res.data.country_code, count:1, ip_addr:res.data.IPv4})
+        })
+        const result = await response.json()
+        return result ;
        }, [])
 
 

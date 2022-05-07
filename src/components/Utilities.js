@@ -63,7 +63,7 @@ function Utilities() {
                 springConfig={ presets.gentle }
             />
             <div className="donate_button">
-                <button onClick={()=> navigate("/payment")}>Donate</button>
+                <button onClick={()=> navigate("/donation")}>Donate</button>
             </div>
 
 

@@ -1,5 +1,4 @@
-import React , { useState , useEffect } from 'react'
-import axios from 'axios'
+import React , { useEffect } from 'react'
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -9,37 +8,31 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Link } from 'react-router-dom'
-import VisitorCount from './visitorCount';
+import {useLocation} from 'react-router-dom';
+
 
 
 function Footer() {
-    // const [visitorCount, setShowVisitorCount] = useState('')
+    const location = useLocation();
 
-    // useEffect( async () => {
-    //     //passing getData method to the lifecycle method
-    //     const res = await axios.get('https://geolocation-db.com/json/')
-    //     console.log(res.data);
-    //     const response = await fetch('http://localhost:8000/visits', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({name: res.data.state,count:1, ip_addr:res.data.IPv4})
-    //     })
-    //     const result = await response.json()
-    //     setShowVisitorCount(result.count)
-    //     console.log(result)
-    //     //eavh time a page is visited increment that  page count
-    // }, [])
+    const page = (location.pathname.replace('/', ''))
+   
+    useEffect( async () => {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/pagevisitcount`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ page:page , pageCount:1})
+        })
+        return  await response.json()
+    }, [page])
 
 
+  
 
     return (
         <div className="footer">
-            {/* <button > click {visitorCount}</button> */}
-            <VisitorCount page='Home' />
-
-
             <div className="footer_group">
 
             <div className="footer_subsection">

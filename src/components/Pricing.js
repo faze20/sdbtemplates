@@ -11,17 +11,17 @@ export default function Pricing() {
   const navigate = useNavigate();
 
   const basic =()=>{
-    navigate('/button',{state:{price:'Free',quantity:1 ,description:'Free Basic Package '}});
+    navigate('/payment',{state:{price:0,quantity:1 ,description:'Free Basic Package '}});
   }
 
   const standard =()=>{
-    navigate('/button',{state:{price:850,quantity:1 ,description:'Standard Package '}});
+    navigate('/payment',{state:{price:850,quantity:1 ,description:'Standard Package '}});
   }
   const gold=()=>{
-      navigate('/button',{state:{price:1750,quantity:1 ,description:'Gold Package '}});
+      navigate('/payment',{state:{price:1750,quantity:1 ,description:'Gold Package '}});
   }
   const platinum=()=>{
-      navigate('/button',{state:{price:4000,quantity:1 ,description:'Platinum Package '}});
+      navigate('/payment',{state:{price:4000,quantity:1 ,description:'Platinum Package '}});
   }
 
   return (

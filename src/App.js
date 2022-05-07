@@ -26,9 +26,9 @@ import Register from './components/Register';
 import Forgotpassword from './components/Forgotpassword';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard';
-import Payment from './components/Payment';
+import Donation from './components/donation';
 import Pricing from './components/Pricing';
-import Button from './components/Button';
+import Payment from './components/Payment';
 import Error404 from './components/Error404';
 
 
@@ -58,9 +58,9 @@ function App() {
                 <Route path="/privacy"  element={ <Privacypolicy />} />
                 <Route path="/register"  element={<Register /> } />
                 <Route path="/dashboard"  element={<Dashboard /> } />
-                <Route path="/payment"  element={<Payment /> } />
+                <Route path="/donation"  element={<Donation /> } />
                 <Route path="/pricing"  element={<Pricing /> } />
-                <Route path="/button"  element={<Button /> } />
+                <Route path="/payment"  element={<Payment /> } />
                 <Route path="/"  element={<Home />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>

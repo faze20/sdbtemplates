@@ -1,104 +1,79 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { PayPalButton } from "react-paypal-button-v2";
+import {useLocation} from 'react-router-dom';
 import {  useNavigate } from 'react-router-dom';
 
-import '../Payment.css';
+import '../Button.css';
 
 
 
 const Payment = () => {
-    const  [showInputBox , setShowInputBox] = useState(false)
-
-
-    const [otheramount , setOtherAmount ] = useState(0)
     const navigate = useNavigate();
 
-    const fifteen=()=>{
-        
-        navigate('/button',{state:{price:15,quantity:1 ,description:'Thank you for $15 donation '}});
-    }
-    const ten=()=>{
-       
-        navigate('/button',{state:{price:10,quantity:1 ,description:'Thank you for $10 donation '}});
-    }
-    const five=()=>{
-       
-        navigate('/button',{state:{price:5,quantity:1 ,description:'Thank you for $5 donation '}});
-    }
-
-
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-       
-        navigate('/button',{state:{price:otheramount,quantity:1 ,description:`Thank you for ${otheramount} donation`}});
-    }
-  
+    const location = useLocation();
+    const total = location.state.price * location.state.quantity
   return (
-    <div className='payment'>
-        <h1>
-            Donations &amp; Payment
-        </h1>
-        <div className="payment_container">
+    <div className='button_container'>
+        <div className="payment_banner">
+            <p>Paypal Merchant is down at the moment . </p>
+            <button 
+            onClick={()=>navigate('/contact')}
+            >
+                Click to Contact for Payment
 
-            <div className="donations">
-                <h2>Donations </h2>
-                <div className="text_container">
-                    <p>
-                        Because of your donations, 
-                        You gave us the much needed
-                        support to keep maintaining 
-                        and improving the applications 
-                        to serve you and your business 
-                        without distracting adverts like 
-                        most free-application providing 
-                        websites .
+            </button>
+        </div>
+        <div className="button_contents">
+            <div className="button_items">
+                <div className="order_details">
+                    <h2 className='details_summary'>Order Summary</h2>
 
-                    </p>
-                    <div className="donate_buttontext">
-                        <h4>
-
-                        Donations Welcome through CashApp , Paypal , Zelle
-                        </h4>
-                    </div>
-                </div>
-                <div className="donate_buttons">
-                    <div className="button">
-                        <button onClick={()=>{five()}}>$5 Paypal</button>
-                    </div>
-                    <div className="button">
-                        <button onClick={()=>{ten()}}>$10 Paypal</button>
-                    </div>
-                    <div className="button">
-                        <button onClick={()=>{fifteen()}}>$15 Paypal</button>
+                    <div className='order_items'> <p> Quantity :</p> <span> {location.state.quantity}</span></div>
+                    <div className='order_items'><p>Price : </p><span>${location.state.price}</span></div>
+                    <div className='order_items'> <p>Description:</p> <span>{location.state.description}</span> </div>
+                    <div className='order_items'><p>total: </p>$<span>{total }</span> </div>
+                    <div className='payment_options'>
+                        <p>Other Payment options: </p>
+                        <div className="cashapp">
+                              <a href="https://cash.app/$AfeezBadmos">
+                                    <span>
+                                    Cashapp
+                                    </span>
+                                    $AfeezBadmos
+                                </a>
                         
+                         </div>
+                        <h5>  Zelle :  7472498760 </h5>
+                            <h5>Direct Paypal : Afeez20</h5>
                     </div>
-                    <div className="button">
-                        <button onClick={()=> setShowInputBox(true)}>$Custom</button>
-                        {showInputBox && 
-                        <form onSubmit={handleSubmit}>
-                            <input onChange={(e)=> setOtherAmount(e.target.value)}
-                            type="number" name="otheramount" id="other" />
-                            <button type="submit">Donate</button> 
-                        </form>
-                        }
-                    </div>
+
+                </div>
+                <div className="button_payment">
+                    <div className="overlay">
+                    <h4>Hi, our PAYPAL Gateway is Temporarily down!</h4>
                    
-                </div>
-                <div className="cashapp">
-                    <a href="https://cash.app/$AfeezBadmos">
-                        <span>
-                           Cashapp
-                        </span>
-                         $AfeezBadmos
-                    </a>
-                        
                     </div>
-            </div>
+                    <div className='payment_portal'>
+                        <PayPalButton
+                            options={{
+                            clientId:"Af0hsDbQMrzfPTnYx_wSGEOs3J3Q07op0fHSG0KsEuum8n8kEc7-LwYuAO9H4kXcFZcSEc7AumjMAAR1",
 
-           
+                            currency: "USD",
+                            }}
+                            amount={total}
+                            onSuccess={(details, data) => {
+                            alert("Transaction completed by " + details.payer.name.given_name);
+
+                            console.log({ details, data });
+                            }}
+                        />
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
   )
 }
 
 export default Payment
-
