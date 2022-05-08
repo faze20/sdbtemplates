@@ -16,9 +16,9 @@ function Footer() {
     const location = useLocation();
 
     const page = (location.pathname.replace('/', ''))
-   
+   // `${process.env.REACT_APP_BACKEND_API}/pagevisitcount`  'http://localhost:8000/pagevisitcount'
     useEffect( async () => {
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/pagevisitcount`, {
+        const response = await fetch('http://localhost:8000/pagevisitcount', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

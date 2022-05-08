@@ -1,7 +1,5 @@
 import React , { useState , useEffect } from 'react'
 import axios from 'axios'
-
-import styled from 'styled-components'
 import  MenuIcon from '@material-ui/icons/Menu';
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -9,6 +7,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { selectNavs } from '../features/navheads/navSlice';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
+import '../Header.css'
   
 
 
@@ -30,9 +29,9 @@ function Header() {
             setUser(loggedInUser.split('"')[7]);
             setIsLoggedIn(false)
         }
-        // api to get user ip and location
+        // api to get user ip and location `${process.env.REACT_APP_BACKEND_API}/visits` 'http://localhost:8000/visits'
         const res = await axios.get('https://geolocation-db.com/json/')
-        const response = await fetch( `${process.env.REACT_APP_BACKEND_API}/visits`, {
+        const response = await fetch(  'http://localhost:8000/visits', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -55,62 +54,63 @@ function Header() {
 
     return (
        
-        <Container>
+        <div className='header_container' >
            <Link to="/">
                 <img src="logonew3.png"  alt="Logo" />
             </Link>
-            <Menu>
+
+            <div className='header_menu'>
                 {navs && navs.map((car,index)=> (
                       <Link key={index} to= {`/${car}`}>
-                           <Grow> { car}  </Grow>
+                           { car} 
                       </Link> 
                 ))}
-            </Menu>
+            </div>
            
 
-            <RightMenu>
+            <div className='header_rightmenu'>
                 <Link to="/quote">
-                    <Grow>Quote  </Grow>
+                   Quote 
                 </Link>  
                 {isLoggedIn ?  (
                     <Link to="/account">
-                       <Grow> Account </Grow>
+                       Account
                     </Link>
                 ) 
                 : (
                     
-                    <Profile>
+                    <div className='header_profile'>
                         <PersonIcon /> 
                         <div onClick={dropProfileMenu} >
                             <span>{user}</span>
                             <ArrowDropDownIcon />
                         </div>
                         {showSubProfileMenu && 
-                            <SubProfile>
-                                <ul>
+                            <div className='header_subprofile'>
+                                <ul className='subprofile_ul'>
                                     <li><Link  to="/dashboard"> Profile</Link> </li>
                                     <li><Link  to="/dashboard"> Dashboard</Link> </li>
                                     <li><Link  to="/dashboard">  Pricing</Link> </li>
                                     <li><Link  to="/dashboard">  Delete Account</Link> </li>
                                 </ul>
-                            </SubProfile>
+                            </div>
                         }
                         <button onClick={logout}> Logout </button>
 
-                    </Profile>
+                    </div>
                 )
                 }
 
-                
+                <MenuIcon  onClick={()=> setBurgerStatus(true)} />
 
-                <CustomMenu onClick={()=> setBurgerStatus(true)}/>
-            </RightMenu>
+                {/* <CustomMenu /> */}
+            </div>
 
-            <BurgerNav show={burgerStatus}>
-                <CloseWrapper>
-                < CustomClose onClick={()=> setBurgerStatus(false)} />
+            <div className='header_burger' show={burgerStatus}>
+                <div className='header_wrapper'>
+                 < CloseIcon onClick={()=> setBurgerStatus(false)} />
 
-                </CloseWrapper>
+                </div>
                 {navs && navs.map((car,index)=> (
                     <li key={index} > 
                         <Link to= {`/${car}`}>
@@ -130,155 +130,39 @@ function Header() {
                 <li> <Link  to="/blog">  Blog </Link> </li>
                 </ul>
 
-            </BurgerNav>
+            </div>
 
 
            
-        </Container> 
+        </div> 
     )
 }
 
 export default Header
 
-const Container = styled.div`
-min-height:60px;
-position:fixed;
-top:0;
-left:0;
-right:0;
-display:flex;
-align-items: center;
-justify-content:space-between;
-padding: 0 20px;
-background:white;
-opacity: 0.85;
-z-index:1;
-`
-const Menu = styled.div`
-display:flex;
-align-items :center;
-justify-content:center;
-flex:1;
-a {
-    font-weight:600;
-    text-transform :uppercase;
-    padding : 0 10px;
-    flex-wrap: nowrap;
-}
+// const BurgerNav = styled.div`
+// position:fixed;
+// top:0;
+// bottom:0;
+// right:0;
+// background:white;
+// width:300px;
+// z-index:10;
+// padding:20px;
+// display:flex;
+// flex-direction:column;
+// text-align:start;
+// transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+// transition: transform 0.2s ;
+// li{
+//     padding: 15px 0;
+//     border-bottom:1px solid rgba(0,0,0,0.2);
+// }
+// a{
+//     font-weight:600;
+// }
 
-@media (max-width: 768px){
-    display:none
-}
+// `
 
-`
-const RightMenu = styled.div`
-display:flex;
-align-items: center;
-cursor:pointer;
-
-p{
-    font-weight:600;
-    text-transform :uppercase;
-    margin-right:10px;  
-    padding:2px;  
-};
-`
-const CustomMenu = styled(MenuIcon)`
-`
-const BurgerNav = styled.div`
-position:fixed;
-top:0;
-bottom:0;
-right:0;
-background:white;
-width:300px;
-z-index:10;
-padding:20px;
-display:flex;
-flex-direction:column;
-text-align:start;
-transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
-transition: transform 0.2s ;
-li{
-    padding: 15px 0;
-    border-bottom:1px solid rgba(0,0,0,0.2);
-}
-a{
-    font-weight:600;
-}
-
-`
-const CustomClose = styled(CloseIcon)`
-cursor:pointer;
-`
-const CloseWrapper = styled.div`
-display:flex;
-justify-content:flex-end;
-
-`
-const Grow = styled.p`
-background:transparent;
-transition : 0.5s;
-:hover{
-    transform:translateY(-10px)
-};
-`
-const Profile = styled.div`
-display:flex;
-align-items:center;
-span{
-font-size:0.8rem;
-color:green;
-
-}
-button{
-padding:0 0.3rem;
-margin:0 0.8rem;
-background:red;
-color:#fff;
-border:none;
-height: 25px;
-cursor:pointer;
-border-radius:0.2rem;
-:hover{
-    background:transparent;
-    color:green;
-    border:1px solid red;
-}
-}
-div{
-    display:flex;
-    flex-direction:column;
-    justify-contents:center;
-    margin:0 0.5rem;
-   
-}
-@media (max-width: 768px){
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    place-items:center;
-}
-`
-
-const SubProfile = styled.div`
-position:absolute;
-top:3rem;
-color:green;
-background:#fff;
-ul{
-    display:flex;
-    flex-direction:column;
-    color:green;
-    margin-top:2rem;
-    li{
-        margin:0.3rem;
-        padding:0.2rem;
-        :hover{
-            text-decoration:underline;
-            color:green;
-        }
-    }
-}
-`
 
 
