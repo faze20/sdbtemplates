@@ -6,7 +6,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CloseIcon from '@material-ui/icons/Close';
 import { selectNavs } from '../features/navheads/navSlice';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom'
+import { Link , useLocation } from 'react-router-dom'
+
 import '../Header.css'
   
 
@@ -16,6 +17,9 @@ function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [showSubProfileMenu, setShowSubProfileMenu] = useState(false);
+    const location = useLocation();
+    const path =location.pathname.replace('/', '')
+
 
     const[ user , setUser ] = useState('')
     const navs = useSelector(selectNavs)
@@ -52,6 +56,10 @@ function Header() {
         setShowSubProfileMenu(prev => !prev)
     }
 
+    const showOPenClose = ()=>{
+        setBurgerStatus(prev => !prev)
+    }
+
     return (
        
         <div className='header_container' >
@@ -61,7 +69,7 @@ function Header() {
 
             <div className='header_menu'>
                 {navs && navs.map((car,index)=> (
-                      <Link key={index} to= {`/${car}`}>
+                      <Link className={path === `${car}` ? 'header_link' : ''} key={index} to= {`/${car}`}>
                            { car} 
                       </Link> 
                 ))}
@@ -69,11 +77,11 @@ function Header() {
            
 
             <div className='header_rightmenu'>
-                <Link to="/quote">
+                <Link className={path === 'quote' ? 'header_link' : ''} to="/quote">
                    Quote 
                 </Link>  
                 {isLoggedIn ?  (
-                    <Link to="/account">
+                    <Link className={path === 'account' ? 'header_link' : ''} to="/account">
                        Account
                     </Link>
                 ) 
@@ -101,16 +109,25 @@ function Header() {
                 )
                 }
 
-                <MenuIcon  onClick={()=> setBurgerStatus(true)} />
-
-                {/* <CustomMenu /> */}
-            </div>
-
-            <div className='header_burger' show={burgerStatus}>
-                <div className='header_wrapper'>
-                 < CloseIcon onClick={()=> setBurgerStatus(false)} />
+                <div className="open_close">
+                    {
+                        burgerStatus ?
+                        < CloseIcon onClick={()=> showOPenClose()} />
+                        : 
+                        <MenuIcon  onClick={()=> showOPenClose()} />
+                    }
 
                 </div>
+
+
+
+            </div>
+
+            {
+                burgerStatus &&
+
+            <div className='header_burger' >
+                
                 {navs && navs.map((car,index)=> (
                     <li key={index} > 
                         <Link to= {`/${car}`}>
@@ -131,6 +148,7 @@ function Header() {
                 </ul>
 
             </div>
+             }
 
 
            
@@ -139,30 +157,5 @@ function Header() {
 }
 
 export default Header
-
-// const BurgerNav = styled.div`
-// position:fixed;
-// top:0;
-// bottom:0;
-// right:0;
-// background:white;
-// width:300px;
-// z-index:10;
-// padding:20px;
-// display:flex;
-// flex-direction:column;
-// text-align:start;
-// transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
-// transition: transform 0.2s ;
-// li{
-//     padding: 15px 0;
-//     border-bottom:1px solid rgba(0,0,0,0.2);
-// }
-// a{
-//     font-weight:600;
-// }
-
-// `
-
 
 

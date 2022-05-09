@@ -238,6 +238,7 @@ function Applications() {
                         <div className="right_items">
                             <h2>UI/UX DESIGN AND PROTOTYPING </h2>
                             <div className="rightitem_content">
+                            <img loading="lazy" src="proto.png" alt="performance" />
                         <p>
                         Our designers will develop wireframes of the app key
                          screens in Figma. When the design is approved we 
@@ -245,7 +246,7 @@ function Applications() {
                           all the graphic materials for the development team.
                            
                         </p>
-                            <img loading="lazy" src="proto.png" alt="performance" />
+                           
 
                             
 
@@ -274,12 +275,13 @@ function Applications() {
                         <div className="right_items">
                             <h2>PRODUCT DEMO </h2>
                             <div className="rightitem_content">
+                            <img loading="lazy" src="soucrcode.png" alt="performance" />
                         <p>
                         When the final version is ready, the Project Manager will
                          conduct a demo presentation of the developed application.
                            
                         </p>
-                            <img loading="lazy" src="soucrcode.png" alt="performance" />
+                            
 
                             
 
@@ -309,6 +311,7 @@ function Applications() {
                         <div className="right_items">
                             <h2>APP PUBLISHING </h2>
                             <div className="rightitem_content">
+                            <img loading="lazy" src="publish.png" alt="performance" />
                         <p>
                         Everything is set! Accounts are configured, builds are uploaded 
                         and reviewed. Congrats! But we are not a goodbye. We will be in
@@ -316,7 +319,7 @@ function Applications() {
 
                            
                         </p>
-                            <img loading="lazy" src="publish.png" alt="performance" />
+                           
 
                             
 

@@ -64,7 +64,14 @@ function Softwares() {
         <div className="websites_contents">
             <div className="website_divider"></div>
            
-            <header  style= {{ background :"url('apps.png')   " } }>
+            <header  
+            style= {{ background :"url('apps.png')",
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+
+                } }
+            >
                 <div className="website_header">
                     <div className="softwareheader_content">
                         <div className="side_one">
@@ -194,6 +201,7 @@ function Softwares() {
             <div className="right_items">
                 <h2><span className='softwareheader_span'>Software </span>  QA  </h2>
              <div className="rightitem_content">
+              <img src="quality.png" alt="performance" /> 
                 <p>
                 We work with you to assess your current Quality Assurance
                  processes and help you define and build the best QA strategy
@@ -205,7 +213,7 @@ function Softwares() {
                       design, development, deployment and maintenance.
                     
                 </p>
-                <img src="quality.png" alt="performance" />
+               
                 </div>
             </div>
 
@@ -228,6 +236,7 @@ function Softwares() {
             <div className="right_items">
                 <h2>Test <span className='softwareheader_span'> Automation </span>  </h2>
              <div className="rightitem_content">
+                <img src="test automation.png" alt="performance" />
                 <p>
                 We help you identify the best areas for testing automation 
                 and develop the scripts to enable and automate a script 
@@ -236,7 +245,7 @@ function Softwares() {
                   it in your development lifecycle.
                     
                 </p>
-                <img src="test automation.png" alt="performance" />
+               
                 </div>
             </div>
                 

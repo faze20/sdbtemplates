@@ -237,27 +237,6 @@ height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .contact_header {
-    flex-direction: column;
-  }
-  .contact_input {
-    flex-direction: column;
-    margin: 0;
-  }
-  .contact_input input {
-    width: 100%;
-    margin: 5px;
-  }
-  .contact_form button {
-    width: 100%;
-    margin: 5px;
-    font-size: 12px;
-  }
-  .contact_form textarea {
-    width: 100%;
-    margin: 5px;
-  }
- 
   .description {
     font-size: 1.3rem;
     margin: 5px;
@@ -275,13 +254,6 @@ height: 60vh;
   }
   
  
-  .contact_form {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: whitesmoke;
-
-  }
   .footer_group {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -78,7 +78,13 @@ function Websites() {
        
 
             
-            <header  style= {{ background :"url('sdbnew3.png') no-repeat center center fixed" } } >
+            <header 
+             style= {{ background :"url('sdbnew3.png') no-repeat center center fixed" ,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                 } } 
+            >
                 <div className="website_header">
                         <div className="websiteheader_content">
                             <Fade right>

@@ -1,11 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 import Section from './Section'
 
 
 function Home() {
     return (
-        <Container>
+        <div>
             <Section
                 title="Custom Software"
                 description="One Stop Shop for your Scalable Software Solutions"
@@ -60,12 +59,9 @@ function Home() {
                 rightBtnText="Keyword Analysis"
                 color = 'white'            
             />
-        </Container>
+        </div>
     )
 }
 
 export default Home
 
-const Container = styled.div`
-
-`
