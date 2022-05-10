@@ -40,7 +40,11 @@ function Softwares() {
     useEffect(() => {
         document.head.innerHTML+=`
         <meta name='Software Engineering' content='scalable programming softwares'/>
-        <meta name='software solutions' content='software development and engineering'/>
+        <meta
+        name="description"
+        content="Our software engineers Team will design, implement and deploy complex
+         enterprise solutions. Our custom software will be developed with the technology stack best suited..."
+      />
         `
         document.title = "Software";
 
@@ -51,14 +55,6 @@ function Softwares() {
         );
         return () => clearTimeout(intervalId);
       }, []);
-
-    //   useEffect(() => {
-    //     document.head.innerHTML+=`
-    //     <meta name='Data' content='Data Migration'/>
-    //     <meta name='database' content='Big data'/>
-    //     `
-    //     document.title = "Mobile Apps";
-    //   }, []);
     return (
         <div className="websites_container">
         <div className="websites_contents">

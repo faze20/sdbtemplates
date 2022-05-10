@@ -102,22 +102,22 @@
     bottom: 0;
     right: 0;
     background: #fff;
-    width: 20rem;
+    width: 16rem;
     z-index: 10;
-    padding: .5rem 2rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     text-align: start;
 }
 .header_burger li{
-    padding: 1rem 0 1rem 0.5rem ;
+    padding: 0.7rem 0 0.7rem 0.5rem ;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     transition: border-left 0.3s ease-in;}
 
 .header_burger li:hover{
     border-left: 5px solid #fe7448;
 }
-/* .......SECTION Stles......................... */
+/* .......SECTION Styles......................... */
 .section_wrap{
     width: 100vw;
     height: 100vh;
@@ -132,12 +132,12 @@
 }
 .section_buttons{
     display:flex;
-flex-direction:column;
-align-items:center;
+    flex-direction:column;
+    align-items:center;
 }
 .section_buttongroup{
     display:flex;
-margin-bottom:30px;
+    margin-bottom:30px;
 }
 .section_leftbutton,
 .section_rightbuttons{
@@ -172,9 +172,9 @@ margin-bottom:30px;
 }
 .down_arrow{
     margin-top:20px;
-height:40px;
-animation: animateDown infinite 1.5s;
-overflow-x: hidden;
+    height:40px;
+    animation: animateDown infinite 1.5s;
+    overflow-x: hidden;
 }
 @media (max-width: 768px){
     .header_menu{
@@ -189,5 +189,8 @@ overflow-x: hidden;
     /* ........section style...........section */
     .section_buttongroup{
         flex-direction: column;
+    }
+    .section_itemtext{
+        padding-top: 5rem;
     }
 }

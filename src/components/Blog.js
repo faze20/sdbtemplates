@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -10,6 +10,12 @@ import '../Blog.css';
 
 
 function Blog() {
+    useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='blog' content='article reports'/>
+        `
+        document.title = "Blog";
+      }, []);
     return (
         <div className="blog_container">
              <div className="blogSubheader">

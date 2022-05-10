@@ -1,8 +1,25 @@
-import React from 'react'
+import React , {  useEffect} from 'react'
 import Section from './Section'
 
 
 function Home() {
+    
+    useEffect(() => {
+        document.head.innerHTML+=`
+        <meta name='Software Engineering' content='scalable programming softwares'/>
+        <meta
+        name="description"
+        content="Mclien Communications Nig ltd. | Computer Software & Services 
+        | Technology Consultant | Research & Development | Software Engineering 
+        | Engineering | Web Site Design |.  
+        "
+      />
+        `
+        document.title = "Software Developers - Dedicated Software Development";
+
+      
+      }, []);
+
     return (
         <div>
             <Section
