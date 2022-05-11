@@ -10,9 +10,14 @@ function Debugging() {
     useEffect(() => {
         document.head.innerHTML+=`
         <meta name='debug' content='debug'/>
-        <meta name='debug' content='debug'/>
+        <meta
+        name="description"
+        content="Software dev bytes offers top Debugging developers, programmers, and software engineers on 
+        ... Top companies and start-ups choose Software Dev Bytes Debugging freelancers for their production bug issues"
+      />
+      <meta name = "title" content = "HTTP Debugger - Debug HTTP API Calls to Back-ends" />
         `
-        document.title = "Debugging";
+        document.title = "Real-Time Debugging Systems - Debugging Made Easy";
       }, []);
     
     return (
@@ -36,8 +41,8 @@ function Debugging() {
 
                     <Fade bottom>
                         <div className="submainsection_list">
-                            <li> <Link   to="/contact">  Softwares </Link> </li>
-                            <li> <Link   to="/contact">  Developers</Link> </li>
+                            <li> <Link   to="/software">  Softwares </Link> </li>
+                            <li> <Link   to="/App's">  Developers</Link> </li>
                             <li> <Link   to="/contact">  Custom Codes </Link> </li>
                         </div>
                     </Fade>
@@ -49,11 +54,14 @@ function Debugging() {
                     </div>
 
                 </div>
-
+ 
             </div>
             
         </div>
             <div className="mainsection_otherscontainer">
+            <div className="fixed_link">
+                    <Link to='/contact'>Get In Touch</Link>
+                </div>
                 <div className="mainsub_contents">
                 <div className="mainsub_items">
                         <img src="step1.png" alt="online classes" />

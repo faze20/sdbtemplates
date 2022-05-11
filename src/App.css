@@ -78,6 +78,20 @@ height: 60vh;
   margin-right: 5px;
 }
 /*..................... debuggin  and other styling */
+.fixed_link{
+  position: fixed;
+  right: -2.5rem;
+  top: 50%;
+  transform: rotate(90deg);
+  cursor: pointer;
+  background-color: green;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+}
+.fixed_link a{
+  color: #fff;
+
+}
 .mainsection_container,
 .aboutcontext_container
 {
@@ -105,7 +119,10 @@ height: 60vh;
   display: table; 
   margin: 0 auto;
 }
-.submainsection_list > li {
+.submainsection_list > li ,
+.description a,
+.description_nft a
+{
   border: 1px solid #dd840d;
   padding: 0.5rem 2rem;
   margin: 0.5rem 0;
@@ -114,7 +131,9 @@ height: 60vh;
   width: 11rem;
 }
 .submainsection_list > li:hover ,
-.description a:hover{
+.description a:hover,
+.description_nft a:hover
+{
   background: #dd840d;
   /* transform: translateY(-10px); */
 }
@@ -127,6 +146,7 @@ height: 60vh;
 }
 .mainsection_otherscontainer{
   margin: 2rem 1rem 0 1rem;
+  position: relative;
 }
 .mainsub_items{
   display: flex;
@@ -147,26 +167,37 @@ height: 60vh;
   justify-content: space-between;
   padding: 0.2rem 2rem 0 2rem;
 }
-.item_description h2{
+.item_description h2,
+.item_description_nft h2{
   margin-bottom: 2rem;
   font-size: 3rem;
 }
 .description{
   max-width: 15rem;
 }
-.description h3{
+.item_description_nft{
+  margin-left: 4rem;
+}
+.description h3,
+.description_nft h3{
   margin-bottom: 2rem;
   text-decoration: underline;
   text-decoration-color: #dd840d;
 }
-.description p{
+.description p,
+.description_nft p{
   line-height: 2rem;
   margin-bottom: 1rem;
 }
-.description a{
-  border: 1px solid #dd840d;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+.description_nft div{
+  display: flex;
+}
+.description_nft div >p{
+  margin: 0.5rem 0.2rem;
+}
+.nft img{
+  margin-top: 3rem;
+  border-radius: 1rem;
 }
 /*..................... debuggin  and other styling */
 
@@ -334,6 +365,17 @@ height: 60vh;
   .mainsub_items,
   .mainsub_otheritems{
     flex-direction: column;
+  }
+  .item_description_nft{
+    margin: 0;
+  }
+  .item_description h2,
+  .item_description_nft h2{
+    font-size: 1.8rem;
+  }
+  .description_nft div{
+    flex-direction: column;
+    width: 100%;
   }
 
 

@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import PinterestIcon from '@material-ui/icons/Pinterest';
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import '../Blog.css';
 
@@ -23,31 +22,36 @@ function Blog() {
                     <span>Blog &#8594; </span> <span>Category &#8594;</span> <span>Title</span>
                  </div>
                  <div className="social_media">
-                     <ul>
-                         <li><FacebookIcon /></li>
-                         <li><TwitterIcon /></li>
-                         <li><InstagramIcon /></li>
-                         <li><PinterestIcon /></li>
+                     <ul className='socialmedia_ul'>
+                         <li><a href='https://www.facebook.com/badmos.hakoredeh'><FacebookIcon /></a></li>
+                         <li><a href="https://www.twitter.com/afeez20"><TwitterIcon /></a></li>
+                         <li><a href="https://www.instagram.com/softwaredev__bytes"><InstagramIcon /></a></li>
+                         <li><a href="https://www.linkedin.com/in/afeez-badmos-19962333"><LinkedInIcon/></a></li>
                      </ul>
 
                  </div>
              </div>
 
-
-                <div className="blog_app"  >
+            <div className="blog_app"  >
                    <div className="header">
-                       <div className="backdrop" style= {{ background :"url('blogbackground.jpg') center " } }>
+                       <div className="backdrop" style= {{ background :"url('blogbackground.jpg') center center " ,
+                            backgroundPosition: 'center',
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            
+                            } }>
                             <div className="blog_textcontent">
                                 <h2>
-                                    Hello! Welcome to Software Dev Bytes Blog With Creative Contents and
-                                    Use Cases.
+                                    Hello! Welcome to Software Dev Bytes Blog With
+                                     Creative Contents and multiple use cases.
+                                   
                                 </h2>
                             </div>
 
                        </div>
                        <div className="side_backdrop">
                            <div className="news_list">
-                               <h2>LATEST STORIES</h2>
+                               <h2 className='newlist_h2'><span className='created_by'>LATEST</span> STORIES</h2>
                                <ul className='stories_list'>
                                    <li className='list_item'>
                                        <h4>MOMS</h4>
@@ -70,8 +74,11 @@ function Blog() {
                            </div>
                        </div>
                    </div>
+
                     <div className="blog_gallery">
+                        <h2>OUR <span className='created_by'> ARTICLES</span></h2>
                         <div className="blog_sectionArena">
+                            
                             <div className="blog_sectionContent">
                                 
                                 <div className="blog_image">
@@ -80,7 +87,7 @@ function Blog() {
                                         
                                     </div>
                                     <h4>Websites Ethics</h4> 
-                                    <img src="laptop.png" alt="laptop" />
+                                    <img src="laptop.jpg" alt="laptop" />
                                 </div>
                                 <h3>Best Web Practices</h3>
                                 <div className="blog_description">
@@ -121,7 +128,7 @@ function Blog() {
                             </div>
                         </div>
                         <div className="blogItemlist_container">
-                        <h2> Latest Articles </h2>
+                        <h2> <span className='created_by'>LATEST</span> ARTICLES </h2>
 
             <div className="blogItemList">
                        
@@ -134,7 +141,7 @@ function Blog() {
                         <img src="shopping.jpg" alt="online shopping" />
                     </Link>
                         <p>
-                        Whether you’ve been running an online store for 6 months or 6+ years, it’s a never-ending battle to win conversions.
+                        Whether you&apos;ve been running an online store for 6 months or 6+ years, it&apos;s a never-ending battle to win conversions.
                         For more Conversion, Develop a Loyalty Program, Focus on Building Consumer Trust, Don’t Invest in Paid Ads Too Early,
                         Answer All Questions on Every Platform, Over-Deliver in All You Do...more
 
@@ -143,7 +150,7 @@ function Blog() {
                         
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -161,7 +168,7 @@ function Blog() {
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -178,7 +185,7 @@ function Blog() {
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -194,7 +201,7 @@ function Blog() {
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -210,7 +217,7 @@ function Blog() {
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -226,7 +233,7 @@ function Blog() {
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span> </p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
@@ -237,17 +244,17 @@ function Blog() {
                     </Link>
                         <p>
                            Custodial Wallet or Hosted Wallet :it is when third party keep your crypto for you The main benefit of
-                            keeping your crypto in a hosted wallet is if you forget your password, you won’t lose your crypto. A 
-                            drawback to a hosted wallet is you can’t access everything crypto has to offer. However, that may
+                            keeping your crypto in a hosted wallet is if you forget your password, you won&apos;t lose your crypto. A 
+                            drawback to a hosted wallet is you can&apos;t access everything crypto has to offer. However, that may
                              change as hosted wallets start to support more features.
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div>
                 <div className="blogItemList_content">
-                <h4>How to Create N F T's</h4>
+                <h4>How to Create N F T&apos;s</h4>
                     <Link to="/">
                        
                         <img src="artificial Intelligence.jpg" alt="ai" />
@@ -255,18 +262,18 @@ function Blog() {
                         <p>
                         Before you start, you will need to decide on which blockchain you want to issue your NFTs.Each blockchain has
                          its own separate NFT token standard, compatible wallet services and marketplaces.Since Ethereum has the largest
-                          NFT ecosystem, here’s what you’ll need to mint your own NFT artwork, music or video on the Ethereum blockchain:..more
+                          NFT ecosystem, here&apos;s what you&apos;ll need to mint your own NFT artwork, music or video on the Ethereum blockchain:..more
                         </p>
                         <div className="blog_created">
                                     <p>2/09/2021</p>
-                                    <p>By Faze59</p>
+                                    <p>By <span className='created_by'>Faze59</span></p>
                                 </div>
                 </div></div> </div>
            
            
               
             </div>
-             </div>
+            </div>
 
         </div>
          

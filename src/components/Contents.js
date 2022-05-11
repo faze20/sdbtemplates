@@ -48,6 +48,9 @@ function Contents() {
                 
             </div>
             <div className="mainsection_otherscontainer">
+            <div className="fixed_link">
+                    <Link to='/contact'>Get In Touch</Link>
+                </div>
             <div className="mainsub_contents">
             <div className="mainsub_items">
                         <img src="step1.png" alt="online classes" />
