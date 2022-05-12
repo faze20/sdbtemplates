@@ -166,6 +166,7 @@ height: 60vh;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem 2rem 0 2rem;
+  align-items: center;
 }
 .item_description h2,
 .item_description_nft h2{
@@ -199,6 +200,44 @@ height: 60vh;
   margin-top: 3rem;
   border-radius: 1rem;
 }
+/* content fancy tabs */
+.fancy_tabs{
+  display: flex;
+  align-items: center;
+}
+.fancytab_show{
+  display: none;
+}
+.fancytab_noshow{
+  display: block;
+  border-left: 2px solid green;
+  padding: 0 1rem 1rem 2rem;
+  margin-bottom: 1rem;
+}
+.fancylist_items{
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.fancy_item{
+  display: flex;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+  width: 100%;
+}
+.fancylist_container{
+  margin: 0 1rem;
+  width: 100%;
+}
+.fancytabs_image img{
+  width: 20rem;
+  border-radius: 1rem;
+}
+.content_margin{
+  margin: 6rem 0 ;
+}
+/* content fancy tabs */
+
 /*..................... debuggin  and other styling */
 
 /* ABout us section styles............................. */
@@ -376,6 +415,9 @@ height: 60vh;
   .description_nft div{
     flex-direction: column;
     width: 100%;
+  }
+  .fancy_tabs{
+    flex-direction: column;
   }
 
 

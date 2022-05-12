@@ -27,7 +27,7 @@ function Blockchain() {
                 </p>
                 <Fade bottom>
                 <div className="submainsection_list">
-                    <li> <Link   to="/contact">  For Business</Link> </li>
+                    <li> <Link   to="/contact"> Join Discord</Link> </li>
                     <li> <Link   to="/contact">   Developers</Link> </li>
                     <li> <Link   to="/contact">  For Miners</Link> </li>
                 </div>
