@@ -135,7 +135,6 @@ height: 60vh;
 .description_nft a:hover
 {
   background: #dd840d;
-  /* transform: translateY(-10px); */
 }
 .submainsection_link{
   margin-top: 2rem;
@@ -155,7 +154,6 @@ height: 60vh;
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
-
 }
 .mainsub_items img,
 .mainsub_otheritems img{
@@ -200,6 +198,23 @@ height: 60vh;
   margin-top: 3rem;
   border-radius: 1rem;
 }
+.displayPrice{
+  margin-left: 1rem;
+  outline: none;
+  border: 1px solid #dd840d;
+  background-color: #dd840d;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: 0.5s;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.displayPrice:hover{
+  background-color: #fff;
+  color: #000;
+}
+
 /* content fancy tabs */
 .fancy_tabs{
   display: flex;
@@ -236,7 +251,239 @@ height: 60vh;
 .content_margin{
   margin: 6rem 0 ;
 }
-/* content fancy tabs */
+/* content fancy tabs ..........................*/
+/* SEO pricing styling */
+.seopricing_content{
+  margin: 5rem;
+}
+.seopricing_content h2{
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.seolabel,
+.seo_top{
+  display: flex;
+  justify-content: space-between;
+}
+.seotop_left{
+  background:#f7f7f7 ;
+  padding: 2rem;
+  border-radius: .5rem;
+  flex: 0.8;
+}
+.seotop_left h2{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.seotop_left p{
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+.seolabel{
+  margin-bottom: 2rem;
+}
+.seolabel p{
+  margin: 0 1rem;
+}
+.seolabel_orange{
+  border:6px solid #dd840d;
+  border-radius: 50%;
+}
+.seolabel_green{
+  border:6px solid green;
+  border-radius: 50%;
+}
+.pie_one{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-image: conic-gradient(#dd840d 87%, green 13%);
+}
+.priceelement_header{
+  background:#f7f7f7 ;
+  margin: 3rem 0 ;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.priceelement_header h3{
+  margin: 2rem 0;
+}
+.prices_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.priceelement{
+  background:#f7f7f7 ;
+  padding: 3rem 1rem 1rem 1rem;
+  margin: 0 1em;
+  border-radius: 1rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+
+
+}
+.price_sticker {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  margin-left: -.5em;
+  z-index: 1;
+  display: inline-block;
+  padding: .25em 1em;
+  background: green none repeat scroll 0% 0%;
+  color: #FFF;
+  font: 1em "FBold", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
+}
+.price_sticker:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 0;
+  border-style: solid;
+  border-width: 0 .5em .5em 0;
+  border-color: transparent #f00 transparent transparent;
+}
+.priceelement  h1{
+  font-size: 3rem;
+  color: #dd840d;
+
+}
+.priceelement_li{
+  margin: 1rem 0;
+  border-bottom: 1px solid gray;
+  padding: 1rem 0;
+}
+.priceelement_li span{
+  font-style: bold;
+  font-size: 1.5rem;
+}
+.priceelement button{
+  outline: none;
+  border: 2px solid #dd840d;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #dd840d;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.priceelement button:hover{
+  background-color: aliceblue;
+  color: #212238;
+}
+.otherseo_services{
+  margin: 4rem 2rem 0 2rem;
+}
+.seoFaq_header{
+  padding: 1rem;
+  text-align: center;
+}
+.seoFaq_header h2{
+  font-size: 2rem;
+}
+.seoFaq_header p{
+  margin: 2rem 1.5rem ;
+  line-height: 1.8rem;
+
+}
+.faqs_red,
+.faqs_blue,
+.faqs_yellow{
+  padding: 1rem;
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.faqs_red{
+  background-color: red;
+}
+.faqs_yellow{
+  background-color: #dd840d;
+}
+.faqs_blue{
+  background-color: blue;
+}
+.seoFaqs_item{
+  border-radius: 1rem;
+  background: #f7f7f7;
+}
+.seoFaqs_item p{
+  margin: 1rem;
+  line-height: 1.5rem;
+}
+.seoFaqs_content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+/* SEO pricing styling ........................*/
+/* funnel form styling */
+.funnel_form{
+  background:#1abc9c ;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.funnelform_container h4{
+  text-align: center;
+  margin: 2rem 0;
+}
+.funnelform_items{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.f_item{
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+.f_item label{
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #f7f7f7;
+}
+.f_item input{
+  padding:0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+.f_item button{
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: #dd840d;
+  border: 1px solid #dd840d;
+  outline: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.f_item button:hover{
+  background: #f7f7f7;
+  color: #212238;
+}
+.funnelform_newsletter p{
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.funnelform_checkboxes input{
+  margin: 0 1rem;
+}
+/* funnel form styling */
+
 
 /*..................... debuggin  and other styling */
 
@@ -402,7 +649,11 @@ height: 60vh;
     margin: 0 1rem;
   }
   .mainsub_items,
-  .mainsub_otheritems{
+  .mainsub_otheritems,
+   .seo_top,
+  .seolabel,
+  .fancy_tabs,
+  .funnelform_items{
     flex-direction: column;
   }
   .item_description_nft{
@@ -416,11 +667,30 @@ height: 60vh;
     flex-direction: column;
     width: 100%;
   }
-  .fancy_tabs{
-    flex-direction: column;
+
+/* seo pricing styling ........................*/
+  .seopricing_content{
+    margin: 2rem 1rem 0 1rem;
+  }
+  .seotop_left{
+    margin-bottom: 1rem;
+  }
+  .seolabel p{
+    margin: 1rem 0;
+  }
+  .prices_container,
+  .seoFaqs_content{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
   }
 
+ 
 
+
+
+
+
+/* seo pricing styling ........................*/
 
 
       /* ...............debugging and others styling */

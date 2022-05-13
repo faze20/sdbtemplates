@@ -2,6 +2,8 @@ import React , {useEffect} from 'react'
 import '../App.css'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
+import Funnel from './Funnel'
+
 
 function Blockchain() {
     useEffect(() => {
@@ -202,6 +204,9 @@ function Blockchain() {
                    
 
                 </div>
+                <Funnel
+                heading = 'More Nft development awaits... Fill out the form to get started!'
+                />
         </div>
 
 

@@ -141,7 +141,7 @@ function Header() {
                 <li> <Link  to="/about">  Who We Are</Link> </li>
                 <li> <Link   to="/debug">  Refactoring |Debugging </Link> </li>
                 <li> <Link   to="/contents"> Content Management Systems  </Link> </li> 
-                <li> <Link   to="/ecommerce">   E-commerce | SEO </Link> </li>
+                <li> <Link   to="/ecommerce"> SEO | E-commerce </Link> </li>
                 <li> <Link   to="/portfolio">  Portfolios</Link> </li>
                 <li> <Link  to="/blockchain">  Blockchain </Link> </li>
                 <li> <Link  to="/blog">  Blog </Link> </li>

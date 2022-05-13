@@ -1,13 +1,11 @@
 .pricing_container {
   margin: 4.5rem 0.5rem 0 0.3rem;
-  /* padding: 0.5rem; */
 }
 .pricing_contents {
   margin: 4rem;
 }
 .pricing_header {
   margin: 1rem 0;
-  /* text-align: center; */
 }
 .pricing_header h1 {
   margin: 8rem 2rem 0 0rem;
@@ -44,7 +42,6 @@ thead th:nth-child(3) {
   width: 15%;
   color: rgba(233, 92, 27, 0.926);
 }
-
 thead th:nth-child(4) {
   width: 15%;
   color: rgba(115, 16, 228, 0.919);
@@ -59,7 +56,6 @@ thead th:nth-child(5) {
 .green > svg {
   color: green;
 }
-
 tr {
   border-bottom: 1px solid #cd9b0e;
 }
@@ -101,7 +97,6 @@ tbody td {
   cursor: pointer;
 }
 .button_row button:hover {
-  /* transform: scaleY(-50%); */
   background: transparent;
   color: orange;
   letter-spacing: 2px;
