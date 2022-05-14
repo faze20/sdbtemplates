@@ -18,7 +18,7 @@ import Debugging from './components/Debugging';
 import Portfolio from './components/Portfolio';
 import Contents from './components/Contents';
 import About from './components/About';
-import Blog from './components/Blog';
+import BlogHome from './components/Bloghome';
 import Utilities from './components/Utilities';
 import TermsandConditions from './components/TermsandConditions';
 import Privacypolicy from './components/Privacypolicy';
@@ -30,6 +30,7 @@ import Donation from './components/donation';
 import Pricing from './components/Pricing';
 import Payment from './components/Payment';
 import Error404 from './components/Error404';
+import Blog from './components/Blog';
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
                 <Route path="/account"  element={ <Account /> } />
                 <Route path="/quote"  element={ <Quote />} />
                 <Route path="/blockchain"  element={ <Blockchain /> } />
-                <Route path="/blog"  element={ <Blog /> } />
+                <Route path="/blog"  element={ <BlogHome /> } />
                 <Route path="/ecommerce"  element={<Ecommerce /> } />
                 <Route path="/debug"  element={<Debugging /> } />
                 <Route path="/portfolio" element={ <Portfolio /> } />
@@ -63,6 +64,7 @@ function App() {
                 <Route path="/payment"  element={<Payment /> } />
                 <Route path="/"  element={<Home />} />
                 <Route path="*" element={<Error404 />} />
+                <Route path="blogs/:id"  element={ <Blog /> } />
             </Routes>
             <Footer />
         </Router>

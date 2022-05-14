@@ -369,6 +369,7 @@ function Ecommerce() {
                 </div>
                 <Funnel
                 heading='More traffic awaits... Fill out the form to get started!'
+                buttonText= 'GET A FREE SEO ANALYSIS'
                 />
             </div>
         </>

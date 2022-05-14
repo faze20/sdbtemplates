@@ -206,6 +206,7 @@ function Blockchain() {
                 </div>
                 <Funnel
                 heading = 'More Nft development awaits... Fill out the form to get started!'
+                buttonText='TALK TO A DEVELOPER'
                 />
         </div>
 

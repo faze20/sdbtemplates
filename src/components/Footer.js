@@ -9,8 +9,7 @@ import PinterestIcon from '@material-ui/icons/Pinterest';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { Link } from 'react-router-dom'
 import {useLocation} from 'react-router-dom';
-
-
+import '../App.css'
 
 function Footer() {
     const location = useLocation();
