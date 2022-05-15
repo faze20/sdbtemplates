@@ -18,11 +18,6 @@ const transitionStyles = {
   exiting: { opacity: 0 },
   exited: { opacity: 0 }
 };
-
-
-
-
-
 function Applications() {
     const TEXTS = [
         "Cross Platform Mobile development ",
@@ -40,7 +35,6 @@ function Applications() {
     const [inProp, setInProp] =  React.useState(false);
     const navigate = useNavigate();
 
-
     useEffect(() => {
         document.head.innerHTML+=`
         <meta name='Data' content='Data Migration'/>
@@ -54,14 +48,7 @@ function Applications() {
         );
         return () => clearTimeout(intervalId);
       }, []);
-
-    //   useEffect(() => {
-    //     document.head.innerHTML+=`
-    //     <meta name='Data' content='Data Migration'/>
-    //     <meta name='database' content='Big data'/>
-    //     `
-    //     document.title = "Mobile Apps";
-    //   }, []);
+    
     return (
         <div className="websites_container">
              <div className="websites_contents">
@@ -79,10 +66,6 @@ function Applications() {
                         </div>
                         )}
                     </Transition>
-                    {/* <TextTransition
-                        text={ TEXTS[index % TEXTS.length] }
-                        springConfig={ presets.gentle }
-                    /> */}
                     <div className="pricing_button">
                         <button onClick={()=> navigate("/pricing")}>Pricing</button>
                     </div>
@@ -110,9 +93,7 @@ function Applications() {
                             </Link>
                         </li>
                     </ul>
-                             
             </div>
-            
             <section className='app_header'>
                  <div className="website_header">
                        <div className='video_content'>

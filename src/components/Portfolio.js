@@ -39,11 +39,11 @@ function Portfolio() {
     }
     const dropProfileMenu2 = ()=>{
         setShowItem2(prev => !prev)
-        setDisplayImage('portfolio4.png')
+        setDisplayImage('portfoli4.png')
     }
     const dropProfileMenu3 = ()=>{
         setShowItem3(prev => !prev)
-        setDisplayImage('portfolio15.png')
+        setDisplayImage('portfolio5.png')
     }
 
     const dropProfileMenu4 = ()=>{
@@ -69,7 +69,7 @@ function Portfolio() {
                     <Fade bottom>
                     <div className="submainsection_list">
                         <li> <Link   to="/contact">  Entrepreneurs</Link> </li>
-                        <li> <Link   to="/contact">  For Developers</Link> </li>
+                        <li> <Link   to="/contact">  Freelancers</Link> </li>
                         <li> <Link   to="/contact">  For Designers </Link> </li>
                     </div>
                     </Fade>

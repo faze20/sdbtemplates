@@ -80,21 +80,21 @@ function Utilities() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/ecommerce">
+                        <Link to="/contents">
                         <p > Youtube</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link to="/ecommerce">
+                        <Link to="/contents">
                             <p > Email</p>
                            
                         </Link>
 
                     </li>
                     <li>
-                        <Link to="/ecommerce">
+                        <Link to="/websites">
                         <p > Webtools</p>
                            
                         </Link>

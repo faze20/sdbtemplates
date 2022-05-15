@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react'
+import React , { useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -12,15 +12,12 @@ import blogDatas from '../data/blogData'
 
 function Blog() {
     const params = useParams();
-    const blogItem = blogDatas.find((blog)=> {
-        if(blog.id === params.id)
-            return blog ;
-    });
+    const blogItem = blogDatas[(parseInt(params.id)- 1)]
     useEffect(() => {
         document.head.innerHTML+=`
         <meta name='blog' content='article reports'/>
         `
-        document.title = "Blog";
+        document.title =`${blogItem.title}`;
       }, []);
       
     return (
@@ -48,30 +45,42 @@ function Blog() {
                         } }>
                         <div className="blog_textcontent">
                             <h2>
-                            5 Tips for Successful E-commerce store
+                                {blogItem.title}
                             </h2>
                         </div>
                     </div>
              </div>
-
-             <div className="blogItemList_content">
-                 {params.id}{blogItem}
-                    <h4>5 Tips for Successful E-commerce store</h4>
-                    {/* <Link to="/blogs/1">
-                        <img src="shopping.jpg" alt="online shopping" />
-                    </Link> */}
-                    <p>
-                    Whether you&apos;ve been running an online store for 6 months or 6+ years, it&apos;s a never-ending battle to win conversions.
-                    For more Conversion, Develop a Loyalty Program, Focus on Building Consumer Trust, Don’t Invest in Paid Ads Too Early,
-                    Answer All Questions on Every Platform, Over-Deliver in All You Do...more
-                    </p>
-                    <div className="blog_created">
-                        <p>2/09/2021</p>
-                        <p>By <span className='created_by'>Faze59</span></p>
+            <div className="blogging_container">
+                <div className="blogging_right">
+                    <div className="bloggingItem_content">
+                        <h2>{blogItem.title}</h2>
+                        <p>
+                                {blogItem.article}
+                        </p>
+                        <div className="blogging_created">
+                            <p>{blogItem.date}</p>
+                            <p>By <span className='created_by'>{blogItem.author}</span></p>
+                        </div>
                     </div>
                 </div>
+                <div className="blogging_left">
+                    <div className="blogging_advert">
+                        <div className="advert_content">
+                            <span>advert <br /> placeholder</span>
+                        </div>
+                        <div className="advert_content">
+                            <span>advert <br /> placeholder</span>
+                        </div>
+                        <div className="advert_content">
+                            <span>advert <br /> placeholder</span>
+                        </div>
+                        <div className="advert_content">
+                            <span>advert <br /> placeholder</span>
+                        </div>
+                    </div>
 
-
+                </div>
+            </div>
 
          </div>
     )

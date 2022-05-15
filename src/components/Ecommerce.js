@@ -286,7 +286,7 @@ function Ecommerce() {
                             <div className="seoFaq_header">
                                 <h2>Frequently Asked <span className='headin_span'> SEO Questions</span></h2>
                                 <p>
-                                Since 1999, we&apos;ve seen the SEO landscape transform from black hat
+                                Since early 20&apos;s, we&apos;ve seen the SEO landscape transform from black hat
                                  practices of keyword stuffing and buying backlinks to an emphasis
                                   on user experience &amp; content quality. With such a significant 
                                   change in the industry, you probably have questions &amp; concerns 

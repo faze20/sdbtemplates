@@ -19,7 +19,6 @@
   align-items: center;
   padding: 0 2rem;
   position: relative;
-
 }
 .overlay{
   position: absolute;
@@ -59,7 +58,6 @@
 .payment_portal{
   width: 100%;
   z-index: -1;
-
 }
 .payment_banner{
   display: flex;
@@ -76,11 +74,15 @@
   border: none;
   margin-left: 0.3rem;
   cursor: pointer;
-
+}
+.other_paymentmethod{
+  color: #dd840d;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .button_items {
     flex-direction: column;
+    height: auto;
   }
 
 }

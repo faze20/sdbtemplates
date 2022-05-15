@@ -35,7 +35,7 @@ export default function Pricing() {
         <div className="pricing_main">
           <p>
           At Software Dev Bytes, we assist companies of all sizes with their <Link to="/websites">Website Development</Link>
-           , <Link to="/utilities">Search Engine Optimization </Link>  and <Link to="/applications">Website Maintenance </Link> needs. To help 
+           , <Link to="/ecommerce">Search Engine Optimization </Link>  and <Link to="/websites">Website Maintenance </Link> needs. To help 
            smaller businesses, we&#39;ve created a number of website design packages. We do this
             because we know how challenging it is for smaller companies to find a website developer
              that can serve their needs properly and responsively. Our packages allow small business

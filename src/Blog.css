@@ -142,6 +142,42 @@
 .blog_image {
   position: relative;
 }
+/* .......individual blog item........... */
+
+.bloggingItem_content{
+  margin: 0 2rem;
+}
+.bloggingItem_content h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.bloggingItem_content p{
+  line-height: 2rem;
+
+}
+.blogging_container{
+  display: flex;
+  margin: 2rem;
+}
+.blogging_right{
+  width: 100%;
+}
+.blogging_left{
+  flex: 0.2;
+}
+.advert_content{
+  width: 10rem;
+  height: 10rem;
+  background: gray;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.blogging_created{
+  display: flex;
+  justify-content: space-around;
+}
 @media (max-width: 768px) {
   .blogSubheader{
 padding: 1rem; 

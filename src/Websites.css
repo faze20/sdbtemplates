@@ -17,7 +17,8 @@
   justify-content: space-between;
   padding: 0.3rem 1rem;
 }
-.data_header{
+.data_header,
+.website_header{
   height: 100vh;
 }
 .website_divider {

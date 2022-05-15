@@ -33,7 +33,7 @@ const Payment = () => {
                     <div className='order_items'> <p>Description:</p> <span>{location.state.description}</span> </div>
                     <div className='order_items'><p>total: </p>$<span>{total }</span> </div>
                     <div className='payment_options'>
-                        <p>Other Payment options: </p>
+                        <p className='other_paymentmethod'>Other Payment options: </p>
                         <div className="cashapp">
                               <a href="https://cash.app/$AfeezBadmos">
                                     <span>
