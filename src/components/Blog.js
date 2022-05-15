@@ -4,10 +4,18 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useParams } from "react-router-dom";
 import '../Blog.css';
+import blogDatas from '../data/blogData'
+
 
 
 function Blog() {
+    const params = useParams();
+    const blogItem = blogDatas.find((blog)=> {
+        if(blog.id === params.id)
+            return blog ;
+    });
     useEffect(() => {
         document.head.innerHTML+=`
         <meta name='blog' content='article reports'/>
@@ -31,9 +39,8 @@ function Blog() {
 
                  </div>
              </div>
-
              <div className="header">
-                    <div className="backdrop" style= {{ background :"url('/blogbackground.jpg') center center " ,
+                    <div className="backdrop blogPage" style= {{ background :"url('/blogbackground.jpg') center center " ,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
@@ -41,14 +48,28 @@ function Blog() {
                         } }>
                         <div className="blog_textcontent">
                             <h2>
-                                Hello! Welcome to Software Dev Bytes Blog With
-                                    Creative Contents and multiple use cases.
-                                
+                            5 Tips for Successful E-commerce store
                             </h2>
                         </div>
-
                     </div>
-            </div>
+             </div>
+
+             <div className="blogItemList_content">
+                 {params.id}{blogItem}
+                    <h4>5 Tips for Successful E-commerce store</h4>
+                    {/* <Link to="/blogs/1">
+                        <img src="shopping.jpg" alt="online shopping" />
+                    </Link> */}
+                    <p>
+                    Whether you&apos;ve been running an online store for 6 months or 6+ years, it&apos;s a never-ending battle to win conversions.
+                    For more Conversion, Develop a Loyalty Program, Focus on Building Consumer Trust, Don’t Invest in Paid Ads Too Early,
+                    Answer All Questions on Every Platform, Over-Deliver in All You Do...more
+                    </p>
+                    <div className="blog_created">
+                        <p>2/09/2021</p>
+                        <p>By <span className='created_by'>Faze59</span></p>
+                    </div>
+                </div>
 
 
 

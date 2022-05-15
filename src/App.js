@@ -48,6 +48,7 @@ function App() {
                 <Route path="/account"  element={ <Account /> } />
                 <Route path="/quote"  element={ <Quote />} />
                 <Route path="/blockchain"  element={ <Blockchain /> } />
+                <Route path="/blogs/:id"  element={ <Blog /> } />
                 <Route path="/blog"  element={ <BlogHome /> } />
                 <Route path="/ecommerce"  element={<Ecommerce /> } />
                 <Route path="/debug"  element={<Debugging /> } />
@@ -64,7 +65,6 @@ function App() {
                 <Route path="/payment"  element={<Payment /> } />
                 <Route path="/"  element={<Home />} />
                 <Route path="*" element={<Error404 />} />
-                <Route path="blogs/:id"  element={ <Blog /> } />
             </Routes>
             <Footer />
         </Router>

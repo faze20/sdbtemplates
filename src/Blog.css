@@ -29,6 +29,9 @@
   justify-content: center;
   width: 100%;
 }
+.blogPage{
+  height: 50vh;
+}
 .blog_textcontent{
   background-color: #fff;
   padding: 1.2rem;

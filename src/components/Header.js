@@ -64,7 +64,7 @@ function Header() {
        
         <div className='header_container' >
            <Link to="/">
-                <img src="logonew3.png"  alt="Logo" />
+                <img src="/logonew3.png"  alt="Logo" />
             </Link>
 
             <div className='header_menu'>
