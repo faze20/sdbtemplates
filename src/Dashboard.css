@@ -1,12 +1,86 @@
 .container {
-  margin-top: 4.5rem;
+  margin-top: 1rem;
   padding-top: 1rem;
 }
 .utility_content {
-  opacity: 0.4;
-  padding: 6rem 6rem 3rem 6rem;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .utility_container {
   background: #fff;
   border-radius: 1rem;
+  padding: 1rem;
+}
+.utility_container h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.utility_item{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+.ut_item{
+  height: 15rem;
+  width: 15rem;
+  background-color: #fae1d4;
+  position: relative;
+  margin: 0 2rem;
+  border-radius: 1rem;
+}
+.one{
+  background-color: #212238;
+}
+.ut_button{
+  position: absolute;
+  top: 6em;
+  left: 2em;
+  right: 2em;
+  bottom: 6em;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.ut_button:hover{
+  background-color: green;
+  color: #f7f7f7;
+}
+.dashboard_nolog{
+  text-align: center;
+  background: #f7f7f7 ;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.nolog_content p{
+  margin: 2rem 0;
+}
+.nolog_content > a {
+  text-decoration: underline;
+}
+.dashboard_login{
+ margin: 2rem 0;
+ display: flex;
+ justify-content: space-around;
+}
+.dashboard_login a{
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dd840d;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  width: 100%;
+  background: #dd840d;
+  color: #fff;
+  transition: 0.2s; 
+   text-align: center;
+}
+.nolog_content button:hover,
+.dashboard_login a:hover{
+  background: #f7f7f7;
+  color: #000;
 }

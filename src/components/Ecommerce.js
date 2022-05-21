@@ -1,22 +1,17 @@
-import React , {useState, useEffect} from 'react'
+import React , {useState} from 'react'
+import {Helmet} from 'react-helmet'
 import '../App.css'
 import { Link } from 'react-router-dom'
 import {  useNavigate } from 'react-router-dom';
 import Funnel from './Funnel'
-
 import Fade from 'react-reveal/Fade'
-
-
 
 function Ecommerce() {
     const [showPricing, setSHowPricing] = useState(false)
-
     const displayPricing = ()=>{
         setSHowPricing(prev => !prev)
     }
-
     const navigate = useNavigate();
-    
     const bestseo =()=>{
       navigate('/payment',{state:{price:299,quantity:1 ,description:'Best SEO'}});
     }
@@ -29,60 +24,47 @@ function Ecommerce() {
     const platinum =()=>{
         navigate('/payment',{state:{price:499,quantity:1 ,description:'Platinum'}});
     }
-  
-    useEffect(() => {
-        document.head.innerHTML+=`
-        <meta name='online store' content='debug'/>
-        <meta name='description'
-         content=
-         'We perform SEO campaigns over several months, allow your
-          business to gain organic traffic. Our SEO strategy allows
-           your company increase Leads, Revenue, and Website Traffic and gain
-            overall revenue, brand recognition.'
-         />
-        `
-        document.title = "The California SEO Company America |USA SEO Experts | E-commerce ";
-      }, []);
+    
     return (
         <>
+             <Helmet>
+                 <meta name='online store' content='debug'/>
+                <meta name='description'
+                content=
+                'We perform SEO campaigns over several months, allow your business to gain organic traffic. Our SEO strategy allows  your company increase Leads, Revenue, and Website Traffic and gain overall revenue, brand recognition.'
+                />
+                <title>The California SEO Company America |USA SEO Experts | E-commerce</title>
+            </Helmet>
             <div className="mainsection_container"  style= {{ background :"url('ecommerceseo.png') center center ",
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat'
                 } }>
+                <div className="submainsection_container">
+                    <h2  className='submainsection_title'>S E O | E Commerce Store</h2>
+                    <div className="submainsection_items">
+                        <p>Our team of experts build highly Optimised and top ranking Stores</p>
+                        <Fade bottom>
+                            <div className="submainsection_list">
+                                <li> <Link   to="/contact">  For Business</Link> </li>
+                                <li> <Link   to="/contact">  For Startups</Link> </li>
+                                <li> <Link   to="/contact">  For SEO </Link> </li>
+                            </div>
+                        </Fade>
+                        <div className='submainsection_link'>
+                            <Link   to="/contact">  
+                                  Ready for your  E-commerce Store?Contact us.
+                            </Link>
+                        </div>
 
-            <div className="submainsection_container">
 
-                <h2  className='submainsection_title'>S E O | E Commerce Store</h2>
-                <div className="submainsection_items">
-                    <p>
-                    Our team of experts build highly Optimised and top ranking Stores
-
-                    </p>
-                    <Fade bottom>
-                    <div className="submainsection_list">
-                        <li> <Link   to="/contact">  For Business</Link> </li>
-                        <li> <Link   to="/contact">  For Startups</Link> </li>
-                        <li> <Link   to="/contact">  For SEO </Link> </li>
                     </div>
-                    </Fade>
-                    <div className='submainsection_link'>
-                        <Link   to="/contact">  
-                        Ready for your  E-commerce Store?Contact us.
-                        </Link>
-                    </div>
-
-
                 </div>
             </div>
-              
-            </div>
-
             <div className="mainsection_otherscontainer">
                 <div className="fixed_link">
-                        <Link to='/contact'>Get In Touch</Link>
+                    <Link to='/contact'>Get In Touch</Link>
                 </div>
-
                 <div className="mainsub_otheritems nft ">
                         <img src="seo.jpg" alt="online classes" />
                         <div className="item_description_nft">
@@ -101,7 +83,6 @@ function Ecommerce() {
                             </div>
                         </div>
                 </div>
-
                 <div className="mainsub_otheritems nft " style={{ marginTop : '8rem'}}>
                     
                     <div className="item_description_nft">
@@ -132,7 +113,6 @@ function Ecommerce() {
                     </div>
                     <img src="seo1.jpg" alt="online classes" />
                 </div>
-
                 {showPricing &&
                 <div className="seopricing_container">
                     <div className="seopricing_content">
@@ -143,11 +123,11 @@ function Ecommerce() {
                                     <h2>87% of <span className='headin_span'>Customers Check</span> A Store Online</h2>
                                     <h4>Before They Buy Or Visit A Physical Location</h4>
                                     <p>
-                                    With 87% of customers shopping online first your online footprint is
-                                     essential for your business. We help your business get ahead of the 
-                                     competition by creating locally tailored ads with targeted 
-                                     advertising using Google search. Have your business show in the 
-                                     top 3 searches for certain keywords or phases using Google Ads.
+                                        With 87% of customers shopping online first your online footprint is
+                                        essential for your business. We help your business get ahead of the 
+                                        competition by creating locally tailored ads with targeted 
+                                        advertising using Google search. Have your business show in the 
+                                        top 3 searches for certain keywords or phases using Google Ads.
                                     </p>
                                 </div>
                                 <div className="seotop_right">
@@ -157,22 +137,14 @@ function Ecommerce() {
                                     </div>
                                     <div className="seo_chart">
                                         <div className="pie_one"> </div>
-
-                                       
-
                                     </div>
                                 </div>
                             </div>
                             <div className="priceelement_content">
                                 <div className="priceelement_header">
-                                    <h2>
-                                      Get Started Now &amp; Sign Up Below
-                                    </h2>
-                                    <h3>
-                                    You can also ask our Senior Developer <span className='headin_span'>1-747-249-8760</span> with your questions
-                                    </h3>
+                                    <h2>Get Started Now &amp; Sign Up Below  </h2>
+                                    <h3>You can also ask our Senior Developer <span className='headin_span'>1-747-249-8760</span> with your questions</h3>
                                     <p>*Managed Price listed only, Google Ads budget additional</p>
-
                                 </div>
                                 <div className="prices_container">
                                     <div className="priceelement">
@@ -182,10 +154,8 @@ function Ecommerce() {
                                         <h3>SEO Pricing</h3>
                                         <p>SEO to improve your Google ranking</p>
                                         <h1>$299</h1>
-                                        
                                         <h5>Per Month</h5>
                                         <button onClick={()=>{bestseo()}} className="basic">Add To Cart &#8921;</button>
-                                        
                                         <ul >
                                             <li className='priceelement_li'><span>Improve</span> Website SEO* </li>
                                             <li className='priceelement_li'><span>No Contracts</span> Month to Month </li>
@@ -204,7 +174,7 @@ function Ecommerce() {
                                         </ul>
                                     </div>
                                     <div className="priceelement">
-                                    <div className="price_sticker">
+                                        <div className="price_sticker">
                                            Google Ads
                                         </div>
                                         <h3>Google Ads Manager</h3>
@@ -225,11 +195,10 @@ function Ecommerce() {
                                             <li className='priceelement_li'><span>SAVE!</span> $150 promo code from Google Ads**</li>
                                             <li className='priceelement_li'>*Google Ads budget additional </li>
                                             <li className='priceelement_li'> **Promo requires you to be a new customer and spend $50 in Ads </li>
-                                           
                                         </ul>
                                     </div>
                                     <div className="priceelement">
-                                    <div className="price_sticker">
+                                        <div className="price_sticker">
                                            Social Media
                                         </div>
                                         <h3>Social Media Management Consulting</h3>
@@ -248,7 +217,6 @@ function Ecommerce() {
                                             <li className='priceelement_li'><span>Meetings </span> online monthly to help with a marketing plan and keep the projects on task</li>
                                             <li className='priceelement_li'><span>Social Media Plan</span> handcrafted social media marketing plan for your business to finally take advantage of social media
                                             </li>
-                                           
                                         </ul>
                                     </div>
                                     <div className="priceelement">
@@ -270,7 +238,6 @@ function Ecommerce() {
                                             <li className='priceelement_li'><span>Optimized</span> to Track Conversions or low CPA </li>
                                             <li className='priceelement_li'><span>Fully</span> Managed Advertising Solution!</li>
                                             <li className='priceelement_li'>*No activation fees! </li>
-                                           
                                         </ul>
                                     </div>
                                 </div>
@@ -286,82 +253,69 @@ function Ecommerce() {
                             <div className="seoFaq_header">
                                 <h2>Frequently Asked <span className='headin_span'> SEO Questions</span></h2>
                                 <p>
-                                Since early 20&apos;s, we&apos;ve seen the SEO landscape transform from black hat
-                                 practices of keyword stuffing and buying backlinks to an emphasis
-                                  on user experience &amp; content quality. With such a significant 
-                                  change in the industry, you probably have questions &amp; concerns 
-                                  about your current tactics and we're here to help.
+                                    Since early 20&apos;s, we&apos;ve seen the SEO landscape transform from black hat
+                                    practices of keyword stuffing and buying backlinks to an emphasis
+                                    on user experience &amp; content quality. With such a significant 
+                                    change in the industry, you probably have questions &amp; concerns 
+                                    about your current tactics and we're here to help.
                                 </p>
                                 <h4>
-                                Here are just a few of the most common questions our 
-                                customers ask us when it comes to their SEO strategy.
+                                    Here are just a few of the most common questions our 
+                                    customers ask us when it comes to their SEO strategy.
                                 </h4>
                             </div>
                             <div className="seoFaqs_content">
                                 <div className="seoFaqs_item">
-                                    <h5 className='faqs_red'>
-                                    How do I get on page one of Google for a specific keyword?
-                                    </h5>
+                                    <h5 className='faqs_red'>How do I get on page one of Google for a specific keyword?</h5>
                                     <p >
-                                    There&apos;s no magical formula to ranking on the first page,
-                                     but Google heavily favors websites with quality content 
-                                     developed around relevant keywords. Simply placing a keyword
-                                      as many times as possible within your content will hurt your rankings.
+                                        There&apos;s no magical formula to ranking on the first page,
+                                        but Google heavily favors websites with quality content 
+                                        developed around relevant keywords. Simply placing a keyword
+                                        as many times as possible within your content will hurt your rankings.
                                     </p>
                                 </div>
                                 <div className="seoFaqs_item">
-                                    <h5 className='faqs_yellow'>
-                                    My rankings have dropped in recent months. What happened?
-                                    </h5>
+                                    <h5 className='faqs_yellow'> My rankings have dropped in recent months. What happened? </h5>
                                     <p>
-                                    Rankings change all the time, but if you&apos;ve seen a significant drop,
-                                     it could be due to increased competition under specific search terms,
-                                      Google penalties, a poor mobile user experience, bad backlinks, or 
-                                      outdated or spammy content.
+                                        Rankings change all the time, but if you&apos;ve seen a significant drop,
+                                        it could be due to increased competition under specific search terms,
+                                        Google penalties, a poor mobile user experience, bad backlinks, or 
+                                        outdated or spammy content.
                                     </p>
                                 </div>
                                 <div className="seoFaqs_item">
-                                    <h5 className='faqs_blue'>
-                                    I'm ranking well, so why am I not getting business from my site?
-                                    </h5>
+                                    <h5 className='faqs_blue'>I'm ranking well, so why am I not getting business from my site?</h5>
                                     <p>
-                                    This could be due to complicated navigation on your site. If potential
-                                     customers get to your site but don&apos;t know what to do next, they&apos;re likely
-                                      to leave and head back to the search results page to find an alternative.
-                                       That means lost business to your competitors.
+                                        This could be due to complicated navigation on your site. If potential
+                                        customers get to your site but don&apos;t know what to do next, they&apos;re likely
+                                        to leave and head back to the search results page to find an alternative.
+                                        That means lost business to your competitors.
                                     </p>
                                 </div>
                                 <div className="seoFaqs_item">
-                                    <h5 className='faqs_blue'>
-                                    I have lots of links to my website but I&apos;m not ranking well. Why is that?
-                                    </h5>
+                                    <h5 className='faqs_blue'>I have lots of links to my website but I&apos;m not ranking well. Why is that? </h5>
                                     <p>
-                                    Google takes into account the quality of your backlinks, not the number. You want to
-                                     obtain links from authoritative websites in your industry to indicate that you&apos;re a
-                                      knowledgeable and reliable company to do business with.
+                                        Google takes into account the quality of your backlinks, not the number. You want to
+                                        obtain links from authoritative websites in your industry to indicate that you&apos;re a
+                                        knowledgeable and reliable company to do business with.
                                     </p>
                                 </div>
                                 <div className="seoFaqs_item">
-                                    <h5 className='faqs_red'>
-                                    How do I reach and attract a local audience to my website?
-                                    </h5>
+                                    <h5 className='faqs_red'>How do I reach and attract a local audience to my website?</h5>
                                     <p>
-                                    By setting up a Google My Business account and building a presence on local listings
-                                     websites (e.g. Yelp, TripAdvisor, etc.), users will be presented with your location 
-                                     and contact information when they make a geographic-based search.
+                                        By setting up a Google My Business account and building a presence on local listings
+                                        websites (e.g. Yelp, TripAdvisor, etc.), users will be presented with your location 
+                                        and contact information when they make a geographic-based search.
                                     </p>
                                 </div>
                                  <div className="seoFaqs_item">
-                                    <h5 className='faqs_yellow'>
-                                    How long does it take to start seeing results with SEO?
-                                    </h5>
+                                    <h5 className='faqs_yellow'>  How long does it take to start seeing results with SEO?  </h5>
                                     <p>
-                                    There&apos;s no set timetable for when you&apos;ll start to see rankings improve. Some businesses
-                                     see progress within a few months, but many others need a year or more to recover from a
-                                      Google penalty or clean up their content and backlinks.
+                                        There&apos;s no set timetable for when you&apos;ll start to see rankings improve. Some businesses
+                                        see progress within a few months, but many others need a year or more to recover from a
+                                        Google penalty or clean up their content and backlinks.
                                     </p>
                                 </div>
-
                             </div>
                         </div>
 

@@ -4,7 +4,6 @@ import '../Contact.css'
 
 function Quote({text}) {
     const [Feedback, setShowFeedback] = useState(false)
-
     const sendEmail = (e)=>{
         e.preventDefault();
         emailjs.sendForm(
@@ -31,7 +30,7 @@ function Quote({text}) {
                     {Feedback ? 
                         <div className="funnel_feedback">
                             <p  className='success' >
-                            Your message has been sent, Quote on the way !
+                                 Your message has been sent, Quote on the way !
                             </p>
                             <button onClick={feedbackClose}> X </button>
                         </div>

@@ -15,7 +15,6 @@
 .header_link{
     color: green;
 }
-
 .header_menu{
     display: flex;
     align-items: center;
@@ -76,7 +75,6 @@
     top: 3rem;
     color: green;
     background: #fff;
-
 }
 .subprofile_ul{
     display: flex;
@@ -165,7 +163,6 @@
 .section_rightbuttons{
     background:#fff;
     opacity:0.65;
-    
 }
 .section_rightbuttons a{
     color: #000;
@@ -185,7 +182,6 @@
         grid-template-columns: 1fr 1fr;
         place-items: center;
     }
-
     /* ........section style...........section */
     .section_buttongroup{
         flex-direction: column;
@@ -193,4 +189,33 @@
     .section_itemtext{
         padding-top: 5rem;
     }
+}
+/* @media only screen and (min-device-width: 768px) */
+@media (min-width: 769px) and (max-width: 1281px)
+{
+    .header_menu{
+        display: none;
+    }
+    .section_itemtwo{
+        margin-left: 3rem;
+    }
+    .who_weare p,
+    .description p,
+     .description_nft p ,
+     .seoFaq_header p,
+     .seoFaqs_item p {
+        font-size: 0.8rem;
+    }
+    .who_weare h2{
+        font-size: 2.8rem;
+    }
+    .who_weare{
+        margin-left: 1rem;
+    }
+    .seoFaqs_item p{
+        margin: 1rem;
+    }
+   
+   
+   
 }

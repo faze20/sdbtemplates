@@ -1,5 +1,5 @@
-import React , { useEffect} from 'react'
-// import { Link } from 'react-router-dom'
+import React  from 'react'
+import { Helmet } from 'react-helmet'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -8,20 +8,18 @@ import { useParams } from "react-router-dom";
 import '../Blog.css';
 import blogDatas from '../data/blogData'
 
-
-
 function Blog() {
     const params = useParams();
     const blogItem = blogDatas[(parseInt(params.id)- 1)]
-    useEffect(() => {
-        document.head.innerHTML+=`
-        <meta name='blog' content='article reports'/>
-        `
-        document.title =`${blogItem.title}`;
-      }, []);
-      
     return (
         <div className="blog_container">
+             <Helmet>
+                <meta name='blog' content='article reports'/>
+                <meta name='description' 
+                content='Make your blog truly your own with advanced web features. Start your blog today! '
+                />
+                <title>{blogItem.title}</title>
+            </Helmet>
              <div className="blogSubheader">
                  <div>
                     <span>Blog &#8594; </span> <span>Category &#8594;</span> <span>Title</span>

@@ -5,23 +5,21 @@ import EmailIcon from '@material-ui/icons/Email';
 import WorkIcon from '@material-ui/icons/Work';
 import '../Contact.css'
 
-
-
 function Address() {
     return (
         <div className="address">
             <div className="addr_section">
-            <address>
-                <BusinessIcon />
-                <p>25630 Felicia avenue, Menifee California.
-                CA 92586.</p>
-                
-            </address>
+                <address>
+                    <BusinessIcon />
+                    <p>
+                        25630 Felicia avenue, Menifee California.
+                        CA 92586.
+                    </p>
+                </address>
             </div>
             <div className="addr_section">
                 <PhoneIcon />
                 <p> +1 747 2498760 </p>
-                
             </div>
             <div className="addr_section">
                 <EmailIcon />
@@ -30,7 +28,7 @@ function Address() {
             <div className="addr_section">
                 <WorkIcon />
                 <div>
-                <a href="https://afeez-portfolio.herokuapp.com/"> PortFolio </a>
+                    <a href="https://afeez-portfolio.herokuapp.com/"> PortFolio </a>
                 </div>
             </div>
         </div>

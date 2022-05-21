@@ -1,10 +1,10 @@
 import React,  { useState } from 'react'
 import emailjs from 'emailjs-com';
+import '../App.css'
 
 
 function Funnel({heading , buttonText }) {
     const [Feedback, setShowFeedback] = useState(false)
-
     const funnelSubmit = (e) =>{
         e.preventDefault()
         emailjs.sendForm(
@@ -33,9 +33,7 @@ function Funnel({heading , buttonText }) {
                     <div className="funnelform_elements">
                         {Feedback ? 
                         <div className="funnel_feedback">
-                            <p  className='success' >
-                            Your message has been sent!!!
-                            </p>
+                            <p  className='success' > Your message has been sent!!! </p>
                             <button onClick={feedbackClose}> X </button>
                         </div>
                             :
@@ -60,17 +58,17 @@ function Funnel({heading , buttonText }) {
                                 <button type="submit">{buttonText}</button>
                             </div>
                         </div>
-                            }
+                       }
                     </div>
                 </form>
                 <div className="funnelform_newsletter">
                     <p>Would You like to receive email updates and promotional
-                            offers from Software dev Bytes in the future? *
-                        </p>
-                        <div className="funnelform_checkboxes">
-                            <input type="checkbox" name="Yes" id="yes" />
-                            <input type="checkbox" name="No" id="No" />
-                        </div>
+                        offers from Software dev Bytes in the future? *
+                    </p>
+                    <div className="funnelform_checkboxes">
+                        <input type="checkbox" name="Yes" id="yes" />
+                        <input type="checkbox" name="No" id="No" />
+                    </div>
                 </div>
             </div>
         </div>

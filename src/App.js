@@ -1,5 +1,5 @@
 import React  from 'react';
-import './App.css';
+// import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import { BrowserRouter as Router, Routes , Route} from "react-router-dom";
@@ -31,7 +31,6 @@ import Pricing from './components/Pricing';
 import Payment from './components/Payment';
 import Error404 from './components/Error404';
 import Blog from './components/Blog';
-
 
 function App() {
     return (
@@ -70,7 +69,6 @@ function App() {
         </Router>
         <ToastContainer />
         </>
-
     );
 }
 

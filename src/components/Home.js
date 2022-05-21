@@ -1,27 +1,21 @@
-import React , {  useEffect} from 'react'
+import React from 'react'
 import Section from './Section'
-
+import {Helmet} from 'react-helmet'
 
 function Home() {
-    
-    useEffect(() => {
-        document.head.innerHTML+=`
-        <meta name='Software Engineering' content='scalable programming softwares'/>
-        <meta
-        name="description"
-        content="Mclien Communications Nig ltd. | Computer Software & Services 
-        | Technology Consultant | Research & Development | Software Engineering 
-        | Engineering | Web Site Design |.  
-        "
-      />
-        `
-        document.title = "Software Developers - Dedicated Software Development";
-
-      
-      }, []);
-
+   
     return (
         <div>
+              <Helmet>
+                <meta name='Software Engineering' content='scalable programming softwares'/>
+                <meta
+                name="description"
+                content="Mclien Communications Nig ltd. | Computer Software &amp; Services 
+                | Technology Consultant | Research &amp; Development | Software Engineering 
+                | Engineering | Web Site Design |.  
+                "
+                 />
+            </Helmet>
             <Section
                 title="Custom Software"
                 description="One Stop Shop for your Scalable Software Solutions"
@@ -30,7 +24,6 @@ function Home() {
                 leftBtnText="Software Engineering"
                 rightBtnText="Continous Integration"
                 color = 'white'
-            
             />
             <Section
                 title="Web Applications"
@@ -48,7 +41,6 @@ function Home() {
                 leftBtnText="Native apps"
                 rightBtnText="Cross Platform"                          
             />
-
             <Section 
                 title="Cloud Technology"
                 description="Get your secured and undisrupted architecture migration"

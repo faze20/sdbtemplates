@@ -3,9 +3,7 @@ import { Link , useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
 import '../Register.css';
 
-
 function Register() {
-
     const [input, setInput] = useState(
         {
             firstName: '', 
@@ -14,18 +12,13 @@ function Register() {
             phoneNumber : '',
             password : '',
             confirmPassword: '',
-
         });
-
     const { firstName, userName , email , phoneNumber , password, confirmPassword } = input
-
     const handleChange = (e) => setInput({
         ...input,
         [e.currentTarget.name]: e.currentTarget.value
     }); 
-
     const navigate = useNavigate()
-    
     const handleSubmit = async (e)=>{
         e.preventDefault()
         if (password === confirmPassword && input.password.length > 6) {
@@ -50,15 +43,10 @@ function Register() {
         } else {
             toast.error('Passwords do not match | less than six characters')
         }
-
     }
-
     return (
         <div className="register">
-            <h2 className='register_header'>
-                Sign Up
-            </h2>
-
+            <h2 className='register_header'> Sign Up</h2>
             <div className='register_box'>
                 <form onSubmit={handleSubmit}>
                     <div className="register_container">
@@ -89,7 +77,6 @@ function Register() {
                     </div>
                     <button className='btn_signup' type="submit">Sign Up</button>
                 </form>
-
             </div>
             <div className="forgot_pword">
                 Already a member ? <Link to='/account'>  Login </Link>

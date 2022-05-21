@@ -10,8 +10,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-
-
 .websites_subheader {
   display: flex;
   justify-content: space-between;
@@ -110,7 +108,6 @@
 .form h3{
   color: aliceblue;
 }
-
 .side_two{
   padding-right: 1rem;
 }
@@ -223,7 +220,6 @@
 .rightitem_content img{
   max-width: 20rem;
   max-height: 20rem;
-
 }
 .rightitem_content p{
   line-height: 2.5rem;
@@ -293,12 +289,10 @@ font-size: 3rem;
 }
 .website_aboutme{
   padding: 1px;
-
 }
 .website_aboutme h2{
   text-align: center;
   margin: 2rem 0;
-
 }
 .aboutme_content{
   display: flex;
@@ -316,7 +310,6 @@ font-size: 3rem;
 }
 .about_text p{
   line-height: 2rem;
-
 }
 .acheivements{
   display: flex;
@@ -341,12 +334,10 @@ font-size: 3rem;
   cursor: pointer;
   font-weight: 800;
   font-size: 1rem;
-
 }
 .buttons > button:hover{
   background: #ffc600;
   color: #fff;
-
 }
 
 @media (max-width: 768px) {
@@ -371,7 +362,6 @@ font-size: 3rem;
   .dataheader_content{
     margin: 0 1rem;
     padding-top: 16rem;
-
   }
   .fade_p{
     color: black;
@@ -410,7 +400,6 @@ font-size: 3rem;
     line-height: 2rem;
     font-size: 0.9rem;
     width: 100%;
-
   }
   .rightitem_content{
     flex-direction: column;
@@ -433,13 +422,12 @@ font-size: 3rem;
   .image{
     width: 100%;
     text-align: center;
-
   }
   .image img{
     width: 50%;
     height: 50%;
-
-  }.about_text{
+  }
+  .about_text{
     margin: 1rem;
   }.about_text p{
     font-size: .8rem;
@@ -449,7 +437,6 @@ font-size: 3rem;
   #video{
     width: 0%;
   }
-
   .data_header {
     height: 100vh;
     background: url("/dataMobile.jpg") no-repeat center center fixed;
@@ -461,13 +448,10 @@ font-size: 3rem;
   .app_header{
     height: 100vh;
     background: url("/appMobile2.jpg") no-repeat center center fixed;
-    /* background: url("/dataMobile.jpg") no-repeat center center fixed; */
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
   }
   .sideone_content{
     opacity: 0.7;
@@ -484,6 +468,48 @@ font-size: 3rem;
   }
   .sideone_button{
     display: block;
+  }
+}
+@media (min-width: 769px) and (max-width: 1281px){
+  .websiteheader_content,
+  .dataheader_content{
+      padding-top: 1rem;
+      max-width: 19rem;
+  }
+  .fade_h1, .clouddatafade_h1 {
+      font-size: 2.5rem;
+  }
+  .fade_p, .data_p {
+      max-width: 14rem;
+      font-size: 0.8em;
+  }
+  .data_header, .website_header {
+      height: 58vh;
+  }
+  .benefit_item p ,
+  .rightitem_content p{
+      font-size: 0.8em;
+  }
+  .side_one{
+      padding: 0 1rem;
+  }
+  .side_two{
+      padding: 0;
+  }
+  .quote_button{
+      font-size: 1em ;
+  }
+  .benefit_item{
+      max-width: 14rem;
+  }
+  .websitecard p{
+      max-width: 18rem;
+  }
+  .about_text{
+      margin: 0 1rem;
+  }
+  .buttons{
+      width: 100%;
   }
 
 }

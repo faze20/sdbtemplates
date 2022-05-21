@@ -1,52 +1,40 @@
-import React , {useState , useEffect} from 'react'
+import React , {useState } from 'react'
 import '../App.css'
+import {Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
-
-
 
 function Contents() {
     const [showItem , setShowItem] = useState(false)
     const [showItem1 , setShowItem1] = useState(false)
     const [showItem2 , setShowItem2] = useState(false)
     const [displayImage, setDisplayImage] = useState('content.png')
-
-
-    useEffect(() => {
-        document.head.innerHTML+=`
-        <meta name='cms' content='wix shopify wordpress squarespace'/>
-        <meta name='description' 
-        content=
-        'Our CMS Development Services. Our custom CMS developers help 
-        your company to achieve your business and tech goals. CMS Integration.
-         Seamless communication'
-        />
-        <meta name='keyword' content='Headless CMS contentful build launch iterate '/>
-
-        `
-        document.title = "Content Management-Create Digital Experience faster | Contentful";
-      }, []);
-
+    
     const dropProfileMenu = ()=>{
         setShowItem(prev => !prev)
         setDisplayImage('content.png')
-
     }
     const dropProfileMenu1 = ()=>{
         setShowItem1(prev => !prev)
         setDisplayImage('content2.png')
     }
-
     const dropProfileMenu2 = ()=>{
         setShowItem2(prev => !prev)
         setDisplayImage('content3.png')
     }
-
-
     return (
         <>
+             <Helmet>
+                <meta name='cms' content='wix shopify wordpress squarespace'/>
+                <meta name='description' 
+                content=
+                'Our CMS Development Services.Our custom CMS developers help your company to achieve your business and tech goals.CMS Integration. Seamless communication'
+                />
+                <meta name='keyword' content='Headless CMS contentful build launch iterate '/>
+                <title>Content Management-Create Digital Experience faster | Contentful</title>
+            </Helmet>
             <div  className="mainsection_container" style= {{ background :"url('contentms.png') center center ",
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
@@ -54,12 +42,8 @@ function Contents() {
             } }>
                 <div className="submainsection_container">
                     <h2 className='submainsection_title'>CONTENT MANAGEMENT SYSTEMS </h2>
-
                     <div className="submainsection_items">
-                        <p>
-                        We manage,update and create your contents so you can meet the needs of your customer
-
-                        </p>
+                        <p>We manage,update and create your contents so you can meet the needs of your customer </p>
                         <Fade bottom>
                             <div className="submainsection_list">
                                 <li> <Link   to="/contact">  WORDPRESS</Link> </li>
@@ -68,37 +52,34 @@ function Contents() {
                             </div>
                         </Fade>
                         <div className='submainsection_link'>
-                        <Link   to="/contact">  
-                            Ready for your optimised contents?Contact us.
-                        </Link>
+                            <Link   to="/contact">  
+                                Ready for your optimised contents?Contact us.
+                            </Link>
                         </div>
-
-
                     </div>
                 </div>
             </div>
             <div className="mainsection_otherscontainer ">
-            <div className="fixed_link">
+                <div className="fixed_link">
                     <Link to='/contact'>Get In Touch</Link>
                 </div>
-            <div className="mainsub_contents content_margin">
-                <div className="mainsub_items">
-                            <img src="content1.png" alt="online classes" />
-                            <div className="item_description_nft">
-                                <h2>What is a <span className='headin_span'>content platform?</span> </h2>
-                                <div className="description_nft">
-                                    <h3>Platform</h3>
-                                    <p>
+                <div className="mainsub_contents content_margin">
+                    <div className="mainsub_items">
+                        <img src="content1.png" alt="online classes" />
+                        <div className="item_description_nft">
+                            <h2>What is a <span className='headin_span'>content platform?</span> </h2>
+                            <div className="description_nft">
+                                <h3>Platform</h3>
+                                <p>
                                     A content platform is the heart of a modern tech stack. It aggregates,
                                     structures and delivers content across an organization&apos;s digital
                                     footprint. It has flexible APIs that enable businesses to build 
                                     engaging experiences across markets and channels.
-                                    </p>
-                                    <Link to='/contact'>Contact us</Link>
-                                </div>
+                                </p>
+                                <Link to='/contact'>Contact us</Link>
                             </div>
                         </div>
-
+                    </div>
                 </div>
                 <div className="fancy_tabs">
                    

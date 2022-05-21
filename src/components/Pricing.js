@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 import CheckIcon from '@material-ui/icons/Check';
 import ClearIcon from '@mui/icons-material/Clear';
 import {  useNavigate } from 'react-router-dom';
-
 import '../Pricing.css';
-
 
 export default function Pricing() {
   const navigate = useNavigate();
-
   const basic =()=>{
     navigate('/payment',{state:{price:0,quantity:1 ,description:'Free Basic Package '}});
   }
-
   const standard =()=>{
     navigate('/payment',{state:{price:850,quantity:1 ,description:'Standard Package '}});
   }
@@ -23,36 +19,30 @@ export default function Pricing() {
   const platinum=()=>{
       navigate('/payment',{state:{price:4000,quantity:1 ,description:'Platinum Package '}});
   }
-
   return (
     <div className="pricing_container">
       <div className="pricing_contents">
         <div className="pricing_header">
-          <h1>
-          Website Design Packages for <span>Smaller Businesses</span> 
-          </h1>
+          <h1>Website Design Packages for <span>Smaller Businesses</span> </h1>
         </div>
         <div className="pricing_main">
           <p>
-          At Software Dev Bytes, we assist companies of all sizes with their <Link to="/websites">Website Development</Link>
-           , <Link to="/ecommerce">Search Engine Optimization </Link>  and <Link to="/websites">Website Maintenance </Link> needs. To help 
-           smaller businesses, we&#39;ve created a number of website design packages. We do this
+            At Software Dev Bytes, we assist companies of all sizes with their <Link to="/websites">Website Development</Link>
+            , <Link to="/ecommerce">Search Engine Optimization </Link>  and <Link to="/websites">Website Maintenance </Link> needs. To help 
+            smaller businesses, we&#39;ve created a number of website design packages. We do this
             because we know how challenging it is for smaller companies to find a website developer
-             that can serve their needs properly and responsively. Our packages allow small business
-              owner to get a first class website without large upfront costs. Best of all you will have 
-              us available on-call to support your update and maintenance needs.
-              </p>
-<p>
-
-           When working with us, you won&#39;t get complicated and disheartening up-charges or 
-           overly technical lingo, just simple, straight-forward answers to your questions. 
-           To see what we mean, take a look at our packages and pricing. Once you do, you&#39;ll 
-           understand why they&#39;re so popular with smaller businesses.
-</p>
-         
+            that can serve their needs properly and responsively. Our packages allow small business
+            owner to get a first class website without large upfront costs. Best of all you will have 
+            us available on-call to support your update and maintenance needs.
+          </p>
+          <p>
+            When working with us, you won&#39;t get complicated and disheartening up-charges or 
+            overly technical lingo, just simple, straight-forward answers to your questions. 
+            To see what we mean, take a look at our packages and pricing. Once you do, you&#39;ll 
+            understand why they&#39;re so popular with smaller businesses.
+          </p>
         </div>
         <div className="table_contents">
-          
           <div className="table_items">
             <table>
               <thead>
@@ -197,13 +187,11 @@ export default function Pricing() {
           </div>
           <div className="getin_touch">
             <p>
-            Email: afeez20@gmail.com, find us at www.softwaredevbytes.com or call us at 747-249-8760
+               Email: afeez20@gmail.com, find us at www.softwaredevbytes.com or call us at 747-249-8760
             </p>
-
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

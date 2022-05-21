@@ -26,7 +26,6 @@
     background-color: whitesmoke;
     margin-bottom: 1rem;
     transition: 0.3s;
-
 }
 .quote_forminput input:hover{
     border: 1px solid #f14964;
@@ -56,8 +55,6 @@
     color: green;
     border: 1px solid green;
   }
-  
-
 .contact_container{
     margin-top: 5rem;
     position: relative;
@@ -70,7 +67,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   .headercontent {
     display: flex;
     align-items: center;
@@ -88,7 +84,6 @@
     background: #64a7de;
     margin-right: 10px;
   }
-  
 .item_contact{
     display: flex;
     justify-content: space-around;
@@ -96,8 +91,6 @@
 .item_one{
     flex: 0.6;
 }
-
-
 .address{
     margin-top: 5rem;
 }
@@ -112,7 +105,6 @@
   .addr_section a {
       margin-left: 2rem;
   }
-
   @media (max-width: 768px) {
       .item_contact{
           flex-direction: column;

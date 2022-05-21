@@ -13,11 +13,10 @@ import '../App.css'
 
 function Footer() {
     const location = useLocation();
-
     const page = (location.pathname.replace('/', ''))
    // `${process.env.REACT_APP_BACKEND_API}/pagevisitcount`  'http://localhost:8000/pagevisitcount'
     useEffect( async () => {
-        const response = await fetch('http://localhost:8000/pagevisitcount', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/pagevisitcount`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -26,31 +25,23 @@ function Footer() {
         })
         return  await response.json()
     }, [page])
-
-
-  
-
     return (
-        <div className="footer">
-            <div className="footer_group">
-
+        <div className="footers" style={{background : '#e1dee3'}}>
+            <div className="footer_group" >
             <div className="footer_subsection">
                 <h3>Software Dev Bytes </h3>
                 <div className="sub">
                     <LocationOnIcon />
                     <p>
-                    25630 Felicia Avenue, 
-                     Menifee,California,
-                      CA 92586,United States</p>
+                        25630 Felicia Avenue, 
+                        Menifee,California,
+                        CA 92586,United States
+                    </p>
                 </div>
                 <div className="sub">
                     <EmailIcon />
-                    <a href="mailto:toafeez20@gmail.com" target="_top">
-                    afeez20@softwaredevbytes.com
-                    </a>
+                    <a href="mailto:toafeez20@gmail.com" target="_top">afeez20@softwaredevbytes.com  </a>
                 </div>
-              
-
             </div>
             <div className="footer_subsection">
                 <h3>Services</h3>
@@ -61,7 +52,6 @@ function Footer() {
                     <li><Link  to="/softwares"> Software Management </Link></li>
                     <li><Link  to="/data"> Cloud Integration </Link></li>
                 </ul>
-
             </div>
             <div className="footer_subsection">
                 <h3>Expertise</h3>
@@ -69,11 +59,10 @@ function Footer() {
                     <li><Link  to="/softwares"> Customised Applications </Link></li>
                     <li><Link  to="/softwares"> Saas Development </Link> </li>
                     <li><Link  to="/applications"> Mobile Applications </Link></li>
-                    <li><Link  to="/websites">  Optimisation</Link></li>
                     <li><Link  to="/data">Data Migration  </Link></li>
+                    <li><Link  to="contact"> Contact us</Link></li>
                 </ul>
             </div>
-
             <div className="footer_subsection">
                 <h3>Industries</h3>
                 <ul>
@@ -83,7 +72,6 @@ function Footer() {
                     <li><Link  to="/websites"> Blockchain </Link></li>
                     <li><Link  to="/websites"> WEB </Link></li>
                 </ul>
-                
             </div>
             </div>
             <div className="footer_social">
@@ -97,7 +85,6 @@ function Footer() {
                     <a href="www.youtube.com"><YouTubeIcon /></a>
                 </div>
             </div>
-
             <hr className="footer_divide"/>
             <div className="copyright">
                 <p>Privacy Policy | Terms </p>
