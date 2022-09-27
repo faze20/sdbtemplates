@@ -343,9 +343,12 @@ function Utilities() {
                             </div>
                             <div className="seo_solcontents">
                                 <div><ModeStandbyIcon /></div>
-                                <a href='https://www.softwaredevbytes.com/blog '>
+                                <Link to="/blog">
                                     <h4>SDB-Tutors</h4>
-                                </a>
+                                </Link>
+                                {/* <a href='https://www.softwaredevbytes.com/blog '>
+                                   
+                                </a> */}
                             </div>
                         </div>
                     </div>
