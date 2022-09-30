@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect , useState } from 'react'
 import {Helmet} from 'react-helmet'
 import TextTransition, { presets } from "react-text-transition";
 import { Link , useNavigate } from 'react-router-dom'
@@ -11,6 +11,8 @@ import './Academy.css'
 
 
 const Academy = () => {
+    const[showComponent , setShowComponent] = useState('home')
+
     const TEXTS = [
         "One-on-One coding classes",
         "Real world practical examples and Lab Practices.",
@@ -20,7 +22,6 @@ const Academy = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-       
         const intervalId = setInterval(() =>
           setIndex(index => index + 1),
           3000 // every 3 seconds
@@ -48,56 +49,79 @@ const Academy = () => {
             <div className='utility_divider'></div>
             <div className="utility_subnav">
                 <ul className='utility_ul'>
-                    <li>
-                        <Link to="/ecommerce">
-                        <p>Code Lab</p>
-                        </Link>
+                    <li className='academy-li'>
+                        <button 
+                            className={showComponent === 'home' ? 'active_link' : ''}
+                            onClick={()=>setShowComponent('home')}> 
+                            Home 
+                        </button>
                     </li>
-                    <li>
-                        <Link to="/contents">
-                        <p > TicTac</p>
-                        </Link>
+                    <li className='academy-li'>
+                        <button 
+                        className={showComponent === 'editor' ? 'active_link' : ''}
+                        onClick={()=>setShowComponent('editor')}>
+                            Editor
+                        </button>
                     </li>
-                    <li>
-                        <Link to="/contents">
-                            <p >Editor</p>
-                        </Link>
+                    <li className='academy-li'>
+                        <button 
+                        className={showComponent === 'tictac' ? 'active_link' : ''}
+                        onClick={()=>setShowComponent('tictac')}>
+                            Challenges
+                        </button>
                     </li>
-                    <li>
-                        <Link to="/websites">
-                        <p > Flappy</p>
-                        </Link>
+                    <li  className='academy-li'>
+                        <button 
+                        className={showComponent === 'flappy' ? 'active_link' : ''}
+                        onClick={()=>setShowComponent('flappy')}>
+                            Curricullum
+                        </button>
                     </li>
-                    <li>
-                        <Link to="/ecommerce">
-                        <p >Projects</p>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/ecommerce">
-                        <p > Chat</p>
-                        </Link>
+                    <li className='academy-li'>
+                        <button
+                        className={showComponent === 'projects' ? 'active_link' : ''}
+                        onClick={()=>setShowComponent('projects')}>
+                            Projects
+                        </button>
                     </li>
                 </ul>
             </div>
             <div className="academy_main">
-                <div className="academyleft_side">
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                <h1>Academy</h1>
-                </div>
-                <div className="academyright_side">
-                    <CodingLab />
-                    <Editor />
-                    <Flappy />
-                    <Projects />
-                    <Tictac />
+                {showComponent === 'home' &&
+                    <div className="academyleft_side">
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                        <h1>Academy</h1>
+                    </div> 
+                }
+                {showComponent === 'lab' && 
+                        <CodingLab />
+                  
+                }
+                {showComponent === 'editor' && 
+                           <Editor />
+                 
+                }
 
-                </div>
+                {showComponent === 'flappy' && 
+                         <Flappy />
+                
+                }
+
+                {showComponent === 'projects' && 
+                         <Projects />
+                    
+                }
+
+                {showComponent === 'tictac' && 
+                        <Tictac />
+                
+                 }
+
             </div>
         
     </div>
