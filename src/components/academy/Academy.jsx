@@ -89,6 +89,45 @@ const Academy = () => {
             <div className="academy_main">
                 {showComponent === 'home' &&
                     <div className="academyleft_side">
+                        <div className='utility_pagecontent'  
+                            style= {{ background :"url('homePhoto.jpg') center center" ,
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover',
+                                        backgroundRepeat: 'no-repeat'
+                            } }
+                        >
+                            <div className='content_left'>
+                              
+                                    <h1>
+                                    #1 Coding <span className='span-orange'>Academy</span>  for Kids &amp; <span className='span-orange'>Teens</span>
+                                    </h1>
+                                    <div>
+                                    <div className='academybanner-header'>
+                                        <h1>Online classes</h1>
+                                        <div className='academybanner-subheader' >
+                                            <h2>Group</h2>
+                                            <div className='academybanner-subheaderdiv'>
+                                                <h3>small Group</h3>
+                                                <h3>Private classes</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='academybanner-header'>
+                                        <h1>Online classes</h1>
+                                        <div className='academybanner-subheader' >
+                                            <h2>Group</h2>
+                                            <div className='academybanner-subheaderdiv'>
+                                                <h3>small Group</h3>
+                                                <h3>Private classes</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+        
+                                <button>Enrol Now</button>
+                            </div>
+                        </div>
                         <h1>Academy</h1>
                         <h1>Academy</h1>
                         <h1>Academy</h1>
