@@ -96,14 +96,14 @@ const Academy = () => {
                                         backgroundRepeat: 'no-repeat'
                             } }
                         >
-                            <div className='content_left'>
-                              
+                            <div className='utilitycontent_left'>
+                                <div className="academyleft-content">
                                     <h1>
                                     #1 Coding <span className='span-orange'>Academy</span>  for Kids &amp; <span className='span-orange'>Teens</span>
                                     </h1>
-                                    <div>
+                                    <div className='acedemybanner-container'>
                                     <div className='academybanner-header'>
-                                        <h1>Online classes</h1>
+                                        <h2>Online classes</h2>
                                         <div className='academybanner-subheader' >
                                             <h2>Group</h2>
                                             <div className='academybanner-subheaderdiv'>
@@ -113,7 +113,7 @@ const Academy = () => {
                                         </div>
                                     </div>
                                     <div className='academybanner-header'>
-                                        <h1>Online classes</h1>
+                                        <h2>Online classes</h2>
                                         <div className='academybanner-subheader' >
                                             <h2>Group</h2>
                                             <div className='academybanner-subheaderdiv'>
@@ -123,11 +123,14 @@ const Academy = () => {
                                         </div>
                                     </div>
 
+                                    </div>
+                                   <button>Enrol Now</button>
                                 </div>
-        
-                                <button>Enrol Now</button>
                             </div>
                         </div>
+
+
+                        
                         <h1>Academy</h1>
                         <h1>Academy</h1>
                         <h1>Academy</h1>

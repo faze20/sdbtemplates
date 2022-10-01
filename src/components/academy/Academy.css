@@ -12,3 +12,33 @@
     background: green;
     color: #eee;
 }
+.utilitycontent_left{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+
+}
+.academyleft-content{
+    background: #fff;
+    max-width: 38rem;
+    min-width: 17rem;
+    padding: .2rem;
+    border-radius: .3rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.academyleft-content h1{
+    margin: .5rem 0;
+}
+.span-orange{
+    color: orange;
+}
+.acedemybanner-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.academybanner-header{
+    background-color: orange;
+    padding: 2rem;
+}
