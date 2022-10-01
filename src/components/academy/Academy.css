@@ -22,11 +22,12 @@
 .academyleft-content{
     background: #fff;
     max-width: 38rem;
-    min-width: 17rem;
+    /* min-width: 17rem; */
     padding: .2rem;
     border-radius: .3rem;
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
+    opacity: 80%;
 }
 .academyleft-content h1{
     margin: .5rem 0;
@@ -36,9 +37,15 @@
 }
 .acedemybanner-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .academybanner-header{
     background-color: orange;
-    padding: 2rem;
+    padding: 0.5rem;
+}
+.academybanner-subheaderdiv{
+    display: flex;
+}
+.academybanner-subheaderdiv h3{
+    max-width: 5rem;
 }

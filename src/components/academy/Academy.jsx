@@ -99,7 +99,7 @@ const Academy = () => {
                             <div className='utilitycontent_left'>
                                 <div className="academyleft-content">
                                     <h1>
-                                    #1 Coding <span className='span-orange'>Academy</span>  for Kids &amp; <span className='span-orange'>Teens</span>
+                                    #1 Coding <span className='span-orange'>Academy</span> <br /> for Kids &amp; <span className='span-orange'>Teens</span>
                                     </h1>
                                     <div className='acedemybanner-container'>
                                     <div className='academybanner-header'>
@@ -111,6 +111,8 @@ const Academy = () => {
                                                 <h3>Private classes</h3>
                                             </div>
                                         </div>
+                                        <button>Enrol Now</button>
+
                                     </div>
                                     <div className='academybanner-header'>
                                         <h2>Online classes</h2>
@@ -121,10 +123,11 @@ const Academy = () => {
                                                 <h3>Private classes</h3>
                                             </div>
                                         </div>
+                                        <button>Enrol Now</button>
+
                                     </div>
 
                                     </div>
-                                   <button>Enrol Now</button>
                                 </div>
                             </div>
                         </div>
